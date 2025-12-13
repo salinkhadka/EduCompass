@@ -1,0 +1,3936 @@
+[
+  {
+    "id": "course_jp_001",
+    "universityId": "uni_jp_001",
+    "name": "Bachelor of Engineering in Computer Science",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 5200,
+    "overview": "This program provides comprehensive training in computer science fundamentals, algorithms, and software engineering. Students gain hands-on experience through projects and internships with leading tech companies.",
+    "requirements": [
+      "Strong background in mathematics and physics",
+      "TOEFL iBT 85+ or IELTS 6.5+",
+      "EJU Science track with minimum 70%"
+    ]
+  },
+  {
+    "id": "course_jp_002",
+    "universityId": "uni_jp_001",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 6500,
+    "overview": "An intensive MBA program focusing on Asian business practices and global management strategies. The curriculum includes case studies, consulting projects, and networking opportunities with industry leaders.",
+    "requirements": [
+      "Bachelor's degree in any field",
+      "Minimum 2 years work experience",
+      "GMAT 650+ or GRE equivalent",
+      "TOEFL iBT 100+ or IELTS 7.0+"
+    ]
+  },
+  {
+    "id": "course_jp_003",
+    "universityId": "uni_jp_001",
+    "name": "Bachelor of Science in Physics",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 5000,
+    "overview": "This program explores fundamental and applied physics with access to state-of-the-art research facilities. Students can participate in cutting-edge research in quantum physics, astrophysics, and materials science.",
+    "requirements": [
+      "High school diploma with strong physics and mathematics grades",
+      "EJU Science track",
+      "TOEFL iBT 80+"
+    ]
+  },
+  {
+    "id": "course_jp_004",
+    "universityId": "uni_jp_001",
+    "name": "Master of International Relations",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "2 years",
+    "tuitionFee": 5800,
+    "overview": "This graduate program examines global politics, diplomacy, and international cooperation with a focus on Asia-Pacific region. Students engage with policy practitioners and conduct field research.",
+    "requirements": [
+      "Bachelor's degree in related field",
+      "TOEFL iBT 95+ or IELTS 7.0+",
+      "Statement of research interest"
+    ]
+  },
+  {
+    "id": "course_jp_005",
+    "universityId": "uni_jp_001",
+    "name": "Bachelor of Medicine",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "6 years",
+    "tuitionFee": 7000,
+    "overview": "A comprehensive medical program combining theoretical knowledge with clinical practice at affiliated hospitals. Graduates are prepared for medical licensing examinations and specialized training.",
+    "requirements": [
+      "Excellent academic record in sciences",
+      "EJU Science track with minimum 80%",
+      "Interview and aptitude test",
+      "JLPT N1 required"
+    ]
+  },
+  {
+    "id": "course_jp_006",
+    "universityId": "uni_jp_002",
+    "name": "Bachelor of Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 5100,
+    "overview": "This program provides rigorous training in economic theory, econometrics, and policy analysis. Students develop analytical skills applicable to finance, consulting, and public policy careers.",
+    "requirements": [
+      "High school diploma with mathematics proficiency",
+      "TOEFL iBT 79+ or IELTS 6.0+",
+      "EJU or entrance examination"
+    ]
+  },
+  {
+    "id": "course_jp_007",
+    "universityId": "uni_jp_002",
+    "name": "Master of Engineering in Robotics",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 6200,
+    "overview": "An advanced program in robotics and automation, covering AI, mechatronics, and human-robot interaction. Students work on real-world projects in collaboration with industry partners.",
+    "requirements": [
+      "Bachelor's in engineering or related field",
+      "Strong programming skills",
+      "TOEFL iBT 85+ or IELTS 6.5+",
+      "Research proposal"
+    ]
+  },
+  {
+    "id": "course_jp_008",
+    "universityId": "uni_jp_002",
+    "name": "Bachelor of Law",
+    "level": "UG",
+    "field": "Law",
+    "duration": "4 years",
+    "tuitionFee": 5300,
+    "overview": "This comprehensive law program covers Japanese and international legal systems with emphasis on comparative law. Students develop critical thinking and analytical skills for legal practice or further study.",
+    "requirements": [
+      "High school completion certificate",
+      "Strong written and verbal communication skills",
+      "JLPT N2 minimum",
+      "Entrance examination"
+    ]
+  },
+  {
+    "id": "course_jp_009",
+    "universityId": "uni_jp_002",
+    "name": "Master of Environmental Science",
+    "level": "PG",
+    "field": "Science",
+    "duration": "2 years",
+    "tuitionFee": 5900,
+    "overview": "This program addresses global environmental challenges through interdisciplinary research in ecology, climate science, and sustainability. Field work and laboratory research are integral components.",
+    "requirements": [
+      "Bachelor's degree in science or related field",
+      "TOEFL iBT 80+ or IELTS 6.5+",
+      "Statement of purpose"
+    ]
+  },
+  {
+    "id": "course_jp_010",
+    "universityId": "uni_jp_002",
+    "name": "Bachelor of Pharmacy",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "6 years",
+    "tuitionFee": 6500,
+    "overview": "A professional program preparing students for careers as licensed pharmacists with training in pharmaceutical sciences and clinical practice. Includes extensive practical training in hospital and community settings.",
+    "requirements": [
+      "Strong chemistry and biology background",
+      "EJU Science track",
+      "JLPT N2 or higher",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_jp_011",
+    "universityId": "uni_jp_003",
+    "name": "Bachelor of Information Technology",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 5100,
+    "overview": "This program covers software development, network systems, and cybersecurity with hands-on labs and industry projects. Students gain practical skills in emerging technologies like cloud computing and IoT.",
+    "requirements": [
+      "High school diploma with mathematics",
+      "TOEFL iBT 75+ or IELTS 5.5+",
+      "Basic programming knowledge recommended"
+    ]
+  },
+  {
+    "id": "course_jp_012",
+    "universityId": "uni_jp_003",
+    "name": "Master of Data Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 6400,
+    "overview": "An intensive program in data analytics, machine learning, and big data technologies. Students work on real-world datasets and industry problems, developing expertise in statistical modeling and AI.",
+    "requirements": [
+      "Bachelor's degree in STEM field",
+      "Programming experience in Python or R",
+      "TOEFL iBT 85+",
+      "Strong mathematics background"
+    ]
+  },
+  {
+    "id": "course_jp_013",
+    "universityId": "uni_jp_003",
+    "name": "Bachelor of Mechanical Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 5200,
+    "overview": "This program provides comprehensive training in mechanical systems, thermodynamics, and manufacturing processes. Students gain practical experience through laboratory work and industry internships.",
+    "requirements": [
+      "Strong background in physics and mathematics",
+      "EJU Science track",
+      "TOEFL iBT 75+"
+    ]
+  },
+  {
+    "id": "course_jp_014",
+    "universityId": "uni_jp_003",
+    "name": "Master of Public Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "2 years",
+    "tuitionFee": 6000,
+    "overview": "This program prepares professionals to address population health challenges through epidemiology, health policy, and community health interventions. Includes fieldwork and research opportunities.",
+    "requirements": [
+      "Bachelor's degree in health sciences or related field",
+      "TOEFL iBT 80+ or IELTS 6.0+",
+      "Work experience in healthcare preferred"
+    ]
+  },
+  {
+    "id": "course_jp_015",
+    "universityId": "uni_jp_003",
+    "name": "Bachelor of Architecture",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 5400,
+    "overview": "This program combines design creativity with technical knowledge in sustainable architecture and urban planning. Students develop portfolios through studio projects and learn from renowned architects.",
+    "requirements": [
+      "High school diploma",
+      "Portfolio submission",
+      "TOEFL iBT 75+",
+      "Entrance examination and interview"
+    ]
+  },
+  {
+    "id": "course_jp_016",
+    "universityId": "uni_jp_004",
+    "name": "Bachelor of Electrical Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 5300,
+    "overview": "This program focuses on electronics, power systems, and telecommunications with emphasis on innovation and research. Students access cutting-edge laboratories and participate in industry-sponsored projects.",
+    "requirements": [
+      "Excellent mathematics and physics background",
+      "EJU Science track with high scores",
+      "TOEFL iBT 85+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_jp_017",
+    "universityId": "uni_jp_004",
+    "name": "Master of Artificial Intelligence",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 6800,
+    "overview": "An advanced program in AI, machine learning, and neural networks with focus on research and innovation. Students collaborate with leading researchers on cutting-edge AI applications.",
+    "requirements": [
+      "Bachelor's in computer science or related field",
+      "Strong programming and mathematics skills",
+      "TOEFL iBT 90+",
+      "Research statement"
+    ]
+  },
+  {
+    "id": "course_jp_018",
+    "universityId": "uni_jp_004",
+    "name": "Bachelor of Chemical Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 5200,
+    "overview": "This program covers process design, materials science, and sustainable engineering with practical laboratory experience. Graduates work in pharmaceuticals, energy, and materials industries.",
+    "requirements": [
+      "Strong chemistry and mathematics background",
+      "EJU Science track",
+      "TOEFL iBT 85+"
+    ]
+  },
+  {
+    "id": "course_jp_019",
+    "universityId": "uni_jp_004",
+    "name": "Master of Materials Science",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 6300,
+    "overview": "This program explores advanced materials, nanotechnology, and materials characterization with access to state-of-the-art equipment. Research focuses on next-generation materials for technology and energy applications.",
+    "requirements": [
+      "Bachelor's in engineering or physical sciences",
+      "TOEFL iBT 85+",
+      "Research proposal"
+    ]
+  },
+  {
+    "id": "course_jp_020",
+    "universityId": "uni_jp_004",
+    "name": "Bachelor of Applied Physics",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 5100,
+    "overview": "This program bridges fundamental physics and technological applications, preparing students for careers in research and development. Focus areas include optics, quantum physics, and semiconductor technology.",
+    "requirements": [
+      "Excellent physics and mathematics grades",
+      "EJU Science track",
+      "TOEFL iBT 80+"
+    ]
+  },
+  {
+    "id": "course_jp_021",
+    "universityId": "uni_jp_005",
+    "name": "Bachelor of Environmental Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 5000,
+    "overview": "This program addresses environmental challenges through engineering solutions in water treatment, pollution control, and sustainable development. Field studies and laboratory work are core components.",
+    "requirements": [
+      "High school diploma with science background",
+      "TOEFL iBT 72+ or IELTS 5.5+",
+      "EJU or entrance examination"
+    ]
+  },
+  {
+    "id": "course_jp_022",
+    "universityId": "uni_jp_005",
+    "name": "Master of Disaster Science",
+    "level": "PG",
+    "field": "Science",
+    "duration": "2 years",
+    "tuitionFee": 5800,
+    "overview": "A unique program studying natural disasters, risk management, and recovery strategies with particular focus on earthquake and tsunami preparedness. Includes fieldwork and collaboration with disaster management agencies.",
+    "requirements": [
+      "Bachelor's degree in relevant field",
+      "TOEFL iBT 75+",
+      "Statement of purpose"
+    ]
+  },
+  {
+    "id": "course_jp_023",
+    "universityId": "uni_jp_005",
+    "name": "Bachelor of Agriculture",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 4900,
+    "overview": "This program covers sustainable agriculture, food science, and agricultural economics with practical farm experience. Students learn modern farming techniques and contribute to food security research.",
+    "requirements": [
+      "High school completion certificate",
+      "TOEFL iBT 70+",
+      "Interest in agricultural sciences"
+    ]
+  },
+  {
+    "id": "course_jp_024",
+    "universityId": "uni_jp_005",
+    "name": "Master of Biomedical Engineering",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 6100,
+    "overview": "This program integrates engineering principles with medical and biological sciences to develop healthcare technologies. Students work on medical devices, imaging systems, and biomedical signal processing.",
+    "requirements": [
+      "Bachelor's in engineering or life sciences",
+      "TOEFL iBT 80+",
+      "Strong background in biology and engineering"
+    ]
+  },
+  {
+    "id": "course_jp_025",
+    "universityId": "uni_jp_005",
+    "name": "Bachelor of Dentistry",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "6 years",
+    "tuitionFee": 6800,
+    "overview": "A professional program providing comprehensive training in dental sciences and clinical practice. Students gain hands-on experience in affiliated dental clinics and hospitals.",
+    "requirements": [
+      "Strong science background",
+      "EJU Science track",
+      "JLPT N2 minimum",
+      "Interview and practical test"
+    ]
+  },
+  {
+    "id": "course_jp_026",
+    "universityId": "uni_jp_006",
+    "name": "Bachelor of International Business",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 15000,
+    "overview": "This program prepares students for global business careers with courses in international trade, cross-cultural management, and global marketing. Includes exchange programs with partner universities worldwide.",
+    "requirements": [
+      "High school diploma",
+      "TOEFL iBT 80+ or IELTS 6.5+",
+      "Essay and interview"
+    ]
+  },
+  {
+    "id": "course_jp_027",
+    "universityId": "uni_jp_006",
+    "name": "Master of Finance",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 17000,
+    "overview": "An intensive finance program covering investment analysis, risk management, and corporate finance with real-world applications. Students gain industry certifications and participate in trading simulations.",
+    "requirements": [
+      "Bachelor's degree in business or related field",
+      "GMAT 600+ or GRE equivalent",
+      "TOEFL iBT 90+",
+      "Work experience preferred"
+    ]
+  },
+  {
+    "id": "course_jp_028",
+    "universityId": "uni_jp_006",
+    "name": "Bachelor of Political Science",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "4 years",
+    "tuitionFee": 14000,
+    "overview": "This program examines political systems, public policy, and governance with focus on comparative politics and international relations. Students engage in debates, simulations, and policy research.",
+    "requirements": [
+      "High school completion",
+      "TOEFL iBT 80+ or IELTS 6.5+",
+      "Essay submission"
+    ]
+  },
+  {
+    "id": "course_jp_029",
+    "universityId": "uni_jp_006",
+    "name": "Master of Journalism",
+    "level": "PG",
+    "field": "Arts",
+    "duration": "2 years",
+    "tuitionFee": 16000,
+    "overview": "This program trains future journalists in multimedia storytelling, investigative reporting, and digital media. Students produce professional work for publication and gain practical newsroom experience.",
+    "requirements": [
+      "Bachelor's degree in any field",
+      "Writing samples and portfolio",
+      "TOEFL iBT 95+",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_jp_030",
+    "universityId": "uni_jp_006",
+    "name": "Bachelor of Psychology",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "4 years",
+    "tuitionFee": 14500,
+    "overview": "This program explores human behavior, cognition, and mental processes through scientific research and practical applications. Students can specialize in clinical, developmental, or social psychology.",
+    "requirements": [
+      "High school diploma",
+      "TOEFL iBT 79+ or IELTS 6.0+",
+      "Interest in behavioral sciences"
+    ]
+  },
+  {
+    "id": "course_jp_031",
+    "universityId": "uni_jp_007",
+    "name": "Bachelor of Commerce",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 16000,
+    "overview": "This comprehensive business program covers accounting, marketing, and management with emphasis on Japanese business practices. Students gain practical skills through internships with leading corporations.",
+    "requirements": [
+      "High school diploma",
+      "TOEFL iBT 85+ or IELTS 6.5+",
+      "Mathematics proficiency",
+      "Entrance examination"
+    ]
+  },
+  {
+    "id": "course_jp_032",
+    "universityId": "uni_jp_007",
+    "name": "Master of Innovation Management",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 18000,
+    "overview": "This program focuses on entrepreneurship, technology management, and business innovation with strong industry connections. Students develop and pitch business ideas to venture capitalists and industry leaders.",
+    "requirements": [
+      "Bachelor's degree",
+      "TOEFL iBT 90+",
+      "GMAT 620+ recommended",
+      "Business plan or innovation proposal"
+    ]
+  },
+  {
+    "id": "course_jp_033",
+    "universityId": "uni_jp_007",
+    "name": "Bachelor of Media Studies",
+    "level": "UG",
+    "field": "Arts",
+    "duration": "4 years",
+    "tuitionFee": 15500,
+    "overview": "This program examines media industries, digital communication, and content creation with hands-on production experience. Students create films, podcasts, and digital content using professional equipment.",
+    "requirements": [
+      "High school completion",
+      "TOEFL iBT 80+",
+      "Portfolio or creative samples",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_jp_034",
+    "universityId": "uni_jp_007",
+    "name": "Master of Global Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "2 years",
+    "tuitionFee": 17500,
+    "overview": "This interdisciplinary program addresses global health challenges, healthcare systems, and health equity. Students engage in international fieldwork and collaborate with global health organizations.",
+    "requirements": [
+      "Bachelor's in health sciences or related field",
+      "TOEFL iBT 85+",
+      "Work or volunteer experience in health sector preferred"
+    ]
+  },
+  {
+    "id": "course_jp_035",
+    "universityId": "uni_jp_007",
+    "name": "Bachelor of Philosophy",
+    "level": "UG",
+    "field": "Arts",
+    "duration": "4 years",
+    "tuitionFee": 14000,
+    "overview": "This program explores fundamental questions about existence, knowledge, and ethics through Eastern and Western philosophical traditions. Students develop critical thinking and analytical reasoning skills.",
+    "requirements": [
+      "High school diploma",
+      "TOEFL iBT 85+ or IELTS 6.5+",
+      "Essay on philosophical topic"
+    ]
+  },
+  {
+    "id": "course_jp_036",
+    "universityId": "uni_jp_008",
+    "name": "Bachelor of Aerospace Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 5300,
+    "overview": "This program covers aircraft and spacecraft design, propulsion systems, and aerodynamics with access to wind tunnels and simulation facilities. Students participate in aerospace research projects.",
+    "requirements": [
+      "Excellent physics and mathematics background",
+      "EJU Science track with high scores",
+      "TOEFL iBT 76+"
+    ]
+  },
+  {
+    "id": "course_jp_037",
+    "universityId": "uni_jp_008",
+    "name": "Master of Quantum Engineering",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 6500,
+    "overview": "A cutting-edge program in quantum computing, quantum communication, and quantum materials. Students work with leading researchers on next-generation quantum technologies.",
+    "requirements": [
+      "Bachelor's in physics or engineering",
+      "Strong quantum mechanics background",
+      "TOEFL iBT 80+",
+      "Research proposal"
+    ]
+  },
+  {
+    "id": "course_jp_038",
+    "universityId": "uni_jp_008",
+    "name": "Bachelor of Chemistry",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 5000,
+    "overview": "This program provides comprehensive training in organic, inorganic, and physical chemistry with extensive laboratory work. Students can specialize in areas like medicinal chemistry or materials chemistry.",
+    "requirements": [
+      "High school diploma with chemistry background",
+      "EJU Science track",
+      "TOEFL iBT 76+"
+    ]
+  },
+  {
+    "id": "course_jp_039",
+    "universityId": "uni_jp_008",
+    "name": "Master of Renewable Energy",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 6000,
+    "overview": "This program focuses on sustainable energy technologies including solar, wind, and hydrogen energy. Students conduct research on energy efficiency and next-generation power systems.",
+    "requirements": [
+      "Bachelor's in engineering or related field",
+      "TOEFL iBT 76+",
+      "Background in thermodynamics and energy systems"
+    ]
+  },
+  {
+    "id": "course_jp_040",
+    "universityId": "uni_jp_008",
+    "name": "Bachelor of Astronomy",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 5100,
+    "overview": "This program explores celestial objects, cosmology, and astrophysics with access to observatory facilities and space mission data. Students participate in cutting-edge astronomical research.",
+    "requirements": [
+      "Strong physics and mathematics background",
+      "EJU Science track",
+      "TOEFL iBT 76+"
+    ]
+  },
+  {
+    "id": "course_jp_041",
+    "universityId": "uni_jp_009",
+    "name": "Bachelor of Marine Biology",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 4900,
+    "overview": "This program studies marine ecosystems, ocean life, and aquatic environments with extensive fieldwork opportunities. Students access research vessels and coastal field stations.",
+    "requirements": [
+      "High school diploma with biology background",
+      "TOEFL iBT 70+",
+      "Interest in marine sciences"
+    ]
+  },
+  {
+    "id": "course_jp_042",
+    "universityId": "uni_jp_009",
+    "name": "Master of Climate Change Science",
+    "level": "PG",
+    "field": "Science",
+    "duration": "2 years",
+    "tuitionFee": 5700,
+    "overview": "This program examines climate systems, environmental change, and mitigation strategies through interdisciplinary research. Students contribute to climate modeling and policy development.",
+    "requirements": [
+      "Bachelor's in environmental or physical sciences",
+      "TOEFL iBT 75+",
+      "Research statement"
+    ]
+  },
+  {
+    "id": "course_jp_043",
+    "universityId": "uni_jp_009",
+    "name": "Bachelor of Food Science",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 4800,
+    "overview": "This program covers food chemistry, nutrition, and food technology with focus on safety and sustainability. Students work in pilot plants and food processing laboratories.",
+    "requirements": [
+      "High school completion with chemistry",
+      "TOEFL iBT 70+",
+      "EJU or entrance examination"
+    ]
+  },
+  {
+    "id": "course_jp_044",
+    "universityId": "uni_jp_009",
+    "name": "Master of Tourism Management",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 5500,
+    "overview": "This program prepares professionals for the tourism industry with focus on sustainable tourism and destination management. Students engage with tourism businesses and conduct field studies.",
+    "requirements": [
+      "Bachelor's degree in any field",
+      "TOEFL iBT 70+",
+      "Interest in hospitality and tourism"
+    ]
+  },
+  {
+    "id": "course_jp_045",
+    "universityId": "uni_jp_009",
+    "name": "Bachelor of Veterinary Medicine",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "6 years",
+    "tuitionFee": 7200,
+    "overview": "A comprehensive veterinary program covering animal health, diseases, and clinical practice. Students gain hands-on experience with various species at veterinary hospitals and research facilities.",
+    "requirements": [
+      "Strong biology and chemistry background",
+      "EJU Science track",
+      "JLPT N2 minimum",
+      "Interview and aptitude test"
+    ]
+  },
+  {
+    "id": "course_jp_046",
+    "universityId": "uni_jp_010",
+    "name": "Bachelor of International Relations",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "4 years",
+    "tuitionFee": 14000,
+    "overview": "This program examines global politics, diplomacy, and international organizations in an English-speaking environment. Students participate in Model UN, internships, and study abroad programs.",
+    "requirements": [
+      "High school diploma",
+      "TOEFL iBT 79+ or IELTS 6.0+",
+      "Essay and interview"
+    ]
+  },
+  {
+    "id": "course_jp_047",
+    "universityId": "uni_jp_010",
+    "name": "Master of Comparative Culture",
+    "level": "PG",
+    "field": "Arts",
+    "duration": "2 years",
+    "tuitionFee": 15500,
+    "overview": "This program explores cultural exchange, identity, and globalization through anthropological and sociological perspectives. Students conduct ethnographic research and cross-cultural studies.",
+    "requirements": [
+      "Bachelor's in humanities or social sciences",
+      "TOEFL iBT 85+",
+      "Research proposal"
+    ]
+  },
+  {
+    "id": "course_jp_048",
+    "universityId": "uni_jp_010",
+    "name": "Bachelor of Foreign Languages",
+    "level": "UG",
+    "field": "Arts",
+    "duration": "4 years",
+    "tuitionFee": 13000,
+    "overview": "This program develops advanced proficiency in multiple languages with emphasis on translation, interpretation, and cross-cultural communication. Students can major in English, Spanish, French, or German.",
+    "requirements": [
+      "High school diploma",
+      "TOEFL iBT 79+ for English majors",
+      "Proficiency test in chosen language",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_jp_049",
+    "universityId": "uni_jp_010",
+    "name": "Master of International Cooperation",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "2 years",
+    "tuitionFee": 16000,
+    "overview": "This program prepares professionals for careers in international development, NGOs, and multilateral organizations. Students engage in practical projects with development agencies and conduct field research.",
+    "requirements": [
+      "Bachelor's degree in relevant field",
+      "TOEFL iBT 85+",
+      "Work or volunteer experience in international development preferred"
+    ]
+  },
+  {
+    "id": "course_jp_050",
+    "universityId": "uni_jp_010",
+    "name": "Bachelor of Linguistics",
+    "level": "UG",
+    "field": "Arts",
+    "duration": "4 years",
+    "tuitionFee": 13500,
+    "overview": "This program examines language structure, acquisition, and evolution with focus on comparative linguistics and sociolinguistics. Students conduct research on various language families including Japanese.",
+    "requirements": [
+      "High school diploma",
+      "TOEFL iBT 79+ or IELTS 6.0+",
+      "Interest in languages and linguistics"
+    ]
+  },
+  {
+    "id": "course_uk_001",
+    "universityId": "uni_uk_001",
+    "name": "Bachelor of Arts in Philosophy, Politics and Economics",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "3 years",
+    "tuitionFee": 9250,
+    "overview": "This interdisciplinary program combines three complementary subjects to develop critical thinking and analytical skills. Students engage with major political, economic and philosophical questions facing modern society.",
+    "requirements": [
+      "A-levels: AAA",
+      "TSA (Thinking Skills Assessment) required",
+      "Interview required",
+      "IELTS 7.5 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_002",
+    "universityId": "uni_uk_001",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "1 year",
+    "tuitionFee": 69000,
+    "overview": "Oxford's MBA is a transformational program that develops leadership skills and strategic thinking through case studies, consulting projects and global networking. The intensive one-year format is ideal for experienced professionals.",
+    "requirements": [
+      "Bachelor's degree with first-class or strong upper second-class honours",
+      "Minimum 3 years work experience",
+      "GMAT/GRE scores required",
+      "IELTS 7.5 overall (min 7.0 per component)",
+      "Interview required"
+    ]
+  },
+  {
+    "id": "course_uk_003",
+    "universityId": "uni_uk_001",
+    "name": "Bachelor of Medicine and Surgery",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "6 years",
+    "tuitionFee": 39000,
+    "overview": "This comprehensive medical program integrates clinical training with scientific research and prepares students for medical practice. Students gain hands-on experience in Oxford's teaching hospitals from early years.",
+    "requirements": [
+      "A-levels: A*AA including Chemistry and Biology",
+      "BMAT (Biomedical Admissions Test) required",
+      "Interview and multiple assessments",
+      "IELTS 7.5 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_004",
+    "universityId": "uni_uk_001",
+    "name": "Master of Science in Computer Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "1 year",
+    "tuitionFee": 32760,
+    "overview": "This advanced program covers theoretical foundations and practical applications of computer science including AI, machine learning, and software engineering. Students conduct independent research projects.",
+    "requirements": [
+      "Bachelor's degree in computer science or related field with strong grades",
+      "Strong mathematics background",
+      "Programming experience required",
+      "IELTS 7.5 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_005",
+    "universityId": "uni_uk_001",
+    "name": "Bachelor of Engineering in Electrical Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 37000,
+    "overview": "This program provides comprehensive training in electrical and electronic engineering with opportunities to specialize in areas like communications, control systems, or power engineering.",
+    "requirements": [
+      "A-levels: A*A*A including Mathematics and Physics",
+      "Further Mathematics highly recommended",
+      "PAT (Physics Aptitude Test) required",
+      "Interview required"
+    ]
+  },
+  {
+    "id": "course_uk_006",
+    "universityId": "uni_uk_002",
+    "name": "Bachelor of Arts in Natural Sciences",
+    "level": "UG",
+    "field": "Science",
+    "duration": "3 years",
+    "tuitionFee": 35000,
+    "overview": "This flexible program allows students to study multiple science subjects including physics, chemistry, biology, and mathematics. Students can tailor their degree according to their interests and career goals.",
+    "requirements": [
+      "A-levels: A*A*A in science subjects",
+      "NSAA (Natural Sciences Admissions Assessment) required",
+      "Interview required",
+      "IELTS 7.5 overall"
+    ]
+  },
+  {
+    "id": "course_uk_007",
+    "universityId": "uni_uk_002",
+    "name": "Master of Philosophy in Economics",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 35000,
+    "overview": "This rigorous research-oriented program provides advanced training in economic theory and quantitative methods. It serves as excellent preparation for doctoral studies or careers in economic research.",
+    "requirements": [
+      "Bachelor's degree in economics or related field with first-class honours",
+      "Strong mathematical and statistical background",
+      "GRE General Test recommended",
+      "IELTS 7.5 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_008",
+    "universityId": "uni_uk_002",
+    "name": "Bachelor of Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 37000,
+    "overview": "Cambridge's engineering program is one of the most comprehensive in the world, allowing students to keep options open before specializing. It covers all major engineering disciplines with hands-on projects.",
+    "requirements": [
+      "A-levels: A*A*A including Mathematics and Physics",
+      "ENGAA (Engineering Admissions Assessment) required",
+      "Interview required",
+      "IELTS 7.5 overall"
+    ]
+  },
+  {
+    "id": "course_uk_009",
+    "universityId": "uni_uk_002",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "1 year",
+    "tuitionFee": 64000,
+    "overview": "The Cambridge MBA develops entrepreneurial leaders through innovative pedagogy and real-world business challenges. The program emphasizes global perspective and sustainable business practices.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "Minimum 3 years work experience",
+      "GMAT/GRE required (GMAT 690+ average)",
+      "IELTS 7.5 overall (min 7.0 per component)",
+      "Interview required"
+    ]
+  },
+  {
+    "id": "course_uk_010",
+    "universityId": "uni_uk_002",
+    "name": "Bachelor of Arts in Law",
+    "level": "UG",
+    "field": "Law",
+    "duration": "3 years",
+    "tuitionFee": 25000,
+    "overview": "Cambridge's law degree provides rigorous training in legal reasoning and analysis through tutorials, lectures and supervisions. It is excellent preparation for legal practice or further academic study.",
+    "requirements": [
+      "A-levels: A*AA",
+      "LNAT (Law National Aptitude Test) may be required",
+      "Interview required",
+      "IELTS 7.5 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_011",
+    "universityId": "uni_uk_003",
+    "name": "Bachelor of Engineering in Mechanical Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 37000,
+    "overview": "This program provides comprehensive training in mechanical engineering principles with opportunities for specialization in areas like robotics, energy systems, or aerospace engineering.",
+    "requirements": [
+      "A-levels: A*A*A including Mathematics and Physics",
+      "Strong problem-solving skills",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_012",
+    "universityId": "uni_uk_003",
+    "name": "Master of Science in Artificial Intelligence",
+    "level": "PG",
+    "field": "IT",
+    "duration": "1 year",
+    "tuitionFee": 38300,
+    "overview": "This cutting-edge program covers machine learning, computer vision, natural language processing and robotics. Students work on real-world AI applications and conduct independent research.",
+    "requirements": [
+      "Bachelor's degree in computer science, mathematics or related field with 2:1 or above",
+      "Strong programming skills",
+      "Mathematics background required",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_013",
+    "universityId": "uni_uk_003",
+    "name": "Bachelor of Medicine",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "6 years",
+    "tuitionFee": 48000,
+    "overview": "Imperial's medical program integrates basic medical sciences with clinical practice and research. Students benefit from training at world-renowned teaching hospitals in central London.",
+    "requirements": [
+      "A-levels: AAA including Chemistry and Biology",
+      "BMAT or UCAT required",
+      "Interview and multiple mini-interviews (MMI)",
+      "IELTS 7.0 overall (min 6.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_014",
+    "universityId": "uni_uk_003",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "1 year",
+    "tuitionFee": 59900,
+    "overview": "Imperial's MBA focuses on innovation, entrepreneurship and technology-driven business. The program prepares leaders for the rapidly evolving global business environment.",
+    "requirements": [
+      "Bachelor's degree with good honours",
+      "Minimum 3 years work experience",
+      "GMAT/GRE required (GMAT 640+ average)",
+      "IELTS 7.0 overall (min 6.5 per component)",
+      "Interview required"
+    ]
+  },
+  {
+    "id": "course_uk_015",
+    "universityId": "uni_uk_003",
+    "name": "Bachelor of Science in Computing",
+    "level": "UG",
+    "field": "IT",
+    "duration": "3 years",
+    "tuitionFee": 35100,
+    "overview": "This program provides rigorous training in computer science fundamentals, software engineering and system design. Students work on industry projects and gain practical experience.",
+    "requirements": [
+      "A-levels: A*A*A including Mathematics",
+      "Further Mathematics recommended",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_016",
+    "universityId": "uni_uk_004",
+    "name": "Bachelor of Arts in Architecture",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "3 years",
+    "tuitionFee": 28500,
+    "overview": "This program combines design creativity with technical knowledge and cultural understanding. Students develop architectural skills through studio projects and theoretical studies.",
+    "requirements": [
+      "A-levels: AAB",
+      "Portfolio submission required",
+      "Interview may be required",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_017",
+    "universityId": "uni_uk_004",
+    "name": "Master of Science in Data Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "1 year",
+    "tuitionFee": 32100,
+    "overview": "This program trains students in data analysis, machine learning and statistical modeling. Students work on real-world datasets and industry-relevant problems.",
+    "requirements": [
+      "Bachelor's degree in quantitative field with 2:1 or above",
+      "Programming experience in Python or R",
+      "Strong mathematics and statistics background",
+      "IELTS 7.0 overall (min 6.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_018",
+    "universityId": "uni_uk_004",
+    "name": "Bachelor of Science in Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "3 years",
+    "tuitionFee": 24000,
+    "overview": "This program provides rigorous training in economic theory, quantitative methods and policy analysis. Students develop skills applicable to careers in finance, consulting and public policy.",
+    "requirements": [
+      "A-levels: A*AA including Mathematics",
+      "Further Mathematics recommended",
+      "IELTS 7.5 overall (min 6.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_019",
+    "universityId": "uni_uk_004",
+    "name": "Master of Public Administration",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "1 year",
+    "tuitionFee": 27500,
+    "overview": "This program prepares professionals for leadership roles in public service, international organizations and policy analysis. Students engage with practitioners and conduct policy research.",
+    "requirements": [
+      "Bachelor's degree with 2:1 or above",
+      "Professional experience preferred",
+      "IELTS 7.5 overall (min 6.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_020",
+    "universityId": "uni_uk_004",
+    "name": "Bachelor of Engineering in Civil Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 31900,
+    "overview": "This program covers structural engineering, geotechnics, hydraulics and sustainable infrastructure. Students work on design projects and gain practical experience through site visits.",
+    "requirements": [
+      "A-levels: A*AA including Mathematics and Physics",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_021",
+    "universityId": "uni_uk_005",
+    "name": "Bachelor of Science in Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 32000,
+    "overview": "This program covers software engineering, algorithms, artificial intelligence and systems design. Students undertake a major project and can include an industrial placement year.",
+    "requirements": [
+      "A-levels: AAA to A*A*A including Mathematics",
+      "Strong problem-solving skills",
+      "IELTS 6.5 overall (min 5.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_022",
+    "universityId": "uni_uk_005",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "1 year",
+    "tuitionFee": 38500,
+    "overview": "Edinburgh's MBA develops entrepreneurial leaders with global perspective and ethical awareness. The program includes international study trips and consulting projects.",
+    "requirements": [
+      "Bachelor's degree with good honours",
+      "Minimum 3 years work experience",
+      "GMAT/GRE recommended",
+      "IELTS 7.0 overall (min 6.0 per component)",
+      "Interview required"
+    ]
+  },
+  {
+    "id": "course_uk_023",
+    "universityId": "uni_uk_005",
+    "name": "Bachelor of Medicine and Surgery",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "6 years",
+    "tuitionFee": 36600,
+    "overview": "This comprehensive medical program integrates clinical skills with scientific knowledge and research. Students train in Edinburgh's teaching hospitals and community health settings.",
+    "requirements": [
+      "A-levels: AAA including Chemistry and one of Biology, Mathematics or Physics",
+      "UCAT required",
+      "Interview required",
+      "IELTS 7.5 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_024",
+    "universityId": "uni_uk_005",
+    "name": "Master of Science in Artificial Intelligence",
+    "level": "PG",
+    "field": "IT",
+    "duration": "1 year",
+    "tuitionFee": 35300,
+    "overview": "This program provides advanced training in AI, machine learning and robotics. Edinburgh is a leading center for AI research with strong industry connections.",
+    "requirements": [
+      "Bachelor's degree in computer science or related field with 2:1 or above",
+      "Strong programming and mathematics background",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_025",
+    "universityId": "uni_uk_005",
+    "name": "Bachelor of Arts in Law",
+    "level": "UG",
+    "field": "Law",
+    "duration": "4 years",
+    "tuitionFee": 23650,
+    "overview": "This program provides comprehensive legal education covering Scots law, English law and international legal systems. Students develop critical thinking and advocacy skills.",
+    "requirements": [
+      "A-levels: AAA to A*AA",
+      "LNAT recommended",
+      "IELTS 7.0 overall (min 6.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_026",
+    "universityId": "uni_uk_006",
+    "name": "Bachelor of Science in Biomedical Sciences",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "3 years",
+    "tuitionFee": 29750,
+    "overview": "This program explores human health and disease through integrated study of biology, chemistry and medicine. Students gain laboratory skills and research experience.",
+    "requirements": [
+      "A-levels: AAB including Biology and Chemistry",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_027",
+    "universityId": "uni_uk_006",
+    "name": "Master of Science in Digital Asset Management",
+    "level": "PG",
+    "field": "Business",
+    "duration": "1 year",
+    "tuitionFee": 31500,
+    "overview": "This innovative program covers blockchain, cryptocurrencies, digital finance and regulatory frameworks. Students engage with fintech industry leaders and emerging technologies.",
+    "requirements": [
+      "Bachelor's degree with 2:1 or above",
+      "Interest in finance and technology",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_028",
+    "universityId": "uni_uk_006",
+    "name": "Bachelor of Arts in International Relations",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "3 years",
+    "tuitionFee": 23100,
+    "overview": "This program examines global politics, international organizations and foreign policy. Students develop analytical skills through case studies and contemporary issues.",
+    "requirements": [
+      "A-levels: A*AA",
+      "IELTS 7.0 overall (min 6.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_029",
+    "universityId": "uni_uk_006",
+    "name": "Master of Public Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "1 year",
+    "tuitionFee": 28200,
+    "overview": "This program addresses population health challenges through epidemiology, health policy and health promotion. Students work with public health organizations on real-world projects.",
+    "requirements": [
+      "Bachelor's degree with 2:1 or above",
+      "Healthcare or public health experience preferred",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_030",
+    "universityId": "uni_uk_006",
+    "name": "Bachelor of Laws",
+    "level": "UG",
+    "field": "Law",
+    "duration": "3 years",
+    "tuitionFee": 23100,
+    "overview": "King's law degree provides rigorous training in legal reasoning, research and advocacy. The program benefits from London's legal hub location with excellent career prospects.",
+    "requirements": [
+      "A-levels: A*AA",
+      "LNAT required",
+      "IELTS 7.0 overall (min 6.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_031",
+    "universityId": "uni_uk_007",
+    "name": "Bachelor of Engineering in Aerospace Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 28000,
+    "overview": "This program covers aircraft and spacecraft design, propulsion and flight dynamics. Students work on design projects and gain access to flight simulators and wind tunnels.",
+    "requirements": [
+      "A-levels: AAA including Mathematics and Physics",
+      "IELTS 6.0 overall (min 5.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_032",
+    "universityId": "uni_uk_007",
+    "name": "Master of Science in Advanced Computer Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "1 year",
+    "tuitionFee": 29000,
+    "overview": "This program provides advanced training in software engineering, AI, cybersecurity and data science. Students can specialize and undertake significant research projects.",
+    "requirements": [
+      "Bachelor's degree in computer science with 2:1 or above",
+      "Strong programming skills",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_033",
+    "universityId": "uni_uk_007",
+    "name": "Bachelor of Science in Business Management",
+    "level": "UG",
+    "field": "Business",
+    "duration": "3 years",
+    "tuitionFee": 23500,
+    "overview": "This program develops business knowledge and management skills through case studies, simulations and real-world projects. Students can specialize in areas like marketing, finance or operations.",
+    "requirements": [
+      "A-levels: AAA including one essay-based subject",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_034",
+    "universityId": "uni_uk_007",
+    "name": "Master of Public Policy",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "1 year",
+    "tuitionFee": 24500,
+    "overview": "This program trains policy professionals through analysis of contemporary policy challenges and development of practical solutions. Students work with government and NGO partners.",
+    "requirements": [
+      "Bachelor's degree with 2:1 or above",
+      "Work experience preferred",
+      "IELTS 7.0 overall (min 6.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_035",
+    "universityId": "uni_uk_007",
+    "name": "Bachelor of Science in Environmental Science",
+    "level": "UG",
+    "field": "Science",
+    "duration": "3 years",
+    "tuitionFee": 27000,
+    "overview": "This program addresses environmental challenges through interdisciplinary study of ecology, climate science and sustainability. Students conduct fieldwork and laboratory research.",
+    "requirements": [
+      "A-levels: AAB including a science subject",
+      "IELTS 6.0 overall (min 5.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_036",
+    "universityId": "uni_uk_008",
+    "name": "Bachelor of Science in Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "3 years",
+    "tuitionFee": 24000,
+    "overview": "LSE's economics degree provides rigorous training in economic theory, econometrics and policy analysis. The program prepares students for careers in finance, consulting and government.",
+    "requirements": [
+      "A-levels: A*AA including Mathematics",
+      "TMUA (Test of Mathematics for University Admission) required",
+      "IELTS 7.0 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_037",
+    "universityId": "uni_uk_008",
+    "name": "Master of Science in Finance",
+    "level": "PG",
+    "field": "Business",
+    "duration": "1 year",
+    "tuitionFee": 39600,
+    "overview": "This intensive program covers corporate finance, investment management and financial markets. Students gain practical skills through trading simulations and industry projects.",
+    "requirements": [
+      "Bachelor's degree with strong quantitative component and 2:1 or above",
+      "GMAT/GRE strongly recommended",
+      "Strong mathematics background",
+      "IELTS 7.0 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_038",
+    "universityId": "uni_uk_008",
+    "name": "Bachelor of Science in Government",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "3 years",
+    "tuitionFee": 24000,
+    "overview": "This program examines political systems, public policy and governance from comparative and international perspectives. Students develop analytical and research skills.",
+    "requirements": [
+      "A-levels: AAB",
+      "IELTS 7.0 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_039",
+    "universityId": "uni_uk_008",
+    "name": "Master of Public Administration",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "1 year",
+    "tuitionFee": 29900,
+    "overview": "This program prepares professionals for leadership in public service and international organizations. Students engage with policymakers and work on real-world policy challenges.",
+    "requirements": [
+      "Bachelor's degree with 2:1 or above",
+      "Minimum 2 years work experience",
+      "IELTS 7.0 overall (min 7.0 per component)",
+      "Interview may be required"
+    ]
+  },
+  {
+    "id": "course_uk_040",
+    "universityId": "uni_uk_008",
+    "name": "Bachelor of Science in International Relations",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "3 years",
+    "tuitionFee": 24000,
+    "overview": "This program examines global politics, diplomacy and international organizations. LSE's location and network provide exceptional opportunities for engagement with the international community.",
+    "requirements": [
+      "A-levels: AAB",
+      "IELTS 7.0 overall (min 7.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_041",
+    "universityId": "uni_uk_009",
+    "name": "Bachelor of Science in Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "3 years",
+    "tuitionFee": 27250,
+    "overview": "This program provides comprehensive training in software engineering, algorithms and system design. Warwick has strong research and industry connections in computer science.",
+    "requirements": [
+      "A-levels: A*AA including Mathematics",
+      "Further Mathematics recommended",
+      "IELTS 6.0 overall (min 5.5 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_042",
+    "universityId": "uni_uk_009",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "1 year",
+    "tuitionFee": 49950,
+    "overview": "Warwick MBA focuses on developing entrepreneurial leaders with global perspective. The program includes consulting projects, international study trips and strong career support.",
+    "requirements": [
+      "Bachelor's degree with good honours",
+      "Minimum 3 years work experience",
+      "GMAT 600+ or GRE equivalent",
+      "IELTS 7.0 overall (min 6.5 per component)",
+      "Interview required"
+    ]
+  },
+  {
+    "id": "course_uk_043",
+    "universityId": "uni_uk_009",
+    "name": "Bachelor of Science in Mathematics",
+    "level": "UG",
+    "field": "Science",
+    "duration": "3 years",
+    "tuitionFee": 25770,
+    "overview": "This program covers pure and applied mathematics with opportunities to specialize in areas like mathematical physics, statistics or financial mathematics.",
+    "requirements": [
+      "A-levels: A*A*A including Mathematics and Further Mathematics",
+      "STEP may be required for some pathways",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_044",
+    "universityId": "uni_uk_009",
+    "name": "Master of Science in Cyber Security",
+    "level": "PG",
+    "field": "IT",
+    "duration": "1 year",
+    "tuitionFee": 29250,
+    "overview": "This program covers network security, cryptography, secure systems design and digital forensics. Students work on real-world security challenges and research projects.",
+    "requirements": [
+      "Bachelor's degree in computer science or related field with 2:1 or above",
+      "Programming experience required",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_045",
+    "universityId": "uni_uk_009",
+    "name": "Bachelor of Arts in Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "3 years",
+    "tuitionFee": 23650,
+    "overview": "This program provides rigorous training in economic theory and quantitative methods. Warwick Economics is highly regarded with excellent career outcomes in finance and consulting.",
+    "requirements": [
+      "A-levels: A*AA including Mathematics",
+      "Further Mathematics recommended",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_046",
+    "universityId": "uni_uk_010",
+    "name": "Bachelor of Engineering in Electrical and Electronic Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 27000,
+    "overview": "This program covers electronics, power systems, telecommunications and control engineering. Students gain practical skills through laboratory work and industrial placements.",
+    "requirements": [
+      "A-levels: AAA to A*AA including Mathematics and Physics",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_047",
+    "universityId": "uni_uk_010",
+    "name": "Master of Science in Management",
+    "level": "PG",
+    "field": "Business",
+    "duration": "1 year",
+    "tuitionFee": 30700,
+    "overview": "This program is designed for graduates from non-business backgrounds seeking management careers. It covers all major business disciplines with industry projects and case studies.",
+    "requirements": [
+      "Bachelor's degree in non-business field with 2:1 or above",
+      "GMAT/GRE recommended",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_048",
+    "universityId": "uni_uk_010",
+    "name": "Bachelor of Science in Psychology",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "3 years",
+    "tuitionFee": 27000,
+    "overview": "This program examines human behavior, cognition and mental processes through scientific research methods. Students gain practical research experience and can specialize in various areas.",
+    "requirements": [
+      "A-levels: AAB including one science subject",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_049",
+    "universityId": "uni_uk_010",
+    "name": "Master of Public Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "1 year",
+    "tuitionFee": 29400,
+    "overview": "This program prepares public health professionals through study of epidemiology, health promotion and health systems. Students work with public health organizations on practical projects.",
+    "requirements": [
+      "Bachelor's degree with 2:1 or above",
+      "Healthcare background preferred",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+  {
+    "id": "course_uk_050",
+    "universityId": "uni_uk_010",
+    "name": "Bachelor of Science in Chemistry",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 27000,
+    "overview": "This program provides comprehensive training in chemistry with opportunities for industrial placement. Students work in modern laboratories and conduct independent research projects.",
+    "requirements": [
+      "A-levels: AAA to A*AA including Chemistry and one other science",
+      "IELTS 6.5 overall (min 6.0 per component)"
+    ]
+  },
+   {
+    "id": "course_us_001",
+    "universityId": "uni_us_001",
+    "name": "Bachelor of Arts in Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 54269,
+    "overview": "Harvard's economics program combines rigorous analytical training with broad liberal arts education. Students engage with leading scholars and policy practitioners while developing skills applicable to diverse careers.",
+    "requirements": [
+      "SAT 1460-1580 or ACT 33-35",
+      "Strong mathematics background",
+      "TOEFL iBT 100+ or IELTS 7.5+",
+      "Exceptional academic record"
+    ]
+  },
+  {
+    "id": "course_us_002",
+    "universityId": "uni_us_001",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 73440,
+    "overview": "Harvard Business School's MBA program develops leaders through the case method and experiential learning. Students work on real business challenges and build a global network of peers and alumni.",
+    "requirements": [
+      "Bachelor's degree from accredited institution",
+      "GMAT/GRE scores (GMAT average 730)",
+      "Minimum 2 years work experience recommended",
+      "TOEFL iBT 109+ for non-native speakers",
+      "Essays and interview"
+    ]
+  },
+  {
+    "id": "course_us_003",
+    "universityId": "uni_us_001",
+    "name": "Bachelor of Science in Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 54269,
+    "overview": "This program provides comprehensive training in algorithms, systems, theory and applications of computing. Students can pursue research and interdisciplinary projects across Harvard's schools.",
+    "requirements": [
+      "SAT 1500+ or ACT 34+",
+      "Strong mathematics and science background",
+      "TOEFL iBT 100+ or IELTS 7.5+",
+      "Demonstrated interest in computer science"
+    ]
+  },
+  {
+    "id": "course_us_004",
+    "universityId": "uni_us_001",
+    "name": "Master of Public Policy",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "2 years",
+    "tuitionFee": 58542,
+    "overview": "Harvard Kennedy School's MPP develops policy leaders through analytical training and practical experience. Students work on real-world policy challenges with government and nonprofit partners.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "GRE required",
+      "2+ years professional experience recommended",
+      "TOEFL iBT 100+",
+      "Statement of purpose and recommendations"
+    ]
+  },
+  {
+    "id": "course_us_005",
+    "universityId": "uni_us_001",
+    "name": "Doctor of Medicine",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 69300,
+    "overview": "Harvard Medical School provides world-class medical education combining cutting-edge science with clinical training. Students train at affiliated hospitals and conduct research with leading physicians.",
+    "requirements": [
+      "Bachelor's degree with strong science coursework",
+      "MCAT scores (average 520+)",
+      "Clinical experience and research",
+      "TOEFL iBT 100+ for international students",
+      "Interview required"
+    ]
+  },
+  {
+    "id": "course_us_006",
+    "universityId": "uni_us_002",
+    "name": "Bachelor of Science in Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 58416,
+    "overview": "Stanford Engineering offers innovative programs at the intersection of engineering and other disciplines. Students benefit from Silicon Valley's entrepreneurial ecosystem and cutting-edge research facilities.",
+    "requirements": [
+      "SAT 1470-1570 or ACT 33-35",
+      "Exceptional mathematics and science performance",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Strong problem-solving abilities"
+    ]
+  },
+  {
+    "id": "course_us_007",
+    "universityId": "uni_us_002",
+    "name": "Master of Science in Computer Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 58746,
+    "overview": "Stanford's CS program is at the forefront of AI, machine learning, and systems research. Students work with world-renowned faculty and have access to cutting-edge resources and industry partnerships.",
+    "requirements": [
+      "Bachelor's degree in CS or related field with strong GPA",
+      "GRE required",
+      "Strong programming and mathematics background",
+      "TOEFL iBT 100+",
+      "Research statement"
+    ]
+  },
+  {
+    "id": "course_us_008",
+    "universityId": "uni_us_002",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 76950,
+    "overview": "Stanford GSB's MBA emphasizes leadership development and entrepreneurial thinking. The program's small size enables personalized attention and strong peer relationships in the heart of Silicon Valley.",
+    "requirements": [
+      "Bachelor's degree from accredited institution",
+      "GMAT/GRE required (GMAT average 738)",
+      "Work experience recommended",
+      "TOEFL iBT 100+",
+      "Essays and interview"
+    ]
+  },
+  {
+    "id": "course_us_009",
+    "universityId": "uni_us_002",
+    "name": "Bachelor of Arts in Human Biology",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 58416,
+    "overview": "This interdisciplinary program examines human beings from biological, behavioral and social perspectives. Students explore topics from genetics to global health with flexibility to design their own concentration.",
+    "requirements": [
+      "SAT 1450+ or ACT 32+",
+      "Strong science background",
+      "TOEFL iBT 100+",
+      "Demonstrated interest in human biology"
+    ]
+  },
+  {
+    "id": "course_us_010",
+    "universityId": "uni_us_002",
+    "name": "Master of Science in Management Science and Engineering",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 58746,
+    "overview": "This program combines engineering, business and public policy to solve complex organizational and societal problems. Students learn to apply analytical methods to real-world challenges.",
+    "requirements": [
+      "Bachelor's degree with strong quantitative background",
+      "GRE required",
+      "Work experience preferred",
+      "TOEFL iBT 100+",
+      "Statement of purpose"
+    ]
+  },
+  {
+    "id": "course_us_011",
+    "universityId": "uni_us_003",
+    "name": "Bachelor of Science in Computer Science and Engineering",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 57986,
+    "overview": "MIT's CSE program combines computer science theory with engineering practice. Students work on cutting-edge projects in AI, robotics, and systems while learning from world-leading faculty.",
+    "requirements": [
+      "SAT 1520-1580 or ACT 34-36",
+      "Exceptional mathematics and science abilities",
+      "TOEFL iBT 90+ (recommended 100+)",
+      "Strong problem-solving skills"
+    ]
+  },
+  {
+    "id": "course_us_012",
+    "universityId": "uni_us_003",
+    "name": "Master of Engineering",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "1 year",
+    "tuitionFee": 57986,
+    "overview": "MIT's MEng program provides advanced professional training in engineering with flexibility to specialize. Students complete a thesis project that applies engineering principles to real-world problems.",
+    "requirements": [
+      "Bachelor's degree in engineering with strong GPA",
+      "GRE strongly recommended",
+      "Strong technical background",
+      "TOEFL iBT 100+",
+      "Research proposal"
+    ]
+  },
+  {
+    "id": "course_us_013",
+    "universityId": "uni_us_003",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 84300,
+    "overview": "MIT Sloan's MBA develops innovation-driven leaders through hands-on learning and entrepreneurial opportunities. The program emphasizes analytical rigor and practical application in technology-driven industries.",
+    "requirements": [
+      "Bachelor's degree from accredited institution",
+      "GMAT/GRE required",
+      "Work experience required",
+      "TOEFL iBT 100+",
+      "Video statement and essays"
+    ]
+  },
+  {
+    "id": "course_us_014",
+    "universityId": "uni_us_003",
+    "name": "Bachelor of Science in Mathematics",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 57986,
+    "overview": "MIT's mathematics program offers rigorous training in pure and applied mathematics. Students work closely with faculty on research and can explore connections to other fields.",
+    "requirements": [
+      "SAT 1540+ or ACT 35+",
+      "Exceptional mathematics performance",
+      "TOEFL iBT 90+",
+      "Strong analytical abilities"
+    ]
+  },
+  {
+    "id": "course_us_015",
+    "universityId": "uni_us_003",
+    "name": "Master of Science in Artificial Intelligence",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 57986,
+    "overview": "This program provides advanced training in AI theory and applications. Students work on cutting-edge research in machine learning, computer vision, and natural language processing.",
+    "requirements": [
+      "Bachelor's in CS, mathematics or related field",
+      "GRE required",
+      "Strong programming and mathematics background",
+      "TOEFL iBT 100+",
+      "Research experience preferred"
+    ]
+  },
+  {
+    "id": "course_us_016",
+    "universityId": "uni_us_004",
+    "name": "Bachelor of Science in Physics",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 60435,
+    "overview": "Caltech's physics program provides intensive training with small classes and close faculty interaction. Students engage in research from their first year and explore theoretical and experimental physics.",
+    "requirements": [
+      "SAT 1530-1590 or ACT 35-36",
+      "Exceptional physics and mathematics abilities",
+      "TOEFL iBT 100+ or IELTS 7.5+",
+      "Strong research interests"
+    ]
+  },
+  {
+    "id": "course_us_017",
+    "universityId": "uni_us_004",
+    "name": "Master of Science in Electrical Engineering",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 60435,
+    "overview": "This program offers advanced training in electronics, communications, and signal processing. Students work on cutting-edge research projects with world-class faculty and facilities.",
+    "requirements": [
+      "Bachelor's degree in electrical engineering or related field",
+      "GRE required",
+      "Strong mathematics and engineering background",
+      "TOEFL iBT 100+",
+      "Research statement"
+    ]
+  },
+  {
+    "id": "course_us_018",
+    "universityId": "uni_us_004",
+    "name": "Bachelor of Science in Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 60435,
+    "overview": "Caltech's CS program emphasizes theoretical foundations and mathematical rigor while providing practical experience. Students work on research projects and benefit from small class sizes.",
+    "requirements": [
+      "SAT 1530+ or ACT 35+",
+      "Outstanding mathematics and science performance",
+      "TOEFL iBT 100+",
+      "Strong analytical skills"
+    ]
+  },
+  {
+    "id": "course_us_019",
+    "universityId": "uni_us_004",
+    "name": "Master of Science in Applied Physics",
+    "level": "PG",
+    "field": "Science",
+    "duration": "2 years",
+    "tuitionFee": 60435,
+    "overview": "This program bridges fundamental physics and technological applications. Students conduct research in areas like quantum computing, photonics, and condensed matter physics.",
+    "requirements": [
+      "Bachelor's in physics or related field with strong GPA",
+      "GRE Physics Subject Test required",
+      "Strong physics and mathematics background",
+      "TOEFL iBT 100+",
+      "Research experience"
+    ]
+  },
+  {
+    "id": "course_us_020",
+    "universityId": "uni_us_004",
+    "name": "Bachelor of Science in Chemistry",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 60435,
+    "overview": "This program provides rigorous training in chemical principles with extensive laboratory experience. Students engage in research and can explore interdisciplinary connections to biology and materials science.",
+    "requirements": [
+      "SAT 1530+ or ACT 35+",
+      "Strong chemistry and mathematics background",
+      "TOEFL iBT 100+",
+      "Laboratory experience preferred"
+    ]
+  },
+  {
+    "id": "course_us_021",
+    "universityId": "uni_us_005",
+    "name": "Bachelor of Arts in Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 57690,
+    "overview": "Princeton's economics program provides rigorous analytical training with emphasis on theoretical foundations. Students work closely with faculty through the junior paper and senior thesis requirements.",
+    "requirements": [
+      "SAT 1470-1570 or ACT 33-35",
+      "Strong mathematics background",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Excellent academic record"
+    ]
+  },
+  {
+    "id": "course_us_022",
+    "universityId": "uni_us_005",
+    "name": "Master in Public Affairs",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "2 years",
+    "tuitionFee": 58620,
+    "overview": "Princeton's MPA program trains policy leaders through analytical coursework and practical experience. Students complete a policy workshop addressing real-world challenges for government or nonprofit clients.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "GRE required",
+      "2+ years work experience required",
+      "TOEFL iBT 100+",
+      "Policy writing sample"
+    ]
+  },
+  {
+    "id": "course_us_023",
+    "universityId": "uni_us_005",
+    "name": "Bachelor of Science in Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 57690,
+    "overview": "Princeton's BSE program provides broad engineering education with flexibility to specialize. All engineering students complete a senior thesis demonstrating their ability to solve complex problems.",
+    "requirements": [
+      "SAT 1500+ or ACT 34+",
+      "Strong mathematics and physics background",
+      "TOEFL iBT 100+",
+      "Demonstrated interest in engineering"
+    ]
+  },
+  {
+    "id": "course_us_024",
+    "universityId": "uni_us_005",
+    "name": "Master of Finance",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 118500,
+    "overview": "Princeton's MFin program provides rigorous training in quantitative finance and financial engineering. Students work on real-world problems and gain skills for careers in investment banking and asset management.",
+    "requirements": [
+      "Bachelor's degree with strong quantitative background",
+      "GRE required",
+      "Strong mathematics and programming skills",
+      "TOEFL iBT 100+",
+      "Work experience preferred"
+    ]
+  },
+  {
+    "id": "course_us_025",
+    "universityId": "uni_us_005",
+    "name": "Bachelor of Arts in Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 57690,
+    "overview": "This program combines computer science with liberal arts education. Students develop strong technical skills while exploring connections between computing and other disciplines.",
+    "requirements": [
+      "SAT 1480+ or ACT 33+",
+      "Strong mathematics and analytical skills",
+      "TOEFL iBT 100+",
+      "Interest in computer science"
+    ]
+  },
+  {
+    "id": "course_us_026",
+    "universityId": "uni_us_006",
+    "name": "Bachelor of Arts in History",
+    "level": "UG",
+    "field": "Arts",
+    "duration": "4 years",
+    "tuitionFee": 62250,
+    "overview": "Yale's history program offers comprehensive study of the past with access to world-class libraries and archives. Students develop critical thinking and research skills through seminars and thesis projects.",
+    "requirements": [
+      "SAT 1460-1570 or ACT 33-35",
+      "Strong writing and analytical skills",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Academic curiosity"
+    ]
+  },
+  {
+    "id": "course_us_027",
+    "universityId": "uni_us_006",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 76650,
+    "overview": "Yale SOM's MBA develops leaders for business and society through integrated curriculum and experiential learning. The program emphasizes social impact and global perspective.",
+    "requirements": [
+      "Bachelor's degree from accredited institution",
+      "GMAT/GRE required (GMAT average 730)",
+      "Work experience recommended",
+      "TOEFL iBT 100+",
+      "Essays and interview"
+    ]
+  },
+  {
+    "id": "course_us_028",
+    "universityId": "uni_us_006",
+    "name": "Bachelor of Science in Molecular Biophysics and Biochemistry",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 62250,
+    "overview": "This program explores molecular mechanisms of life through interdisciplinary study. Students conduct research in world-class laboratories and work with leading scientists.",
+    "requirements": [
+      "SAT 1480+ or ACT 33+",
+      "Strong biology, chemistry and mathematics background",
+      "TOEFL iBT 100+",
+      "Research interests"
+    ]
+  },
+  {
+    "id": "course_us_029",
+    "universityId": "uni_us_006",
+    "name": "Master of Public Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "2 years",
+    "tuitionFee": 48000,
+    "overview": "Yale's MPH program prepares public health leaders through rigorous training and practical experience. Students work on real-world health challenges with community and global partners.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "GRE required",
+      "Healthcare or public health experience preferred",
+      "TOEFL iBT 100+",
+      "Statement of purpose"
+    ]
+  },
+  {
+    "id": "course_us_030",
+    "universityId": "uni_us_006",
+    "name": "Juris Doctor",
+    "level": "PG",
+    "field": "Law",
+    "duration": "3 years",
+    "tuitionFee": 71435,
+    "overview": "Yale Law School offers the nation's top-ranked JD program with a distinctive small-school environment. Students benefit from unparalleled flexibility and close faculty mentorship.",
+    "requirements": [
+      "Bachelor's degree with excellent academic record",
+      "LSAT required (median 173)",
+      "Strong analytical and writing skills",
+      "TOEFL iBT 100+ for international students",
+      "Personal statement and recommendations"
+    ]
+  },
+  {
+    "id": "course_us_031",
+    "universityId": "uni_us_007",
+    "name": "Bachelor of Arts in Political Science",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "4 years",
+    "tuitionFee": 65524,
+    "overview": "Columbia's political science program benefits from NYC location with access to UN, think tanks and government offices. Students engage with leading scholars and practitioners.",
+    "requirements": [
+      "SAT 1480-1560 or ACT 33-35",
+      "Strong analytical and writing skills",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Interest in politics and governance"
+    ]
+  },
+  {
+    "id": "course_us_032",
+    "universityId": "uni_us_007",
+    "name": "Master of Science in Computer Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 54816,
+    "overview": "Columbia's CS program offers flexibility to specialize in areas like AI, data science, or systems. Students benefit from NYC's tech ecosystem and research collaborations.",
+    "requirements": [
+      "Bachelor's degree in CS or related field with strong GPA",
+      "GRE required",
+      "Programming experience required",
+      "TOEFL iBT 100+",
+      "Statement of purpose"
+    ]
+  },
+  {
+    "id": "course_us_033",
+    "universityId": "uni_us_007",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 83688,
+    "overview": "Columbia Business School's MBA leverages NYC location for unparalleled access to business opportunities. The program offers flexible curriculum and strong finance focus.",
+    "requirements": [
+      "Bachelor's degree from accredited institution",
+      "GMAT/GRE required (GMAT average 729)",
+      "Work experience required",
+      "TOEFL iBT 100+",
+      "Essays and interview"
+    ]
+  },
+  {
+    "id": "course_us_034",
+    "universityId": "uni_us_007",
+    "name": "Bachelor of Science in Applied Mathematics",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 65524,
+    "overview": "This program combines mathematical theory with applications to science, engineering and social sciences. Students develop strong analytical and computational skills.",
+    "requirements": [
+      "SAT 1500+ or ACT 34+",
+      "Exceptional mathematics performance",
+      "TOEFL iBT 100+",
+      "Strong problem-solving abilities"
+    ]
+  },
+  {
+    "id": "course_us_035",
+    "universityId": "uni_us_007",
+    "name": "Master of Science in Financial Engineering",
+    "level": "PG",
+    "field": "Business",
+    "duration": "1 year",
+    "tuitionFee": 85752,
+    "overview": "This intensive program trains quantitative analysts for financial markets. Students learn advanced modeling techniques and work on real-world trading and risk management problems.",
+    "requirements": [
+      "Bachelor's degree with strong quantitative background",
+      "GRE required",
+      "Strong programming and mathematics skills",
+      "TOEFL iBT 100+",
+      "Work experience preferred"
+    ]
+  },
+  {
+    "id": "course_us_036",
+    "universityId": "uni_us_008",
+    "name": "Bachelor of Arts in Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 63801,
+    "overview": "UChicago's economics program is renowned for analytical rigor and innovative thinking. Students engage with leading economic theorists and empirical researchers.",
+    "requirements": [
+      "SAT 1500-1570 or ACT 34-35",
+      "Strong mathematics background",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Intellectual curiosity"
+    ]
+  },
+  {
+    "id": "course_us_037",
+    "universityId": "uni_us_008",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 77841,
+    "overview": "Chicago Booth's MBA emphasizes analytical thinking and empirical rigor. The flexible curriculum allows students to customize their education and explore diverse interests.",
+    "requirements": [
+      "Bachelor's degree from accredited institution",
+      "GMAT/GRE required (GMAT average 730)",
+      "Work experience required",
+      "TOEFL iBT 104+",
+      "Essays and interview"
+    ]
+  },
+  {
+    "id": "course_us_038",
+    "universityId": "uni_us_008",
+    "name": "Bachelor of Science in Mathematics",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 63801,
+    "overview": "This rigorous program offers comprehensive training in pure and applied mathematics. Students work closely with faculty and can specialize in various mathematical areas.",
+    "requirements": [
+      "SAT 1520+ or ACT 34+",
+      "Exceptional mathematics abilities",
+      "TOEFL iBT 100+",
+      "Strong analytical skills"
+    ]
+  },
+  {
+    "id": "course_us_039",
+    "universityId": "uni_us_008",
+    "name": "Master of Science in Computer Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 63801,
+    "overview": "UChicago's CS program emphasizes theoretical foundations and interdisciplinary applications. Students engage in cutting-edge research and work with leading faculty.",
+    "requirements": [
+      "Bachelor's in CS or related field with strong GPA",
+      "GRE required",
+      "Strong programming and mathematics background",
+      "TOEFL iBT 100+",
+      "Research interests"
+    ]
+  },
+  {
+    "id": "course_us_040",
+    "universityId": "uni_us_008",
+    "name": "Master of Public Policy",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "2 years",
+    "tuitionFee": 74160,
+    "overview": "Harris School's MPP program trains policy analysts through rigorous quantitative methods and practical experience. Students work on real policy challenges with government and nonprofit partners.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "GRE required",
+      "Quantitative coursework required",
+      "TOEFL iBT 104+",
+      "Statement of purpose"
+    ]
+  },
+  {
+    "id": "course_us_041",
+    "universityId": "uni_us_009",
+    "name": "Bachelor of Arts in Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 14780,
+    "overview": "Berkeley's CS program is one of the world's best, offering comprehensive training in theory and applications. Students benefit from Bay Area's tech ecosystem and research opportunities.",
+    "requirements": [
+      "SAT 1330-1530 or ACT 28-34",
+      "Strong mathematics and science background",
+      "TOEFL iBT 80+ or IELTS 6.5+",
+      "Completion of A-G requirements"
+    ]
+  },
+  {
+    "id": "course_us_042",
+    "universityId": "uni_us_009",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 72146,
+    "overview": "Berkeley Haas MBA develops innovative leaders through case-based learning and experiential projects. The program emphasizes sustainability and social impact.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "GMAT/GRE required (GMAT average 727)",
+      "Work experience required",
+      "TOEFL iBT 90+",
+      "Essays and interview"
+    ]
+  },
+  {
+    "id": "course_us_043",
+    "universityId": "uni_us_009",
+    "name": "Bachelor of Science in Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 14780,
+    "overview": "Berkeley Engineering offers world-class programs across all major engineering disciplines. Students engage in research and benefit from strong industry connections.",
+    "requirements": [
+      "SAT 1400+ or ACT 30+",
+      "Strong mathematics and science performance",
+      "TOEFL iBT 80+",
+      "Completion of A-G requirements"
+    ]
+  },
+  {
+    "id": "course_us_044",
+    "universityId": "uni_us_009",
+    "name": "Master of Science in Data Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "1 year",
+    "tuitionFee": 60332,
+    "overview": "This intensive program trains data scientists through hands-on projects and industry collaborations. Students learn statistical modeling, machine learning and data engineering.",
+    "requirements": [
+      "Bachelor's degree with strong quantitative background",
+      "GRE required",
+      "Programming experience in Python or R",
+      "TOEFL iBT 90+",
+      "Work experience preferred"
+    ]
+  },
+  {
+    "id": "course_us_045",
+    "universityId": "uni_us_009",
+    "name": "Bachelor of Arts in Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 14780,
+    "overview": "Berkeley's economics program provides rigorous training in economic theory and quantitative methods. Students develop analytical skills for careers in business, policy and research.",
+    "requirements": [
+      "SAT 1350+ or ACT 29+",
+      "Strong mathematics background",
+      "TOEFL iBT 80+",
+      "Completion of A-G requirements"
+    ]
+  },
+  {
+    "id": "course_us_046",
+    "universityId": "uni_us_010",
+    "name": "Bachelor of Science in Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 63452,
+    "overview": "Wharton's undergraduate program is the world's premier business education, offering specialized majors and dual degree options. Students gain practical skills through experiential learning.",
+    "requirements": [
+      "SAT 1480-1570 or ACT 33-35",
+      "Strong mathematics and analytical skills",
+      "TOEFL iBT 100+ or IELTS 7.5+",
+      "Leadership experience"
+    ]
+  },
+  {
+    "id": "course_us_047",
+    "universityId": "uni_us_010",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 84960,
+    "overview": "Wharton's MBA is renowned for finance and leadership development. The program offers unparalleled resources and a global alumni network.",
+    "requirements": [
+      "Bachelor's degree with excellent academic record",
+      "GMAT/GRE required (GMAT average 733)",
+      "Work experience required",
+      "TOEFL iBT 110+",
+      "Essays and interview"
+    ]
+  },
+  {
+    "id": "course_us_048",
+    "universityId": "uni_us_010",
+    "name": "Bachelor of Arts in Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 63452,
+    "overview": "Penn's CS program combines technical depth with interdisciplinary breadth. Students can pursue joint majors and work on research projects across the university.",
+    "requirements": [
+      "SAT 1480+ or ACT 33+",
+      "Strong mathematics and science background",
+      "TOEFL iBT 100+",
+      "Programming experience"
+    ]
+  },
+  {
+    "id": "course_us_049",
+    "universityId": "uni_us_010",
+    "name": "Master of Science in Engineering",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 46272,
+    "overview": "Penn Engineering offers flexible graduate programs with opportunities to specialize and conduct research. Students work with faculty on cutting-edge projects.",
+    "requirements": [
+      "Bachelor's degree in engineering or related field",
+      "GRE required",
+      "Strong technical background",
+      "TOEFL iBT 100+",
+      "Statement of purpose"
+    ]
+  },
+  {
+    "id": "course_us_050",
+    "universityId": "uni_us_010",
+    "name": "Bachelor of Arts in Philosophy, Politics and Economics",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "4 years",
+    "tuitionFee": 63452,
+    "overview": "This interdisciplinary program examines major societal questions through multiple lenses. Students develop critical thinking and analytical skills for diverse careers.",
+    "requirements": [
+      "SAT 1470+ or ACT 33+",
+      "Strong writing and analytical abilities",
+      "TOEFL iBT 100+",
+      "Intellectual curiosity"
+    ]
+  },{
+    "id": "course_au_001",
+    "universityId": "uni_au_001",
+    "name": "Bachelor of Philosophy (Honours)",
+    "level": "UG",
+    "field": "Arts",
+    "duration": "4 years",
+    "tuitionFee": 48000,
+    "overview": "ANU's prestigious PhB program offers talented students a research-intensive undergraduate experience with individualized supervision. Students work closely with leading researchers across any discipline.",
+    "requirements": [
+      "Exceptional academic achievement (ATAR 98+)",
+      "IELTS 6.5+ (6.0 in each band) or equivalent",
+      "Interview and selection process",
+      "Demonstrated research potential"
+    ]
+  },
+  {
+    "id": "course_au_002",
+    "universityId": "uni_au_001",
+    "name": "Master of Computing",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 50000,
+    "overview": "This advanced program covers AI, machine learning, and data science with research and professional tracks. Students gain hands-on experience through projects and industry partnerships.",
+    "requirements": [
+      "Bachelor's degree in IT or related field",
+      "Minimum GPA of 5.0/7.0",
+      "IELTS 6.5+ or TOEFL iBT 80+",
+      "Programming experience recommended"
+    ]
+  },
+  {
+    "id": "course_au_003",
+    "universityId": "uni_au_001",
+    "name": "Bachelor of Engineering (Honours)",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 49000,
+    "overview": "This flexible engineering program allows specialization in various disciplines with emphasis on sustainable solutions. Students complete major design projects and research thesis.",
+    "requirements": [
+      "ATAR 90+ with mathematics and physics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong STEM background"
+    ]
+  },
+  {
+    "id": "course_au_004",
+    "universityId": "uni_au_001",
+    "name": "Master of International Relations",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "2 years",
+    "tuitionFee": 46000,
+    "overview": "This program examines global politics and diplomacy from Australia's unique perspective in the Asia-Pacific region. Students engage with policy practitioners and conduct original research.",
+    "requirements": [
+      "Bachelor's degree with minimum 70% average",
+      "IELTS 6.5+ or equivalent",
+      "Statement of purpose",
+      "Academic references"
+    ]
+  },
+  {
+    "id": "course_au_005",
+    "universityId": "uni_au_001",
+    "name": "Bachelor of Actuarial Studies",
+    "level": "UG",
+    "field": "Business",
+    "duration": "3 years",
+    "tuitionFee": 47000,
+    "overview": "This program provides professional accreditation pathways for actuaries with strong mathematical and statistical training. Students gain exemptions from professional actuarial examinations.",
+    "requirements": [
+      "ATAR 95+ with specialist mathematics",
+      "IELTS 6.5+",
+      "Strong analytical skills"
+    ]
+  },
+  {
+    "id": "course_au_006",
+    "universityId": "uni_au_002",
+    "name": "Doctor of Medicine",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 85000,
+    "overview": "Melbourne Medical School offers a graduate-entry medical program with clinical training at leading hospitals. The curriculum emphasizes patient-centered care and research integration.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "GAMSAT score of 60+",
+      "Relevant work or volunteer experience",
+      "IELTS 7.0+ (7.0 in each band)",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_au_007",
+    "universityId": "uni_au_002",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "18 months",
+    "tuitionFee": 95000,
+    "overview": "Melbourne Business School's MBA is Australia's top-ranked program, offering global perspective and leadership development. Students participate in international study tours and consulting projects.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "Minimum 2 years work experience",
+      "GMAT 650+ or GRE equivalent",
+      "IELTS 7.0+ (7.0 in each band)",
+      "Essays and interview"
+    ]
+  },
+  {
+    "id": "course_au_008",
+    "universityId": "uni_au_002",
+    "name": "Bachelor of Commerce",
+    "level": "UG",
+    "field": "Business",
+    "duration": "3 years",
+    "tuitionFee": 50000,
+    "overview": "This flexible commerce program offers majors in accounting, finance, management, and marketing. Students develop analytical and business skills for diverse career paths.",
+    "requirements": [
+      "ATAR 85+ with mathematics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong analytical aptitude"
+    ]
+  },
+  {
+    "id": "course_au_009",
+    "universityId": "uni_au_002",
+    "name": "Master of Engineering (Software)",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 51000,
+    "overview": "This professional program trains software engineers in advanced development methodologies, architecture, and project management. Students work on industry-sponsored capstone projects.",
+    "requirements": [
+      "Bachelor's in engineering or computer science",
+      "Minimum 65% average",
+      "IELTS 6.5+ or equivalent",
+      "Programming proficiency"
+    ]
+  },
+  {
+    "id": "course_au_010",
+    "universityId": "uni_au_002",
+    "name": "Bachelor of Science",
+    "level": "UG",
+    "field": "Science",
+    "duration": "3 years",
+    "tuitionFee": 48000,
+    "overview": "This comprehensive science program offers majors across biological, chemical, and physical sciences with research opportunities. Students can pursue diverse specializations from biochemistry to physics.",
+    "requirements": [
+      "ATAR 80+ with relevant science subjects",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong science background"
+    ]
+  },
+  {
+    "id": "course_au_011",
+    "universityId": "uni_au_003",
+    "name": "Bachelor of Engineering Honours (Electrical)",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 50000,
+    "overview": "This program covers power systems, electronics, and telecommunications with hands-on laboratory work. Students complete industry placements and final-year research project.",
+    "requirements": [
+      "ATAR 85+ with mathematics and physics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong STEM background"
+    ]
+  },
+  {
+    "id": "course_au_012",
+    "universityId": "uni_au_003",
+    "name": "Master of Data Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "1.5 years",
+    "tuitionFee": 52000,
+    "overview": "This intensive program covers machine learning, big data analytics, and statistical modeling. Students work on real-world datasets and industry problems.",
+    "requirements": [
+      "Bachelor's degree in quantitative field",
+      "Programming experience in Python or R",
+      "IELTS 6.5+ or equivalent",
+      "Strong mathematics and statistics background"
+    ]
+  },
+  {
+    "id": "course_au_013",
+    "universityId": "uni_au_003",
+    "name": "Bachelor of Arts",
+    "level": "UG",
+    "field": "Arts",
+    "duration": "3 years",
+    "tuitionFee": 44000,
+    "overview": "This flexible arts program offers majors in humanities, languages, and social sciences. Students develop critical thinking and communication skills applicable to diverse careers.",
+    "requirements": [
+      "ATAR 80+ (varies by major)",
+      "IELTS 6.5+ (6.0 in each component)",
+      "Strong written communication skills"
+    ]
+  },
+  {
+    "id": "course_au_014",
+    "universityId": "uni_au_003",
+    "name": "Master of Public Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "1.5 years",
+    "tuitionFee": 49000,
+    "overview": "This program prepares public health professionals through epidemiology, biostatistics, and health policy. Students complete research project and practicum placement.",
+    "requirements": [
+      "Bachelor's degree in health or related field",
+      "IELTS 7.0+ (6.5 in each band)",
+      "Work or volunteer experience preferred",
+      "Statement of purpose"
+    ]
+  },
+  {
+    "id": "course_au_015",
+    "universityId": "uni_au_003",
+    "name": "Bachelor of Laws",
+    "level": "UG",
+    "field": "Law",
+    "duration": "4 years",
+    "tuitionFee": 51000,
+    "overview": "Sydney Law School offers one of Australia's premier law programs with focus on advocacy, ethics, and justice. Students gain practical experience through clinics and mooting competitions.",
+    "requirements": [
+      "ATAR 95+",
+      "IELTS 7.5+ (7.0 in writing, 7.0 in reading)",
+      "Exceptional analytical and written skills"
+    ]
+  },
+  {
+    "id": "course_au_016",
+    "universityId": "uni_au_004",
+    "name": "Bachelor of Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "3 years",
+    "tuitionFee": 49000,
+    "overview": "UNSW's CS program is highly regarded for AI, cybersecurity, and software engineering with strong industry connections. Students can choose from various specializations and co-op streams.",
+    "requirements": [
+      "ATAR 90+ with advanced mathematics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong programming aptitude"
+    ]
+  },
+  {
+    "id": "course_au_017",
+    "universityId": "uni_au_004",
+    "name": "Master of Engineering Science (Renewable Energy)",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 50000,
+    "overview": "This program focuses on sustainable energy technologies including solar, wind, and smart grids. Students conduct research on clean energy solutions for the future.",
+    "requirements": [
+      "Bachelor's in engineering or related field",
+      "Minimum 65% average",
+      "IELTS 6.5+ or equivalent",
+      "Background in energy systems helpful"
+    ]
+  },
+  {
+    "id": "course_au_018",
+    "universityId": "uni_au_004",
+    "name": "Bachelor of Commerce",
+    "level": "UG",
+    "field": "Business",
+    "duration": "3 years",
+    "tuitionFee": 48000,
+    "overview": "UNSW Business School offers a comprehensive commerce program with majors in accounting, finance, and management. Students gain practical experience through internships and case competitions.",
+    "requirements": [
+      "ATAR 88+ with mathematics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong analytical skills"
+    ]
+  },
+  {
+    "id": "course_au_019",
+    "universityId": "uni_au_004",
+    "name": "Doctor of Medicine",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "6 years",
+    "tuitionFee": 75000,
+    "overview": "UNSW Medicine offers an integrated medical program with early clinical exposure and innovative teaching methods. Students train at leading Sydney teaching hospitals.",
+    "requirements": [
+      "ATAR 96+ or graduate entry pathway",
+      "UCAT score for undergraduate entry",
+      "IELTS 7.0+ (7.0 in each band)",
+      "Interview",
+      "Demonstrated commitment to medicine"
+    ]
+  },
+  {
+    "id": "course_au_020",
+    "universityId": "uni_au_004",
+    "name": "Master of Information Technology",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 47000,
+    "overview": "This conversion program allows non-IT graduates to gain comprehensive IT skills including programming, databases, and cybersecurity. Students complete industry capstone projects.",
+    "requirements": [
+      "Bachelor's degree in any field",
+      "Minimum 65% average",
+      "IELTS 6.5+ or equivalent",
+      "No prior IT experience required"
+    ]
+  },
+  {
+    "id": "course_au_021",
+    "universityId": "uni_au_005",
+    "name": "Bachelor of Engineering (Honours)",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 47000,
+    "overview": "UQ's engineering program offers specializations across civil, mechanical, electrical, and chemical engineering with strong research focus. Students complete work placement and thesis project.",
+    "requirements": [
+      "ATAR 85+ with mathematics and physics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong STEM background"
+    ]
+  },
+  {
+    "id": "course_au_022",
+    "universityId": "uni_au_005",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "18 months",
+    "tuitionFee": 88000,
+    "overview": "UQ Business School's MBA emphasizes innovation and entrepreneurship with Asia-Pacific focus. Students participate in international study tours and consulting projects.",
+    "requirements": [
+      "Bachelor's degree with strong record",
+      "Minimum 3 years work experience",
+      "GMAT 550+ or GRE equivalent",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_au_023",
+    "universityId": "uni_au_005",
+    "name": "Bachelor of Science",
+    "level": "UG",
+    "field": "Science",
+    "duration": "3 years",
+    "tuitionFee": 45000,
+    "overview": "This flexible science program offers majors across biological, chemical, environmental, and mathematical sciences. Students can participate in research projects and field work.",
+    "requirements": [
+      "ATAR 78+ with relevant science subjects",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong science background"
+    ]
+  },
+  {
+    "id": "course_au_024",
+    "universityId": "uni_au_005",
+    "name": "Master of Biotechnology",
+    "level": "PG",
+    "field": "Science",
+    "duration": "1.5 years",
+    "tuitionFee": 48000,
+    "overview": "This program combines molecular biology with biomedical and agricultural applications. Students gain laboratory skills and conduct independent research projects.",
+    "requirements": [
+      "Bachelor's in life sciences or related field",
+      "Minimum 65% average",
+      "IELTS 6.5+ or equivalent",
+      "Laboratory experience preferred"
+    ]
+  },
+  {
+    "id": "course_au_025",
+    "universityId": "uni_au_005",
+    "name": "Bachelor of Nursing",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "3 years",
+    "tuitionFee": 42000,
+    "overview": "This program prepares registered nurses through clinical placements at Queensland hospitals and comprehensive theoretical training. Graduates are eligible for AHPRA registration.",
+    "requirements": [
+      "ATAR 75+ with science subjects",
+      "IELTS 7.0+ (7.0 in each band)",
+      "Working with Children check",
+      "Health declaration"
+    ]
+  },
+  {
+    "id": "course_au_026",
+    "universityId": "uni_au_006",
+    "name": "Bachelor of Information Technology",
+    "level": "UG",
+    "field": "IT",
+    "duration": "3 years",
+    "tuitionFee": 46000,
+    "overview": "This practical IT program covers software development, networks, and cybersecurity with industry placement year. Students gain hands-on experience with latest technologies.",
+    "requirements": [
+      "ATAR 80+ with mathematics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Interest in technology and innovation"
+    ]
+  },
+  {
+    "id": "course_au_027",
+    "universityId": "uni_au_006",
+    "name": "Master of Artificial Intelligence",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 49000,
+    "overview": "This advanced program covers machine learning, neural networks, and AI applications. Students work on cutting-edge AI research and industry projects.",
+    "requirements": [
+      "Bachelor's in IT, engineering or mathematics",
+      "Minimum 65% average",
+      "IELTS 6.5+ or equivalent",
+      "Programming experience essential"
+    ]
+  },
+  {
+    "id": "course_au_028",
+    "universityId": "uni_au_006",
+    "name": "Bachelor of Pharmacy (Honours)",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 48000,
+    "overview": "Monash Pharmacy is Australia's leading program preparing pharmacists through clinical practice and pharmaceutical sciences. Students complete extensive placements in hospitals and community pharmacies.",
+    "requirements": [
+      "ATAR 90+ with chemistry",
+      "IELTS 7.0+ (7.0 in each band)",
+      "Strong science background",
+      "Supplementary questionnaire"
+    ]
+  },
+  {
+    "id": "course_au_029",
+    "universityId": "uni_au_006",
+    "name": "Master of Business",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 46000,
+    "overview": "This flexible business program allows specialization in marketing, finance, or management with practical focus. Students develop skills through case studies and industry projects.",
+    "requirements": [
+      "Bachelor's degree in any field",
+      "Minimum 60% average",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Work experience recommended"
+    ]
+  },
+  {
+    "id": "course_au_030",
+    "universityId": "uni_au_006",
+    "name": "Bachelor of Engineering (Honours) - Chemical",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 47000,
+    "overview": "This program trains chemical engineers in process design, sustainable manufacturing, and materials science. Students complete industry placements and research thesis.",
+    "requirements": [
+      "ATAR 85+ with chemistry, mathematics, physics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong STEM aptitude"
+    ]
+  },
+  {
+    "id": "course_au_031",
+    "universityId": "uni_au_007",
+    "name": "Bachelor of Science (Mining Engineering)",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 45000,
+    "overview": "Located in Australia's mining capital, this program trains mining engineers in resource extraction and mine management. Students complete extensive industry placements with mining companies.",
+    "requirements": [
+      "ATAR 80+ with mathematics and physics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong engineering aptitude"
+    ]
+  },
+  {
+    "id": "course_au_032",
+    "universityId": "uni_au_007",
+    "name": "Master of Data Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 46000,
+    "overview": "This program combines statistics, machine learning, and business analytics with practical applications. Students work on real-world data problems and industry capstones.",
+    "requirements": [
+      "Bachelor's degree in quantitative discipline",
+      "Programming knowledge",
+      "IELTS 6.5+ or equivalent",
+      "Strong mathematics background"
+    ]
+  },
+  {
+    "id": "course_au_033",
+    "universityId": "uni_au_007",
+    "name": "Bachelor of Commerce",
+    "level": "UG",
+    "field": "Business",
+    "duration": "3 years",
+    "tuitionFee": 43000,
+    "overview": "This comprehensive commerce program offers majors in accounting, finance, economics, and management. Students develop business skills through internships and practical projects.",
+    "requirements": [
+      "ATAR 80+ with mathematics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong analytical skills"
+    ]
+  },
+  {
+    "id": "course_au_034",
+    "universityId": "uni_au_007",
+    "name": "Master of Marine Science",
+    "level": "PG",
+    "field": "Science",
+    "duration": "2 years",
+    "tuitionFee": 45000,
+    "overview": "This program explores ocean ecosystems, marine conservation, and coastal management with access to research vessels. Students conduct fieldwork along Western Australia's pristine coastline.",
+    "requirements": [
+      "Bachelor's in marine biology or related field",
+      "Minimum 65% average",
+      "IELTS 6.5+ or equivalent",
+      "Field experience preferred"
+    ]
+  },
+  {
+    "id": "course_au_035",
+    "universityId": "uni_au_007",
+    "name": "Bachelor of Psychology",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "3 years",
+    "tuitionFee": 42000,
+    "overview": "This program explores human behavior and mental processes through research and practical applications. Students can pursue clinical, organizational, or developmental psychology pathways.",
+    "requirements": [
+      "ATAR 75+ with English",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Interest in behavioral sciences"
+    ]
+  },
+  {
+    "id": "course_au_036",
+    "universityId": "uni_au_008",
+    "name": "Bachelor of Engineering (Honours) - Aerospace",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 44000,
+    "overview": "This program covers aircraft design, propulsion, and aerodynamics with strong defense industry connections. Students gain practical experience through projects and internships.",
+    "requirements": [
+      "ATAR 80+ with mathematics and physics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong STEM background"
+    ]
+  },
+  {
+    "id": "course_au_037",
+    "universityId": "uni_au_008",
+    "name": "Master of Wine Business",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 45000,
+    "overview": "Located in Australia's wine region, this unique program combines wine science with business management. Students gain hands-on experience in vineyards and wineries.",
+    "requirements": [
+      "Bachelor's degree in any field",
+      "IELTS 6.5+ or equivalent",
+      "Interest in wine industry",
+      "Work experience preferred"
+    ]
+  },
+  {
+    "id": "course_au_038",
+    "universityId": "uni_au_008",
+    "name": "Bachelor of Health and Medical Sciences",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "3 years",
+    "tuitionFee": 46000,
+    "overview": "This program provides strong foundation for health careers and medical school with focus on biomedical sciences. Students can pursue various health-related specializations.",
+    "requirements": [
+      "ATAR 80+ with science subjects",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong science aptitude"
+    ]
+  },
+  {
+    "id": "course_au_039",
+    "universityId": "uni_au_008",
+    "name": "Master of Cyber Security",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 44000,
+    "overview": "This program trains cybersecurity professionals in threat detection, incident response, and security architecture. Students work on real security challenges and industry projects.",
+    "requirements": [
+      "Bachelor's in IT or related field",
+      "Minimum 60% average",
+      "IELTS 6.5+ or equivalent",
+      "Basic IT knowledge required"
+    ]
+  },
+  {
+    "id": "course_au_040",
+    "universityId": "uni_au_008",
+    "name": "Bachelor of Laws",
+    "level": "UG",
+    "field": "Law",
+    "duration": "4 years",
+    "tuitionFee": 43000,
+    "overview": "Adelaide Law School offers comprehensive legal education with focus on advocacy and ethics. Students gain practical experience through clinics and mooting programs.",
+    "requirements": [
+      "ATAR 90+",
+      "IELTS 7.0+ (6.5 in each band)",
+      "Excellent written and analytical skills"
+    ]
+  },
+  {
+    "id": "course_au_041",
+    "universityId": "uni_au_009",
+    "name": "Bachelor of Information Technology",
+    "level": "UG",
+    "field": "IT",
+    "duration": "3 years",
+    "tuitionFee": 45000,
+    "overview": "UTS IT program offers cutting-edge curriculum with strong industry partnerships and practical focus. Students can specialize in cybersecurity, data analytics, or enterprise systems.",
+    "requirements": [
+      "ATAR 78+ with mathematics",
+      "IELTS 6.5+ (6.0 in each component)",
+      "Interest in technology"
+    ]
+  },
+  {
+    "id": "course_au_042",
+    "universityId": "uni_au_009",
+    "name": "Master of Data Science and Innovation",
+    "level": "PG",
+    "field": "IT",
+    "duration": "1.5 years",
+    "tuitionFee": 47000,
+    "overview": "This program combines data science with business innovation and entrepreneurship. Students work on real-world data projects with industry partners.",
+    "requirements": [
+      "Bachelor's degree in quantitative field",
+      "Programming experience",
+      "IELTS 6.5+ or equivalent",
+      "Strong analytical skills"
+    ]
+  },
+  {
+    "id": "course_au_043",
+    "universityId": "uni_au_009",
+    "name": "Bachelor of Design (Animation)",
+    "level": "UG",
+    "field": "Arts",
+    "duration": "3 years",
+    "tuitionFee": 44000,
+    "overview": "This creative program trains animators and visual effects artists using industry-standard tools. Students work on animated shorts and collaborate with film industry professionals.",
+    "requirements": [
+      "ATAR 70+ (portfolio assessed)",
+      "IELTS 6.5+ (6.0 in each component)",
+      "Portfolio submission",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_au_044",
+    "universityId": "uni_au_009",
+    "name": "Master of Engineering Management",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "1.5 years",
+    "tuitionFee": 45000,
+    "overview": "This program combines technical engineering knowledge with business management skills. Students develop expertise in project management, innovation, and leadership.",
+    "requirements": [
+      "Bachelor's in engineering",
+      "Minimum 65% average",
+      "IELTS 6.5+ or equivalent",
+      "Work experience preferred"
+    ]
+  },
+  {
+    "id": "course_au_045",
+    "universityId": "uni_au_009",
+    "name": "Bachelor of Nursing",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "3 years",
+    "tuitionFee": 43000,
+    "overview": "This program prepares registered nurses through clinical placements at Sydney hospitals. Students gain comprehensive nursing skills for diverse healthcare settings.",
+    "requirements": [
+      "ATAR 75+ with science subjects",
+      "IELTS 7.0+ (7.0 in each component)",
+      "Health and character checks",
+      "Working with Children check"
+    ]
+  },
+  {
+    "id": "course_au_046",
+    "universityId": "uni_au_010",
+    "name": "Bachelor of Games and Interactive Environments",
+    "level": "UG",
+    "field": "IT",
+    "duration": "3 years",
+    "tuitionFee": 42000,
+    "overview": "This program trains game developers and designers using industry tools and technologies. Students create games and interactive experiences for various platforms.",
+    "requirements": [
+      "ATAR 70+ with mathematics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Portfolio or creative work preferred",
+      "Passion for game development"
+    ]
+  },
+  {
+    "id": "course_au_047",
+    "universityId": "uni_au_010",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "18 months",
+    "tuitionFee": 72000,
+    "overview": "QUT's MBA focuses on practical leadership and innovation with strong entrepreneurship stream. Students work on live business projects and develop strategic thinking skills.",
+    "requirements": [
+      "Bachelor's degree with strong record",
+      "Minimum 3 years work experience",
+      "GMAT 550+ recommended",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_au_048",
+    "universityId": "uni_au_010",
+    "name": "Bachelor of Engineering (Honours) - Electrical",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 43000,
+    "overview": "This program covers power systems, control systems, and electronics with practical industry focus. Students complete work-integrated learning and capstone projects.",
+    "requirements": [
+      "ATAR 75+ with mathematics and physics",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Strong STEM background"
+    ]
+  },
+  {
+    "id": "course_au_049",
+    "universityId": "uni_au_010",
+    "name": "Master of Public Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "1.5 years",
+    "tuitionFee": 41000,
+    "overview": "This program prepares public health professionals through epidemiology, health promotion, and policy studies. Students complete practicum with health organizations.",
+    "requirements": [
+      "Bachelor's degree in health or related field",
+      "IELTS 6.5+ or equivalent",
+      "Work experience preferred",
+      "Statement of purpose"
+    ]
+  },
+  {
+    "id": "course_au_050",
+    "universityId": "uni_au_010",
+    "name": "Bachelor of Creative Industries",
+    "level": "UG",
+    "field": "Arts",
+    "duration": "3 years",
+    "tuitionFee": 40000,
+    "overview": "This innovative program combines creative practice with business skills for careers in media, design, and entertainment. Students work on industry projects and build professional portfolios.",
+    "requirements": [
+      "ATAR 68+ (varies by major)",
+      "IELTS 6.5+ (6.0 in each band)",
+      "Portfolio for some majors",
+      "Creative aptitude"
+    ]
+  }, {
+    "id": "course_ca_001",
+    "universityId": "uni_ca_001",
+    "name": "Bachelor of Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 58000,
+    "overview": "This highly competitive program offers comprehensive training in algorithms, software engineering, and AI with access to cutting-edge research labs. Students can specialize in areas like machine learning, cybersecurity, or software systems.",
+    "requirements": [
+      "High school diploma with 90%+ average",
+      "Advanced Functions and Calculus required",
+      "TOEFL iBT 100+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_002",
+    "universityId": "uni_ca_001",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "2 years",
+    "tuitionFee": 120000,
+    "overview": "Rotman's MBA is one of the world's top business programs, featuring integrative thinking and global business strategies. Students participate in international study trips and real consulting projects.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "Minimum 2 years work experience",
+      "GMAT 660+ or GRE equivalent",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Essays and interview"
+    ]
+  },
+  {
+    "id": "course_ca_003",
+    "universityId": "uni_ca_001",
+    "name": "Bachelor of Engineering Science",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 60000,
+    "overview": "An intensive engineering program offering eight specializations with emphasis on design and innovation. Students gain hands-on experience through capstone projects and industry partnerships.",
+    "requirements": [
+      "High school diploma with 88%+ average",
+      "Advanced Functions, Calculus, Chemistry, and Physics required",
+      "TOEFL iBT 100+ or IELTS 6.5+",
+      "Supplementary application"
+    ]
+  },
+  {
+    "id": "course_ca_004",
+    "universityId": "uni_ca_001",
+    "name": "Doctor of Medicine",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 85000,
+    "overview": "A rigorous medical program combining clinical training with research at world-class teaching hospitals. The curriculum emphasizes patient-centered care and prepares students for diverse medical careers.",
+    "requirements": [
+      "Bachelor's degree preferably in life sciences",
+      "MCAT score (minimum 500)",
+      "Volunteer and healthcare experience",
+      "CASPer test",
+      "Strong reference letters"
+    ]
+  },
+  {
+    "id": "course_ca_005",
+    "universityId": "uni_ca_001",
+    "name": "Master of Applied Science in Electrical Engineering",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 50000,
+    "overview": "This research-intensive program explores advanced topics in power systems, signal processing, and communications. Students work with leading researchers on innovative engineering solutions.",
+    "requirements": [
+      "Bachelor's in electrical engineering or related field",
+      "Minimum B+ average",
+      "TOEFL iBT 93+ or IELTS 7.0+",
+      "Research statement and references"
+    ]
+  },
+  {
+    "id": "course_ca_006",
+    "universityId": "uni_ca_002",
+    "name": "Bachelor of Commerce",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 54000,
+    "overview": "The Sauder School of Business offers an innovative commerce program with co-op opportunities and global exchange. Students develop business acumen through experiential learning and real-world projects.",
+    "requirements": [
+      "High school diploma with 84%+ average",
+      "Pre-Calculus 12 required",
+      "TOEFL iBT 90+ or IELTS 6.5+",
+      "Personal profile"
+    ]
+  },
+  {
+    "id": "course_ca_007",
+    "universityId": "uni_ca_002",
+    "name": "Master of Data Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "10 months",
+    "tuitionFee": 58000,
+    "overview": "An intensive professional program in data science, machine learning, and big data analytics. Students complete a capstone project with industry partners and gain practical experience.",
+    "requirements": [
+      "Bachelor's degree in quantitative discipline",
+      "Programming experience",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Strong mathematics background",
+      "Video interview"
+    ]
+  },
+  {
+    "id": "course_ca_008",
+    "universityId": "uni_ca_002",
+    "name": "Bachelor of Applied Science in Civil Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 55000,
+    "overview": "This program trains engineers in infrastructure design, construction management, and environmental engineering. Students work on sustainable infrastructure projects and participate in co-op programs.",
+    "requirements": [
+      "High school diploma with 85%+ average",
+      "Chemistry, Physics 12, Pre-Calculus 12 required",
+      "TOEFL iBT 90+ or IELTS 6.5+",
+      "Personal profile"
+    ]
+  },
+  {
+    "id": "course_ca_009",
+    "universityId": "uni_ca_002",
+    "name": "Master of Public Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "2 years",
+    "tuitionFee": 42000,
+    "overview": "This program addresses population health challenges through epidemiology, health policy, and community health. Students conduct research and complete practicum placements with health organizations.",
+    "requirements": [
+      "Bachelor's degree in any field",
+      "TOEFL iBT 90+ or IELTS 6.5+",
+      "Work or volunteer experience in health preferred",
+      "Statement of intent"
+    ]
+  },
+  {
+    "id": "course_ca_010",
+    "universityId": "uni_ca_002",
+    "name": "Bachelor of Science in Psychology",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "4 years",
+    "tuitionFee": 45000,
+    "overview": "This program explores human behavior, cognition, and mental processes through research and experiential learning. Students can pursue clinical, developmental, or cognitive psychology tracks.",
+    "requirements": [
+      "High school diploma with 78%+ average",
+      "Pre-Calculus 12 or higher mathematics",
+      "TOEFL iBT 90+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_011",
+    "universityId": "uni_ca_003",
+    "name": "Bachelor of Science in Biomedical Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 54000,
+    "overview": "This interdisciplinary program combines engineering principles with medical and biological sciences. Students design medical devices, imaging systems, and biomedical technologies.",
+    "requirements": [
+      "High school diploma with 90%+ average",
+      "Advanced mathematics, chemistry, and physics required",
+      "TOEFL iBT 90+ or IELTS 6.5+",
+      "Strong science background"
+    ]
+  },
+  {
+    "id": "course_ca_012",
+    "universityId": "uni_ca_003",
+    "name": "Master of Management Analytics",
+    "level": "PG",
+    "field": "Business",
+    "duration": "12 months",
+    "tuitionFee": 48000,
+    "overview": "Desautels' MMA program trains professionals in data-driven decision-making and business analytics. Students develop expertise in predictive modeling, optimization, and data visualization.",
+    "requirements": [
+      "Bachelor's degree with quantitative background",
+      "GMAT/GRE recommended",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Work experience preferred",
+      "Video essay"
+    ]
+  },
+  {
+    "id": "course_ca_013",
+    "universityId": "uni_ca_003",
+    "name": "Bachelor of Arts in Economics",
+    "level": "UG",
+    "field": "Business",
+    "duration": "3 years",
+    "tuitionFee": 48000,
+    "overview": "This program provides rigorous training in economic theory, econometrics, and policy analysis. Students develop analytical skills for careers in finance, consulting, and public policy.",
+    "requirements": [
+      "High school diploma with 85%+ average",
+      "Mathematics required",
+      "TOEFL iBT 90+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_014",
+    "universityId": "uni_ca_003",
+    "name": "Doctor of Medicine and Master of Surgery",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 72000,
+    "overview": "McGill's medical program is one of Canada's most prestigious, offering clinical training at Montreal's teaching hospitals. The curriculum emphasizes evidence-based medicine and patient care.",
+    "requirements": [
+      "Bachelor's degree with strong science background",
+      "MCAT score required",
+      "Extensive healthcare experience",
+      "CASPer test",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_ca_015",
+    "universityId": "uni_ca_003",
+    "name": "Master of Science in Computer Science",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 45000,
+    "overview": "This research-focused program covers advanced topics in AI, machine learning, and theoretical computer science. Students work with renowned faculty on cutting-edge research projects.",
+    "requirements": [
+      "Bachelor's in computer science or related field",
+      "Strong programming and mathematics background",
+      "TOEFL iBT 86+ or IELTS 6.5+",
+      "Research statement and references"
+    ]
+  },
+  {
+    "id": "course_ca_016",
+    "universityId": "uni_ca_004",
+    "name": "Bachelor of Science in Nursing",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 42000,
+    "overview": "This program prepares registered nurses through comprehensive clinical and theoretical training. Students gain hands-on experience in hospitals and community health settings.",
+    "requirements": [
+      "High school diploma with 75%+ average",
+      "Biology 30 and Chemistry 30 required",
+      "TOEFL iBT 90+ or IELTS 6.5+",
+      "CASPer test"
+    ]
+  },
+  {
+    "id": "course_ca_017",
+    "universityId": "uni_ca_004",
+    "name": "Master of Engineering in Artificial Intelligence",
+    "level": "PG",
+    "field": "IT",
+    "duration": "16 months",
+    "tuitionFee": 38000,
+    "overview": "This professional program focuses on AI applications, deep learning, and intelligent systems. Students complete industry projects and gain practical experience in AI development.",
+    "requirements": [
+      "Bachelor's in engineering or computer science",
+      "Programming experience required",
+      "TOEFL iBT 90+ or IELTS 6.5+",
+      "Strong mathematics background"
+    ]
+  },
+  {
+    "id": "course_ca_018",
+    "universityId": "uni_ca_004",
+    "name": "Bachelor of Commerce in Finance",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 44000,
+    "overview": "This program provides comprehensive training in financial markets, corporate finance, and investment analysis. Students participate in trading simulations and industry competitions.",
+    "requirements": [
+      "High school diploma with 80%+ average",
+      "Mathematics 30-1 required",
+      "TOEFL iBT 90+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_019",
+    "universityId": "uni_ca_004",
+    "name": "Master of Science in Environmental Engineering",
+    "level": "PG",
+    "field": "Engineering",
+    "duration": "2 years",
+    "tuitionFee": 35000,
+    "overview": "This program addresses environmental challenges through sustainable engineering solutions. Research focuses on water quality, air pollution control, and renewable energy systems.",
+    "requirements": [
+      "Bachelor's in engineering or environmental science",
+      "TOEFL iBT 90+ or IELTS 6.5+",
+      "Research proposal"
+    ]
+  },
+  {
+    "id": "course_ca_020",
+    "universityId": "uni_ca_004",
+    "name": "Bachelor of Science in Petroleum Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 45000,
+    "overview": "Located in Canada's energy capital, this program trains engineers in oil and gas extraction, reservoir engineering, and energy systems. Students gain industry experience through co-op placements.",
+    "requirements": [
+      "High school diploma with 80%+ average",
+      "Chemistry 30, Physics 30, Mathematics 30-1 required",
+      "TOEFL iBT 90+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_021",
+    "universityId": "uni_ca_005",
+    "name": "Bachelor of Health Sciences",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 48000,
+    "overview": "McMaster's innovative BHSc program uses problem-based learning to explore health from multiple perspectives. Students develop critical thinking and leadership skills for health careers.",
+    "requirements": [
+      "High school diploma with 90%+ average",
+      "Advanced Functions, Chemistry, Biology required",
+      "TOEFL iBT 86+ or IELTS 6.5+",
+      "Supplementary application and video"
+    ]
+  },
+  {
+    "id": "course_ca_022",
+    "universityId": "uni_ca_005",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "12 months",
+    "tuitionFee": 90000,
+    "overview": "DeGroote's co-op MBA combines intensive coursework with eight months of paid work experience. The program emphasizes strategic leadership and practical business skills.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "Minimum 2 years work experience",
+      "GMAT 550+ or GRE equivalent",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_ca_023",
+    "universityId": "uni_ca_005",
+    "name": "Bachelor of Engineering in Chemical Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 50000,
+    "overview": "This program trains engineers in process design, materials science, and sustainable manufacturing. Students complete co-op work terms and gain practical industry experience.",
+    "requirements": [
+      "High school diploma with 85%+ average",
+      "Advanced Functions, Calculus, Chemistry, Physics required",
+      "TOEFL iBT 86+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_024",
+    "universityId": "uni_ca_005",
+    "name": "Master of Public Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "2 years",
+    "tuitionFee": 40000,
+    "overview": "This program prepares public health professionals through epidemiology, biostatistics, and health policy courses. Students complete practicum placements with health organizations.",
+    "requirements": [
+      "Bachelor's degree in health or related field",
+      "TOEFL iBT 92+ or IELTS 6.5+",
+      "Work experience preferred",
+      "Statement of intent and references"
+    ]
+  },
+  {
+    "id": "course_ca_025",
+    "universityId": "uni_ca_005",
+    "name": "Bachelor of Science in Biochemistry",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 46000,
+    "overview": "This program explores molecular processes in living organisms with extensive laboratory research opportunities. Students can pursue careers in research, medicine, or biotechnology.",
+    "requirements": [
+      "High school diploma with 80%+ average",
+      "Advanced Functions, Calculus, Chemistry, Biology required",
+      "TOEFL iBT 86+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_026",
+    "universityId": "uni_ca_006",
+    "name": "Bachelor of Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 55000,
+    "overview": "Waterloo's CS program is Canada's top computer science program with mandatory co-op work terms. Students gain extensive industry experience while learning cutting-edge technologies.",
+    "requirements": [
+      "High school diploma with 90%+ average",
+      "Advanced Functions, Calculus and Vectors required",
+      "TOEFL iBT 90+ or IELTS 7.0+",
+      "AIF with written responses"
+    ]
+  },
+  {
+    "id": "course_ca_027",
+    "universityId": "uni_ca_006",
+    "name": "Master of Engineering in Software Engineering",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 48000,
+    "overview": "This professional program focuses on advanced software development, architecture, and project management. Students work on real-world projects with industry partners.",
+    "requirements": [
+      "Bachelor's in computer science or software engineering",
+      "Strong programming skills",
+      "TOEFL iBT 90+ or IELTS 7.0+",
+      "Work experience preferred"
+    ]
+  },
+  {
+    "id": "course_ca_028",
+    "universityId": "uni_ca_006",
+    "name": "Bachelor of Mathematics",
+    "level": "UG",
+    "field": "Science",
+    "duration": "4 years",
+    "tuitionFee": 52000,
+    "overview": "This flexible program allows specialization in pure math, applied math, statistics, or operations research. Co-op opportunities provide practical experience in quantitative fields.",
+    "requirements": [
+      "High school diploma with 85%+ average",
+      "Advanced Functions, Calculus and Vectors required",
+      "TOEFL iBT 90+ or IELTS 7.0+",
+      "AIF"
+    ]
+  },
+  {
+    "id": "course_ca_029",
+    "universityId": "uni_ca_006",
+    "name": "Master of Business, Entrepreneurship and Technology",
+    "level": "PG",
+    "field": "Business",
+    "duration": "16 months",
+    "tuitionFee": 75000,
+    "overview": "This unique program combines business education with technical knowledge for aspiring tech entrepreneurs. Students develop and launch their own startups with mentorship support.",
+    "requirements": [
+      "Bachelor's degree in any field",
+      "GMAT/GRE recommended",
+      "TOEFL iBT 100+ or IELTS 7.5+",
+      "Entrepreneurial experience or interest",
+      "Video interview"
+    ]
+  },
+  {
+    "id": "course_ca_030",
+    "universityId": "uni_ca_006",
+    "name": "Bachelor of Applied Science in Mechatronics Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 54000,
+    "overview": "This integrated program combines mechanical, electrical, and computer engineering with robotics. Students design intelligent systems through extensive project work and co-op terms.",
+    "requirements": [
+      "High school diploma with 88%+ average",
+      "Advanced Functions, Calculus, Chemistry, Physics required",
+      "TOEFL iBT 90+ or IELTS 7.0+",
+      "AIF"
+    ]
+  },
+  {
+    "id": "course_ca_031",
+    "universityId": "uni_ca_007",
+    "name": "Bachelor of Medical Sciences",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 50000,
+    "overview": "This program provides strong preparation for medical school and health careers through comprehensive science education. Students can specialize in various biomedical disciplines.",
+    "requirements": [
+      "High school diploma with 85%+ average",
+      "Biology, Chemistry, Mathematics required",
+      "TOEFL iBT 83+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_032",
+    "universityId": "uni_ca_007",
+    "name": "Master of Business Administration (Ivey)",
+    "level": "PG",
+    "field": "Business",
+    "duration": "12 months",
+    "tuitionFee": 110000,
+    "overview": "Ivey's MBA is Canada's premier business program using the case method. Students analyze over 400 real business cases and develop leadership and strategic thinking skills.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "Minimum 3 years work experience",
+      "GMAT 640+ or GRE equivalent",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Video essay and interview"
+    ]
+  },
+  {
+    "id": "course_ca_033",
+    "universityId": "uni_ca_007",
+    "name": "Bachelor of Engineering Science",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 52000,
+    "overview": "This program offers broad engineering education with specialization options in mechanical, electrical, civil, and other disciplines. Students complete design projects and internships.",
+    "requirements": [
+      "High school diploma with 85%+ average",
+      "Advanced Functions, Calculus, Chemistry, Physics required",
+      "TOEFL iBT 83+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_034",
+    "universityId": "uni_ca_007",
+    "name": "Master of Science in Epidemiology",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "2 years",
+    "tuitionFee": 38000,
+    "overview": "This program trains researchers in disease patterns, risk factors, and public health interventions. Students conduct original research and collaborate with health agencies.",
+    "requirements": [
+      "Bachelor's degree with strong science background",
+      "TOEFL iBT 86+ or IELTS 6.0+",
+      "Statistics coursework recommended",
+      "Research proposal"
+    ]
+  },
+  {
+    "id": "course_ca_035",
+    "universityId": "uni_ca_007",
+    "name": "Bachelor of Arts in Psychology",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "4 years",
+    "tuitionFee": 45000,
+    "overview": "This program explores human behavior, cognition, and mental health through research and practical applications. Students can pursue clinical, developmental, or cognitive psychology tracks.",
+    "requirements": [
+      "High school diploma with 80%+ average",
+      "Grade 12U English required",
+      "TOEFL iBT 83+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_036",
+    "universityId": "uni_ca_008",
+    "name": "Bachelor of Commerce",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 52000,
+    "overview": "Smith School of Business offers an intimate commerce program with experiential learning and global opportunities. Students develop business skills through case competitions and internships.",
+    "requirements": [
+      "High school diploma with 85%+ average",
+      "Advanced Functions or Calculus required",
+      "TOEFL iBT 88+ or IELTS 6.5+",
+      "PSE required"
+    ]
+  },
+  {
+    "id": "course_ca_037",
+    "universityId": "uni_ca_008",
+    "name": "Master of Science in Computing",
+    "level": "PG",
+    "field": "IT",
+    "duration": "2 years",
+    "tuitionFee": 42000,
+    "overview": "This research program covers advanced computing topics including AI, software engineering, and cybersecurity. Students work with faculty on innovative research projects.",
+    "requirements": [
+      "Bachelor's in computer science or related field",
+      "Strong programming and mathematics background",
+      "TOEFL iBT 88+ or IELTS 7.0+",
+      "Research statement and references"
+    ]
+  },
+  {
+    "id": "course_ca_038",
+    "universityId": "uni_ca_008",
+    "name": "Bachelor of Science in Engineering Physics",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 54000,
+    "overview": "This rigorous program combines engineering and physics with focus on innovation and research. Students work on cutting-edge projects in nanotechnology, photonics, and quantum computing.",
+    "requirements": [
+      "High school diploma with 88%+ average",
+      "Advanced Functions, Calculus, Chemistry, Physics required",
+      "TOEFL iBT 88+ or IELTS 6.5+",
+      "PSE"
+    ]
+  },
+  {
+    "id": "course_ca_039",
+    "universityId": "uni_ca_008",
+    "name": "Doctor of Medicine",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 68000,
+    "overview": "Queen's medical program emphasizes early clinical exposure and integrated learning. Students train at Kingston teaching hospitals and develop patient-centered care skills.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "MCAT score required",
+      "Healthcare and volunteer experience",
+      "CASPer test",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_ca_040",
+    "universityId": "uni_ca_008",
+    "name": "Master of Public Administration",
+    "level": "PG",
+    "field": "Social Sciences",
+    "duration": "2 years",
+    "tuitionFee": 36000,
+    "overview": "This professional program prepares leaders for public sector careers through policy analysis, strategic management, and governance courses. Students complete practicum placements with government agencies.",
+    "requirements": [
+      "Bachelor's degree in any field",
+      "TOEFL iBT 88+ or IELTS 7.0+",
+      "Work experience preferred",
+      "Statement of interest"
+    ]
+  },
+  {
+    "id": "course_ca_041",
+    "universityId": "uni_ca_009",
+    "name": "Bachelor of Science in Computer Science",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 46000,
+    "overview": "SFU's CS program offers co-op opportunities and specializations in AI, cybersecurity, and software systems. Students gain practical experience through industry placements.",
+    "requirements": [
+      "High school diploma with 75%+ average",
+      "Pre-Calculus 12 or Calculus 12 required",
+      "TOEFL iBT 88+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_042",
+    "universityId": "uni_ca_009",
+    "name": "Master of Business Administration",
+    "level": "PG",
+    "field": "Business",
+    "duration": "16 months",
+    "tuitionFee": 65000,
+    "overview": "Beedie's MBA focuses on entrepreneurship, innovation, and sustainable business practices. Students work on consulting projects and develop leadership skills.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "Minimum 2 years work experience",
+      "GMAT 550+ or GRE equivalent",
+      "TOEFL iBT 100+ or IELTS 7.0+",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_ca_043",
+    "universityId": "uni_ca_009",
+    "name": "Bachelor of Arts in Psychology",
+    "level": "UG",
+    "field": "Social Sciences",
+    "duration": "4 years",
+    "tuitionFee": 42000,
+    "overview": "This program explores human behavior through research methods and applied psychology. Students can specialize in areas like clinical, developmental, or cognitive psychology.",
+    "requirements": [
+      "High school diploma with 70%+ average",
+      "English 12 required",
+      "TOEFL iBT 88+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_044",
+    "universityId": "uni_ca_009",
+    "name": "Master of Public Health",
+    "level": "PG",
+    "field": "Medicine",
+    "duration": "2 years",
+    "tuitionFee": 38000,
+    "overview": "This interdisciplinary program addresses population health through epidemiology, health policy, and community health. Students complete practicum with health organizations.",
+    "requirements": [
+      "Bachelor's degree in health or related field",
+      "TOEFL iBT 93+ or IELTS 7.0+",
+      "Work or volunteer experience preferred",
+      "Statement of intent"
+    ]
+  },
+  {
+    "id": "course_ca_045",
+    "universityId": "uni_ca_009",
+    "name": "Bachelor of Business Administration",
+    "level": "UG",
+    "field": "Business",
+    "duration": "4 years",
+    "tuitionFee": 44000,
+    "overview": "This program provides comprehensive business education with co-op work terms and international exchange opportunities. Students develop skills in accounting, marketing, and management.",
+    "requirements": [
+      "High school diploma with 73%+ average",
+      "Pre-Calculus 12 required",
+      "TOEFL iBT 88+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_046",
+    "universityId": "uni_ca_010",
+    "name": "Bachelor of Science in Software Engineering",
+    "level": "UG",
+    "field": "IT",
+    "duration": "4 years",
+    "tuitionFee": 48000,
+    "overview": "This program combines software development with engineering principles and includes mandatory internship terms. Students gain practical experience building enterprise-scale applications.",
+    "requirements": [
+      "High school diploma with 80%+ average",
+      "Mathematics 30-1, Chemistry 30, Physics 30 required",
+      "TOEFL iBT 86+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_047",
+    "universityId": "uni_ca_010",
+    "name": "Master of Business Administration (Haskayne)",
+    "level": "PG",
+    "field": "Business",
+    "duration": "16 months",
+    "tuitionFee": 75000,
+    "overview": "Haskayne's MBA emphasizes energy, entrepreneurship, and innovation with strong connections to Calgary's business community. Students complete consulting projects with industry partners.",
+    "requirements": [
+      "Bachelor's degree with strong academic record",
+      "Minimum 2 years work experience",
+      "GMAT 550+ or GRE equivalent",
+      "TOEFL iBT 97+ or IELTS 7.0+",
+      "Interview"
+    ]
+  },
+  {
+    "id": "course_ca_048",
+    "universityId": "uni_ca_010",
+    "name": "Bachelor of Science in Mechanical Engineering",
+    "level": "UG",
+    "field": "Engineering",
+    "duration": "4 years",
+    "tuitionFee": 49000,
+    "overview": "This program covers thermodynamics, mechanics, and manufacturing with focus on energy and aerospace applications. Students complete design projects and internships.",
+    "requirements": [
+      "High school diploma with 78%+ average",
+      "Mathematics 30-1, Chemistry 30, Physics 30 required",
+      "TOEFL iBT 86+ or IELTS 6.5+"
+    ]
+  },
+  {
+    "id": "course_ca_049",
+    "universityId": "uni_ca_010",
+    "name": "Master of Science in Data Science and Analytics",
+    "level": "PG",
+    "field": "IT",
+    "duration": "16 months",
+    "tuitionFee": 42000,
+    "overview": "This professional program trains data scientists in machine learning, big data, and analytics. Students work on capstone projects with industry partners.",
+    "requirements": [
+      "Bachelor's degree in quantitative field",
+      "Programming experience",
+      "TOEFL iBT 97+ or IELTS 7.0+",
+      "Strong mathematics and statistics background"
+    ]
+  },
+  {
+    "id": "course_ca_050",
+    "universityId": "uni_ca_010",
+    "name": "Bachelor of Science in Nursing",
+    "level": "UG",
+    "field": "Medicine",
+    "duration": "4 years",
+    "tuitionFee": 46000,
+    "overview": "This program prepares registered nurses through clinical practice and theoretical education. Students train in hospitals and community health settings throughout Calgary.",
+    "requirements": [
+      "High school diploma with 75%+ average",
+      "Biology 30, Chemistry 30, Mathematics 30-1 required",
+      "TOEFL iBT 92+ or IELTS 7.0+",
+      "CASPer test"
+    ]
+  }
+]

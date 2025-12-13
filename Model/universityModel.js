@@ -2,10 +2,32 @@ const mongoose = require("mongoose");
 
 const universitySchema = new mongoose.Schema(
   {
-    name: { type: String, required: true },
-    tagline: { type: String },
-    description: { type: String },
-    logo: { type: String }, // multer filename
+    uniId: {
+      type: String,
+      required: true,
+      unique: true,
+      index: true,
+    },
+
+    name: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+
+    tagline: {
+      type: String,
+      trim: true,
+    },
+
+    description: {
+      type: String,
+      trim: true,
+    },
+
+    logo: {
+      type: String, // multer filename or URL
+    },
 
     type: {
       type: String,
@@ -13,17 +35,48 @@ const universitySchema = new mongoose.Schema(
       default: "Public",
     },
 
+    website: {
+      type: String,
+      trim: true,
+    },
+
     // Location
-    country: { type: String, required: true },
-    city: { type: String, required: true },
+    country: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+
+    city: {
+      type: String,
+      required: true,
+      trim: true,
+    },
 
     // Stats
-    acceptanceRate: { type: Number },
-    ranking: { type: Number },
-    totalStudents: { type: Number },
-    internationalStudentsPercentage: { type: Number },
+    acceptanceRate: {
+      type: Number, // %
+      min: 0,
+      max: 100,
+    },
 
-    // Tuition
+    ranking: {
+      type: Number,
+      min: 1,
+    },
+
+    totalStudents: {
+      type: Number,
+      min: 0,
+    },
+
+    internationalStudentsPercentage: {
+      type: Number,
+      min: 0,
+      max: 100,
+    },
+
+    // Tuition & Living Cost (yearly)
     tuitionMin: Number,
     tuitionMax: Number,
     livingCostMin: Number,
@@ -35,16 +88,24 @@ const universitySchema = new mongoose.Schema(
     otherRequirements: [String],
 
     // Intakes
-    majorIntakes: [String],
+    majorIntakes: [String], // Fall, Spring, etc.
     applicationDeadlines: [String],
   },
   { timestamps: true }
 );
+
+// Indexes
 universitySchema.index({ country: 1, city: 1 });
 universitySchema.index({ ranking: 1 });
 universitySchema.index({ tuitionMin: 1, tuitionMax: 1 });
-// create text index for name, tagline, description
-universitySchema.index({ name: "text", tagline: "text", description: "text", city: "text", country: "text" });
 
+// Full-text search
+universitySchema.index({
+  name: "text",
+  tagline: "text",
+  description: "text",
+  city: "text",
+  country: "text",
+});
 
 module.exports = mongoose.model("University", universitySchema);
