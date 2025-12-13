@@ -1,0 +1,1600 @@
+[
+  {
+    "id": "uni_jp_001",
+    "name": "University of Tokyo",
+    "tagline": "Excellence in Research and Innovation",
+    "description": "The University of Tokyo is Japan's leading research institution, consistently ranked among the world's top universities. It offers comprehensive programs across sciences, humanities, and engineering.",
+    "logo": "uni_jp_001.png",
+    "type": "Public",
+    "website": "https://www.u-tokyo.ac.jp",
+    "country": "Japan",
+    "city": "Tokyo",
+    "acceptanceRate": 34,
+    "ranking": 23,
+    "totalStudents": 28000,
+    "internationalStudentsPercentage": 12,
+    "tuitionMin": 4800,
+    "tuitionMax": 5400,
+    "livingCostMin": 10000,
+    "livingCostMax": 15000,
+    "academicRequirements": [
+      "High school diploma or equivalent",
+      "Minimum GPA of 3.5/4.0",
+      "Entrance examination (EJU for international students)"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 80+ or IELTS 6.5+",
+      "Japanese Language Proficiency Test (JLPT) N2 or higher for some programs"
+    ],
+    "otherRequirements": [
+      "Statement of purpose and recommendation letters"
+    ],
+    "majorIntakes": ["April", "September"],
+    "applicationDeadlines": ["November 30", "May 31"]
+  },
+  {
+    "id": "uni_jp_002",
+    "name": "Kyoto University",
+    "tagline": "Spirit of Freedom and Academic Excellence",
+    "description": "Kyoto University is renowned for its research-oriented approach and has produced numerous Nobel laureates. The university emphasizes independent thinking and academic freedom.",
+    "logo": "uni_jp_002.png",
+    "type": "Public",
+    "website": "https://www.kyoto-u.ac.jp",
+    "country": "Japan",
+    "city": "Kyoto",
+    "acceptanceRate": 36,
+    "ranking": 36,
+    "totalStudents": 22000,
+    "internationalStudentsPercentage": 10,
+    "tuitionMin": 4800,
+    "tuitionMax": 5400,
+    "livingCostMin": 9000,
+    "livingCostMax": 13000,
+    "academicRequirements": [
+      "High school diploma with strong academic record",
+      "Minimum GPA of 3.4/4.0",
+      "Subject-specific entrance examination"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 79+ or IELTS 6.0+",
+      "JLPT N2 for Japanese-taught programs"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["April", "October"],
+    "applicationDeadlines": ["December 15", "June 15"]
+  },
+  {
+    "id": "uni_jp_003",
+    "name": "Osaka University",
+    "tagline": "Live Locally, Grow Globally",
+    "description": "Osaka University is a leading comprehensive research university with strengths in sciences, engineering, and medicine. It actively promotes international collaboration and student exchange.",
+    "logo": "uni_jp_003.png",
+    "type": "Public",
+    "website": "https://www.osaka-u.ac.jp",
+    "country": "Japan",
+    "city": "Osaka",
+    "acceptanceRate": 40,
+    "ranking": 68,
+    "totalStudents": 23000,
+    "internationalStudentsPercentage": 11,
+    "tuitionMin": 4800,
+    "tuitionMax": 5400,
+    "livingCostMin": 8500,
+    "livingCostMax": 12500,
+    "academicRequirements": [
+      "Completion of 12 years of formal education",
+      "GPA of 3.2/4.0 or above",
+      "Entrance examination or EJU scores"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 75+ or IELTS 5.5+",
+      "JLPT N2 or equivalent for certain programs"
+    ],
+    "otherRequirements": [
+      "Personal statement and academic transcripts"
+    ],
+    "majorIntakes": ["April", "October"],
+    "applicationDeadlines": ["January 10", "July 10"]
+  },
+  {
+    "id": "uni_jp_004",
+    "name": "Tokyo Institute of Technology",
+    "tagline": "Creating Knowledge Society",
+    "description": "Tokyo Institute of Technology specializes in science and engineering education and research. It's Japan's top technical university with cutting-edge facilities and industry partnerships.",
+    "logo": "uni_jp_004.png",
+    "type": "Public",
+    "website": "https://www.titech.ac.jp",
+    "country": "Japan",
+    "city": "Tokyo",
+    "acceptanceRate": 25,
+    "ranking": 56,
+    "totalStudents": 10000,
+    "internationalStudentsPercentage": 15,
+    "tuitionMin": 4800,
+    "tuitionMax": 5400,
+    "livingCostMin": 10500,
+    "livingCostMax": 15500,
+    "academicRequirements": [
+      "Strong background in mathematics and sciences",
+      "Minimum GPA of 3.5/4.0",
+      "Entrance examination focusing on STEM subjects"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 85+ or IELTS 6.5+",
+      "Some programs require JLPT N2"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["April", "September"],
+    "applicationDeadlines": ["December 1", "May 15"]
+  },
+  {
+    "id": "uni_jp_005",
+    "name": "Tohoku University",
+    "tagline": "Open Door Policy Since 1907",
+    "description": "Tohoku University is known for its progressive and open approach to education, being one of the first Japanese universities to admit women. It excels in research and innovation.",
+    "logo": "uni_jp_005.png",
+    "type": "Public",
+    "website": "https://www.tohoku.ac.jp",
+    "country": "Japan",
+    "city": "Sendai",
+    "acceptanceRate": 42,
+    "ranking": 82,
+    "totalStudents": 18000,
+    "internationalStudentsPercentage": 13,
+    "tuitionMin": 4800,
+    "tuitionMax": 5400,
+    "livingCostMin": 7500,
+    "livingCostMax": 11000,
+    "academicRequirements": [
+      "High school certificate or equivalent",
+      "GPA of 3.0/4.0 minimum",
+      "EJU or institutional entrance exam"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 72+ or IELTS 5.5+",
+      "JLPT N2 for Japanese-medium programs"
+    ],
+    "otherRequirements": [
+      "Research proposal for graduate programs"
+    ],
+    "majorIntakes": ["April", "October"],
+    "applicationDeadlines": ["January 15", "July 15"]
+  },
+  {
+    "id": "uni_jp_006",
+    "name": "Waseda University",
+    "tagline": "Independence of Learning, Practical Utilization of Knowledge",
+    "description": "Waseda University is one of Japan's most prestigious private universities with a diverse international community. It offers extensive English-taught programs and strong industry connections.",
+    "logo": "uni_jp_006.png",
+    "type": "Private",
+    "website": "https://www.waseda.jp",
+    "country": "Japan",
+    "city": "Tokyo",
+    "acceptanceRate": 45,
+    "ranking": 203,
+    "totalStudents": 50000,
+    "internationalStudentsPercentage": 18,
+    "tuitionMin": 12000,
+    "tuitionMax": 18000,
+    "livingCostMin": 10000,
+    "livingCostMax": 15000,
+    "academicRequirements": [
+      "High school diploma with good academic standing",
+      "Minimum GPA of 3.0/4.0",
+      "Department-specific entrance examination"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 80+ or IELTS 6.5+ for English programs",
+      "JLPT N1 for Japanese programs"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["April", "September"],
+    "applicationDeadlines": ["February 1", "June 30"]
+  },
+  {
+    "id": "uni_jp_007",
+    "name": "Keio University",
+    "tagline": "Cultivating Personality and Practical Learning",
+    "description": "Keio University is Japan's oldest private university with a rich history of producing leaders in business and politics. It emphasizes practical learning and global perspectives.",
+    "logo": "uni_jp_007.png",
+    "type": "Private",
+    "website": "https://www.keio.ac.jp",
+    "country": "Japan",
+    "city": "Tokyo",
+    "acceptanceRate": 40,
+    "ranking": 197,
+    "totalStudents": 33000,
+    "internationalStudentsPercentage": 14,
+    "tuitionMin": 13000,
+    "tuitionMax": 19000,
+    "livingCostMin": 10500,
+    "livingCostMax": 15500,
+    "academicRequirements": [
+      "Completion of secondary education",
+      "GPA of 3.2/4.0 or above",
+      "Entrance examination and interview"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 85+ or IELTS 6.5+",
+      "JLPT N1 for certain faculties"
+    ],
+    "otherRequirements": [
+      "Essay and recommendation letters"
+    ],
+    "majorIntakes": ["April", "September"],
+    "applicationDeadlines": ["January 20", "June 15"]
+  },
+  {
+    "id": "uni_jp_008",
+    "name": "Nagoya University",
+    "tagline": "Courage to Be Innovative",
+    "description": "Nagoya University is a leading national university with particular strengths in natural sciences and engineering. It has produced multiple Nobel Prize winners and emphasizes research excellence.",
+    "logo": "uni_jp_008.png",
+    "type": "Public",
+    "website": "https://www.nagoya-u.ac.jp",
+    "country": "Japan",
+    "city": "Nagoya",
+    "acceptanceRate": 38,
+    "ranking": 110,
+    "totalStudents": 16000,
+    "internationalStudentsPercentage": 12,
+    "tuitionMin": 4800,
+    "tuitionMax": 5400,
+    "livingCostMin": 8000,
+    "livingCostMax": 11500,
+    "academicRequirements": [
+      "High school graduation certificate",
+      "Minimum GPA of 3.3/4.0",
+      "EJU or university entrance examination"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 76+ or IELTS 6.0+",
+      "JLPT N2 or higher recommended"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["April", "October"],
+    "applicationDeadlines": ["December 20", "June 20"]
+  },
+  {
+    "id": "uni_jp_009",
+    "name": "Hokkaido University",
+    "tagline": "Frontier Spirit and Global Vision",
+    "description": "Hokkaido University is located in Japan's northern island and is known for its pioneering spirit and environmental research. The campus offers a unique blend of nature and academic excellence.",
+    "logo": "uni_jp_009.png",
+    "type": "Public",
+    "website": "https://www.hokudai.ac.jp",
+    "country": "Japan",
+    "city": "Sapporo",
+    "acceptanceRate": 44,
+    "ranking": 145,
+    "totalStudents": 18000,
+    "internationalStudentsPercentage": 11,
+    "tuitionMin": 4800,
+    "tuitionMax": 5400,
+    "livingCostMin": 7000,
+    "livingCostMax": 10500,
+    "academicRequirements": [
+      "Secondary school completion certificate",
+      "GPA of 3.0/4.0 minimum",
+      "Entrance examination scores"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 70+ or IELTS 5.5+",
+      "JLPT N2 for some programs"
+    ],
+    "otherRequirements": [
+      "Statement of purpose"
+    ],
+    "majorIntakes": ["April", "October"],
+    "applicationDeadlines": ["January 31", "July 31"]
+  },
+  {
+    "id": "uni_jp_010",
+    "name": "Sophia University",
+    "tagline": "For Others, With Others",
+    "description": "Sophia University is a private Catholic university known for its strong international programs and multilingual environment. It offers excellent liberal arts and international relations programs.",
+    "logo": "uni_jp_010.png",
+    "type": "Private",
+    "website": "https://www.sophia.ac.jp",
+    "country": "Japan",
+    "city": "Tokyo",
+    "acceptanceRate": 50,
+    "ranking": 801,
+    "totalStudents": 13000,
+    "internationalStudentsPercentage": 22,
+    "tuitionMin": 11000,
+    "tuitionMax": 16000,
+    "livingCostMin": 10000,
+    "livingCostMax": 14500,
+    "academicRequirements": [
+      "High school diploma or equivalent",
+      "Minimum GPA of 2.8/4.0",
+      "Document screening and interview"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 79+ or IELTS 6.0+ for English programs",
+      "JLPT N1 for Japanese programs"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["April", "September"],
+    "applicationDeadlines": ["February 15", "July 1"]
+  }
+  
+  ,{
+    "id": "uni_ca_001",
+    "name": "University of Toronto",
+    "tagline": "Defy Gravity",
+    "description": "The University of Toronto is Canada's leading research university and consistently ranks among the world's top institutions. With three campuses and a diverse community, it offers exceptional programs across all disciplines.",
+    "logo": "uni_ca_001.png",
+    "type": "Public",
+    "website": "https://www.utoronto.ca",
+    "country": "Canada",
+    "city": "Toronto",
+    "acceptanceRate": 43,
+    "ranking": 21,
+    "totalStudents": 95000,
+    "internationalStudentsPercentage": 25,
+    "tuitionMin": 35000,
+    "tuitionMax": 60000,
+    "livingCostMin": 15000,
+    "livingCostMax": 22000,
+    "academicRequirements": [
+      "High school diploma with minimum 85% average",
+      "Specific prerequisite courses depending on program",
+      "Supplementary application for certain programs"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 100+ (22 in writing) or IELTS 6.5+ (6.0 in each band)",
+      "CAEL 70+ or PTE Academic 65+"
+    ],
+    "otherRequirements": [
+      "Personal profile and essays for certain programs"
+    ],
+    "majorIntakes": ["Fall", "Winter"],
+    "applicationDeadlines": ["January 15", "November 1"]
+  },
+  {
+    "id": "uni_ca_002",
+    "name": "University of British Columbia",
+    "tagline": "A Place of Mind",
+    "description": "UBC is a global center for research and teaching, located in beautiful Vancouver and Kelowna. It consistently ranks among the top 40 universities worldwide and offers a transformative learning experience.",
+    "logo": "uni_ca_002.png",
+    "type": "Public",
+    "website": "https://www.ubc.ca",
+    "country": "Canada",
+    "city": "Vancouver",
+    "acceptanceRate": 52,
+    "ranking": 34,
+    "totalStudents": 71000,
+    "internationalStudentsPercentage": 30,
+    "tuitionMin": 33000,
+    "tuitionMax": 58000,
+    "livingCostMin": 16000,
+    "livingCostMax": 24000,
+    "academicRequirements": [
+      "High school graduation with minimum 80% average",
+      "Completion of required prerequisite courses",
+      "Video interview for certain programs"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 90+ or IELTS 6.5+ (6.0 in each component)",
+      "CAEL 70+ or Duolingo 125+"
+    ],
+    "otherRequirements": [
+      "Personal profile questions"
+    ],
+    "majorIntakes": ["Fall", "Winter"],
+    "applicationDeadlines": ["January 15", "September 1"]
+  },
+  {
+    "id": "uni_ca_003",
+    "name": "McGill University",
+    "tagline": "By Work, All Things Increase and Grow",
+    "description": "McGill University is one of Canada's most internationally renowned universities, located in Montreal. It attracts the best students from around the world and has produced numerous Rhodes Scholars and Nobel laureates.",
+    "logo": "uni_ca_003.png",
+    "type": "Public",
+    "website": "https://www.mcgill.ca",
+    "country": "Canada",
+    "city": "Montreal",
+    "acceptanceRate": 46,
+    "ranking": 30,
+    "totalStudents": 40000,
+    "internationalStudentsPercentage": 32,
+    "tuitionMin": 32000,
+    "tuitionMax": 56000,
+    "livingCostMin": 13000,
+    "livingCostMax": 19000,
+    "academicRequirements": [
+      "High school diploma with minimum 85% average",
+      "Specific prerequisite courses by program",
+      "Provincial or national examinations"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 90+ (21 in each component) or IELTS 6.5+",
+      "CAEL 70+ or Duolingo 120+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["Fall", "Winter"],
+    "applicationDeadlines": ["January 15", "September 15"]
+  },
+  {
+    "id": "uni_ca_004",
+    "name": "University of Alberta",
+    "tagline": "Quaecumque Vera - Whatsoever Things Are True",
+    "description": "The University of Alberta is one of Canada's top research universities with a focus on innovation and discovery. Located in Edmonton, it offers comprehensive programs and strong industry partnerships.",
+    "logo": "uni_ca_004.png",
+    "type": "Public",
+    "website": "https://www.ualberta.ca",
+    "country": "Canada",
+    "city": "Edmonton",
+    "acceptanceRate": 58,
+    "ranking": 110,
+    "totalStudents": 40000,
+    "internationalStudentsPercentage": 20,
+    "tuitionMin": 28000,
+    "tuitionMax": 45000,
+    "livingCostMin": 12000,
+    "livingCostMax": 18000,
+    "academicRequirements": [
+      "High school diploma with minimum 75% average",
+      "Completion of required prerequisite subjects",
+      "Competitive average varies by program"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 90+ (21 in each band) or IELTS 6.5+ (5.5 in each band)",
+      "CAEL 70+ or PTE 61+"
+    ],
+    "otherRequirements": [
+      "Supplementary information form for certain programs"
+    ],
+    "majorIntakes": ["Fall", "Winter"],
+    "applicationDeadlines": ["March 1", "October 1"]
+  },
+  {
+    "id": "uni_ca_005",
+    "name": "McMaster University",
+    "tagline": "By Inspiring Greatness",
+    "description": "McMaster University is known for its innovative problem-based learning approach and world-class research facilities. Located in Hamilton, it excels in health sciences, engineering, and business.",
+    "logo": "uni_ca_005.png",
+    "type": "Public",
+    "website": "https://www.mcmaster.ca",
+    "country": "Canada",
+    "city": "Hamilton",
+    "acceptanceRate": 59,
+    "ranking": 152,
+    "totalStudents": 35000,
+    "internationalStudentsPercentage": 18,
+    "tuitionMin": 30000,
+    "tuitionMax": 50000,
+    "livingCostMin": 13500,
+    "livingCostMax": 19500,
+    "academicRequirements": [
+      "High school diploma with minimum 80% average",
+      "Specific subject requirements by program",
+      "Supplementary application for select programs"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 86+ (20 in each band) or IELTS 6.5+ (6.0 in each band)",
+      "CAEL 70+ or Duolingo 120+"
+    ],
+    "otherRequirements": [
+      "Online personal statement for certain programs"
+    ],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["February 1"]
+  },
+  {
+    "id": "uni_ca_006",
+    "name": "University of Waterloo",
+    "tagline": "Innovation Starts Here",
+    "description": "The University of Waterloo is Canada's most innovative university and a global leader in cooperative education. It's particularly renowned for engineering, computer science, and mathematics programs.",
+    "logo": "uni_ca_006.png",
+    "type": "Public",
+    "website": "https://www.uwaterloo.ca",
+    "country": "Canada",
+    "city": "Waterloo",
+    "acceptanceRate": 53,
+    "ranking": 154,
+    "totalStudents": 42000,
+    "internationalStudentsPercentage": 22,
+    "tuitionMin": 34000,
+    "tuitionMax": 55000,
+    "livingCostMin": 14000,
+    "livingCostMax": 20000,
+    "academicRequirements": [
+      "High school diploma with minimum 80-90% depending on program",
+      "Specific mathematics and science prerequisites for STEM programs",
+      "Admission Information Form (AIF)"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 90+ (25 writing, 25 speaking) or IELTS 7.0+ (6.5 writing, speaking)",
+      "CAEL 70+ or Duolingo 120+"
+    ],
+    "otherRequirements": [
+      "Video interview for certain programs"
+    ],
+    "majorIntakes": ["Fall", "Winter"],
+    "applicationDeadlines": ["February 1", "October 1"]
+  },
+  {
+    "id": "uni_ca_007",
+    "name": "Western University",
+    "tagline": "Inspiring Lives of Leadership and Purpose",
+    "description": "Western University offers an exceptional student experience with strong programs in business, medicine, and social sciences. Located in London, Ontario, it provides a beautiful campus and vibrant student life.",
+    "logo": "uni_ca_007.png",
+    "type": "Public",
+    "website": "https://www.uwo.ca",
+    "country": "Canada",
+    "city": "London",
+    "acceptanceRate": 58,
+    "ranking": 172,
+    "totalStudents": 38000,
+    "internationalStudentsPercentage": 16,
+    "tuitionMin": 32000,
+    "tuitionMax": 52000,
+    "livingCostMin": 13000,
+    "livingCostMax": 18500,
+    "academicRequirements": [
+      "High school diploma with minimum 83% average",
+      "Six Grade 12 U or M courses including prerequisites",
+      "Supplementary information for select programs"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 83+ (20 in each band) or IELTS 6.5+ (6.0 in each band)",
+      "CAEL 70+ or PTE 58+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["January 15"]
+  },
+  {
+    "id": "uni_ca_008",
+    "name": "Queen's University",
+    "tagline": "Wisdom and Knowledge Shall Be the Stability of Thy Times",
+    "description": "Queen's University is a historic institution known for academic excellence and strong school spirit. Located in Kingston, it offers intimate class sizes and exceptional undergraduate education.",
+    "logo": "uni_ca_008.png",
+    "type": "Public",
+    "website": "https://www.queensu.ca",
+    "country": "Canada",
+    "city": "Kingston",
+    "acceptanceRate": 42,
+    "ranking": 246,
+    "totalStudents": 30000,
+    "internationalStudentsPercentage": 14,
+    "tuitionMin": 35000,
+    "tuitionMax": 54000,
+    "livingCostMin": 14000,
+    "livingCostMax": 19000,
+    "academicRequirements": [
+      "High school diploma with minimum 80% average",
+      "Six Grade 12 courses including program-specific prerequisites",
+      "Personal Statement of Experience (PSE)"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 88+ (20 writing, 22 reading, 20 speaking, 20 listening) or IELTS 6.5+",
+      "CAEL 70+ or Duolingo 120+"
+    ],
+    "otherRequirements": [
+      "Supplementary essay questions"
+    ],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["February 1"]
+  },
+  {
+    "id": "uni_ca_009",
+    "name": "Simon Fraser University",
+    "tagline": "Engaging the World",
+    "description": "Simon Fraser University is a comprehensive research university with campuses across Metro Vancouver. It's known for community engagement, co-op programs, and innovative interdisciplinary education.",
+    "logo": "uni_ca_009.png",
+    "type": "Public",
+    "website": "https://www.sfu.ca",
+    "country": "Canada",
+    "city": "Burnaby",
+    "acceptanceRate": 59,
+    "ranking": 318,
+    "totalStudents": 36000,
+    "internationalStudentsPercentage": 23,
+    "tuitionMin": 29000,
+    "tuitionMax": 48000,
+    "livingCostMin": 15000,
+    "livingCostMax": 21000,
+    "academicRequirements": [
+      "High school graduation with minimum 70% average",
+      "Specific course prerequisites depending on program",
+      "Competitive admission requirements vary by faculty"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 88+ (20 in each component) or IELTS 6.5+ (6.0 in each band)",
+      "CAEL 70+ or PTE 65+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["Fall", "Spring", "Summer"],
+    "applicationDeadlines": ["February 28", "October 31"]
+  },
+  {
+    "id": "uni_ca_010",
+    "name": "University of Calgary",
+    "tagline": "Eyes High",
+    "description": "The University of Calgary is a comprehensive research university with a strong entrepreneurial spirit. It's particularly known for energy research, medicine, and business programs.",
+    "logo": "uni_ca_010.png",
+    "type": "Public",
+    "website": "https://www.ucalgary.ca",
+    "country": "Canada",
+    "city": "Calgary",
+    "acceptanceRate": 55,
+    "ranking": 235,
+    "totalStudents": 35000,
+    "internationalStudentsPercentage": 17,
+    "tuitionMin": 30000,
+    "tuitionMax": 50000,
+    "livingCostMin": 13000,
+    "livingCostMax": 18000,
+    "academicRequirements": [
+      "High school diploma with minimum 75% average",
+      "Completion of required prerequisite courses",
+      "Admission average varies by program competitiveness"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 86+ (20 in each band) or IELTS 6.5+",
+      "CAEL 70+ or Duolingo 120+"
+    ],
+    "otherRequirements": [
+      "Supplementary application for certain faculties"
+    ],
+    "majorIntakes": ["Fall", "Winter"],
+    "applicationDeadlines": ["March 1", "October 1"]
+  },
+  {
+    "id": "uni_uk_001",
+    "name": "University of Oxford",
+    "tagline": "The Lord is My Light",
+    "description": "The University of Oxford is the oldest university in the English-speaking world and consistently ranks among the top universities globally. It is renowned for its tutorial system and world-class research across all disciplines.",
+    "logo": "uni_uk_001.png",
+    "type": "Public",
+    "website": "https://www.ox.ac.uk",
+    "country": "United Kingdom",
+    "city": "Oxford",
+    "acceptanceRate": 17,
+    "ranking": 3,
+    "totalStudents": 24000,
+    "internationalStudentsPercentage": 43,
+    "tuitionMin": 9250,
+    "tuitionMax": 39000,
+    "livingCostMin": 14600,
+    "livingCostMax": 20900,
+    "academicRequirements": [
+      "A-levels: AAA or equivalent",
+      "International Baccalaureate: 38-40 points",
+      "Strong performance in relevant subjects"
+    ],
+    "languageRequirements": [
+      "IELTS 7.5 overall (min 7.0 per component)",
+      "TOEFL iBT 110 (min 25 Listening, 25 Reading, 25 Speaking, 24 Writing)"
+    ],
+    "otherRequirements": [
+      "Admissions test and interview for most courses"
+    ],
+    "majorIntakes": ["October"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },
+  {
+    "id": "uni_uk_002",
+    "name": "University of Cambridge",
+    "tagline": "From Here, Light and Sacred Draughts",
+    "description": "The University of Cambridge is one of the world's oldest and most prestigious universities, known for its rich history and academic excellence. Cambridge has produced more Nobel Prize winners than any other institution.",
+    "logo": "uni_uk_002.png",
+    "type": "Public",
+    "website": "https://www.cam.ac.uk",
+    "country": "United Kingdom",
+    "city": "Cambridge",
+    "acceptanceRate": 18,
+    "ranking": 2,
+    "totalStudents": 23000,
+    "internationalStudentsPercentage": 39,
+    "tuitionMin": 9250,
+    "tuitionMax": 63000,
+    "livingCostMin": 13300,
+    "livingCostMax": 19200,
+    "academicRequirements": [
+      "A-levels: A*AA to A*A*A depending on course",
+      "IB: 40-42 points with 776 at Higher Level",
+      "Excellent academic record in relevant subjects"
+    ],
+    "languageRequirements": [
+      "IELTS 7.5 overall (typically min 7.0 per component)",
+      "TOEFL iBT 110 overall (min 25 per component)"
+    ],
+    "otherRequirements": [
+      "Written assessment and interview required"
+    ],
+    "majorIntakes": ["October"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },
+  {
+    "id": "uni_uk_003",
+    "name": "Imperial College London",
+    "tagline": "Knowledge is the Adornment and Protection of the Empire",
+    "description": "Imperial College London is a science-based institution with an international reputation for excellence in teaching and research. It focuses exclusively on science, engineering, medicine and business.",
+    "logo": "uni_uk_003.png",
+    "type": "Public",
+    "website": "https://www.imperial.ac.uk",
+    "country": "United Kingdom",
+    "city": "London",
+    "acceptanceRate": 14,
+    "ranking": 6,
+    "totalStudents": 20000,
+    "internationalStudentsPercentage": 59,
+    "tuitionMin": 9250,
+    "tuitionMax": 38000,
+    "livingCostMin": 16200,
+    "livingCostMax": 22400,
+    "academicRequirements": [
+      "A-levels: AAA to A*A*A depending on course",
+      "IB: 38-42 points",
+      "Strong mathematics and science background"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5-7.0 overall (min 6.0-6.5 per component)",
+      "TOEFL iBT 92-100 overall"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["October"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },
+  {
+    "id": "uni_uk_004",
+    "name": "University College London",
+    "tagline": "Let All Come Who By Merit Deserve The Most Reward",
+    "description": "UCL is London's leading multidisciplinary university with an international reputation for the quality of its research and teaching. It was the first university in England to admit students regardless of religion or gender.",
+    "logo": "uni_uk_004.png",
+    "type": "Public",
+    "website": "https://www.ucl.ac.uk",
+    "country": "United Kingdom",
+    "city": "London",
+    "acceptanceRate": 48,
+    "ranking": 9,
+    "totalStudents": 42000,
+    "internationalStudentsPercentage": 52,
+    "tuitionMin": 9250,
+    "tuitionMax": 35000,
+    "livingCostMin": 15800,
+    "livingCostMax": 21600,
+    "academicRequirements": [
+      "A-levels: A*A*A to ABB depending on course",
+      "IB: 34-40 points",
+      "Strong academic performance in relevant subjects"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5-7.5 overall (varies by program)",
+      "TOEFL iBT 92-109 overall"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["September"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },
+  {
+    "id": "uni_uk_005",
+    "name": "University of Edinburgh",
+    "tagline": "The Learned Can See Twice",
+    "description": "The University of Edinburgh is one of Scotland's ancient universities and a global leader in research and teaching. Located in Scotland's capital city, it offers a vibrant and historic learning environment.",
+    "logo": "uni_uk_005.png",
+    "type": "Public",
+    "website": "https://www.ed.ac.uk",
+    "country": "United Kingdom",
+    "city": "Edinburgh",
+    "acceptanceRate": 46,
+    "ranking": 16,
+    "totalStudents": 35000,
+    "internationalStudentsPercentage": 44,
+    "tuitionMin": 9250,
+    "tuitionMax": 32000,
+    "livingCostMin": 11500,
+    "livingCostMax": 16800,
+    "academicRequirements": [
+      "A-levels: AAA to A*A*A depending on course",
+      "IB: 34-43 points",
+      "Good academic standing in relevant subjects"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5 overall (min 5.5 per component)",
+      "TOEFL iBT 92 overall (min 20 per component)"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["September"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },
+  {
+    "id": "uni_uk_006",
+    "name": "King's College London",
+    "tagline": "Sancte et Sapienter",
+    "description": "King's College London is one of England's oldest and most prestigious universities, renowned for its research excellence and global impact. It has a particularly strong reputation in health sciences and humanities.",
+    "logo": "uni_uk_006.png",
+    "type": "Public",
+    "website": "https://www.kcl.ac.uk",
+    "country": "United Kingdom",
+    "city": "London",
+    "acceptanceRate": 42,
+    "ranking": 35,
+    "totalStudents": 32000,
+    "internationalStudentsPercentage": 47,
+    "tuitionMin": 9250,
+    "tuitionMax": 33000,
+    "livingCostMin": 15800,
+    "livingCostMax": 21500,
+    "academicRequirements": [
+      "A-levels: A*AA to BBB depending on course",
+      "IB: 32-38 points",
+      "Strong academic record"
+    ],
+    "languageRequirements": [
+      "IELTS 6.0-7.5 overall (varies by program)",
+      "TOEFL iBT 80-100 overall"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["September"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },
+  {
+    "id": "uni_uk_007",
+    "name": "University of Manchester",
+    "tagline": "Knowledge, Wisdom, Humanity",
+    "description": "The University of Manchester is a major research institution and the largest single-site university in the UK. It has a proud history of innovation and discovery, including splitting the atom.",
+    "logo": "uni_uk_007.png",
+    "type": "Public",
+    "website": "https://www.manchester.ac.uk",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "acceptanceRate": 56,
+    "ranking": 28,
+    "totalStudents": 40000,
+    "internationalStudentsPercentage": 40,
+    "tuitionMin": 9250,
+    "tuitionMax": 28000,
+    "livingCostMin": 10500,
+    "livingCostMax": 14200,
+    "academicRequirements": [
+      "A-levels: AAA to ABB depending on course",
+      "IB: 32-37 points",
+      "Good performance in relevant subjects"
+    ],
+    "languageRequirements": [
+      "IELTS 6.0-7.0 overall (varies by program)",
+      "TOEFL iBT 80-100 overall"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["September"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },
+  {
+    "id": "uni_uk_008",
+    "name": "London School of Economics",
+    "tagline": "To Understand the Causes of Things",
+    "description": "The London School of Economics specializes in social sciences and has an outstanding global reputation. It produces research and teaching in economics, politics, law, sociology and related areas.",
+    "logo": "uni_uk_008.png",
+    "type": "Public",
+    "website": "https://www.lse.ac.uk",
+    "country": "United Kingdom",
+    "city": "London",
+    "acceptanceRate": 8,
+    "ranking": 45,
+    "totalStudents": 12000,
+    "internationalStudentsPercentage": 71,
+    "tuitionMin": 9250,
+    "tuitionMax": 24000,
+    "livingCostMin": 16500,
+    "livingCostMax": 22300,
+    "academicRequirements": [
+      "A-levels: A*AA to AAB depending on course",
+      "IB: 37-38 points",
+      "Excellent grades in relevant subjects"
+    ],
+    "languageRequirements": [
+      "IELTS 7.0 overall (min 7.0 per component)",
+      "TOEFL iBT 100 overall (min 25 Reading/Listening, 24 Writing/Speaking)"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["September"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },
+  {
+    "id": "uni_uk_009",
+    "name": "University of Warwick",
+    "tagline": "Mind Moves Matter",
+    "description": "The University of Warwick is a leading research university with an entrepreneurial approach to education. It is particularly renowned for its business school and strong industry connections.",
+    "logo": "uni_uk_009.png",
+    "type": "Public",
+    "website": "https://www.warwick.ac.uk",
+    "country": "United Kingdom",
+    "city": "Coventry",
+    "acceptanceRate": 52,
+    "ranking": 64,
+    "totalStudents": 27000,
+    "internationalStudentsPercentage": 38,
+    "tuitionMin": 9250,
+    "tuitionMax": 27000,
+    "livingCostMin": 10800,
+    "livingCostMax": 14600,
+    "academicRequirements": [
+      "A-levels: AAA to A*A*A depending on course",
+      "IB: 34-39 points",
+      "Strong academic background"
+    ],
+    "languageRequirements": [
+      "IELTS 6.0-7.0 overall (varies by program)",
+      "TOEFL iBT 87-100 overall"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["September"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },
+  {
+    "id": "uni_uk_010",
+    "name": "University of Bristol",
+    "tagline": "Learning Promotes One's Natural Ability",
+    "description": "The University of Bristol is a research-intensive institution with a strong reputation for innovation and academic excellence. It offers a supportive learning environment in one of the UK's most vibrant cities.",
+    "logo": "uni_uk_010.png",
+    "type": "Public",
+    "website": "https://www.bristol.ac.uk",
+    "country": "United Kingdom",
+    "city": "Bristol",
+    "acceptanceRate": 58,
+    "ranking": 55,
+    "totalStudents": 28000,
+    "internationalStudentsPercentage": 30,
+    "tuitionMin": 9250,
+    "tuitionMax": 27000,
+    "livingCostMin": 11200,
+    "livingCostMax": 15400,
+    "academicRequirements": [
+      "A-levels: AAA to A*AA depending on course",
+      "IB: 32-38 points",
+      "Strong performance in relevant subjects"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5 overall (min 6.0 per component)",
+      "TOEFL iBT 90 overall (min 20 per component)"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["September"],
+    "applicationDeadlines": ["October 15", "January 25"]
+  },{
+    "id": "uni_au_001",
+    "name": "Australian National University",
+    "tagline": "First in Australia, First for the World",
+    "description": "ANU is Australia's leading university and consistently ranks among the world's top institutions. Located in the nation's capital, it offers exceptional research opportunities and a close-knit campus community.",
+    "logo": "uni_au_001.png",
+    "type": "Public",
+    "website": "https://www.anu.edu.au",
+    "country": "Australia",
+    "city": "Canberra",
+    "acceptanceRate": 35,
+    "ranking": 34,
+    "totalStudents": 25000,
+    "internationalStudentsPercentage": 42,
+    "tuitionMin": 30000,
+    "tuitionMax": 50000,
+    "livingCostMin": 18000,
+    "livingCostMax": 25000,
+    "academicRequirements": [
+      "Completion of Australian Year 12 or equivalent",
+      "ATAR 80+ (varies by program)",
+      "Specific prerequisite subjects depending on course"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each band) or TOEFL iBT 80+",
+      "PTE Academic 64+ or Cambridge CAE/CPE 176+"
+    ],
+    "otherRequirements": [
+      "Personal statement for certain programs"
+    ],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["December 15", "May 15"]
+  },
+  {
+    "id": "uni_au_002",
+    "name": "University of Melbourne",
+    "tagline": "Growing Esteem",
+    "description": "The University of Melbourne is Australia's second oldest university and consistently ranks as the nation's top institution. It offers a distinctive Melbourne Model of education emphasizing breadth and depth.",
+    "logo": "uni_au_002.png",
+    "type": "Public",
+    "website": "https://www.unimelb.edu.au",
+    "country": "Australia",
+    "city": "Melbourne",
+    "acceptanceRate": 38,
+    "ranking": 14,
+    "totalStudents": 52000,
+    "internationalStudentsPercentage": 45,
+    "tuitionMin": 32000,
+    "tuitionMax": 52000,
+    "livingCostMin": 20000,
+    "livingCostMax": 28000,
+    "academicRequirements": [
+      "Completion of Year 12 or international equivalent",
+      "ATAR 85+ (competitive programs require higher)",
+      "Prerequisite subjects as specified by course"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each band) or TOEFL iBT 79+",
+      "PTE Academic 58+ or Cambridge CAE 176+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["December 31", "May 31"]
+  },
+  {
+    "id": "uni_au_003",
+    "name": "University of Sydney",
+    "tagline": "The Same Yesterday, Today and Forever",
+    "description": "Founded in 1850, the University of Sydney is Australia's first university and offers world-class education in a stunning sandstone campus. It combines tradition with innovation across all disciplines.",
+    "logo": "uni_au_003.png",
+    "type": "Public",
+    "website": "https://www.sydney.edu.au",
+    "country": "Australia",
+    "city": "Sydney",
+    "acceptanceRate": 40,
+    "ranking": 19,
+    "totalStudents": 73000,
+    "internationalStudentsPercentage": 40,
+    "tuitionMin": 31000,
+    "tuitionMax": 51000,
+    "livingCostMin": 21000,
+    "livingCostMax": 29000,
+    "academicRequirements": [
+      "Completion of secondary education equivalent to Australian Year 12",
+      "ATAR 80+ (varies significantly by program)",
+      "Specific subject prerequisites for certain courses"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each component) or TOEFL iBT 85+",
+      "PTE Academic 61+ or Cambridge CAE 176+"
+    ],
+    "otherRequirements": [
+      "Portfolio or audition for creative arts programs"
+    ],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["January 15", "June 15"]
+  },
+  {
+    "id": "uni_au_004",
+    "name": "University of New South Wales",
+    "tagline": "Excellence, Innovation, Collaboration",
+    "description": "UNSW Sydney is a founding member of the Group of Eight and known for engineering, business, and law programs. It has strong industry connections and emphasizes innovation and entrepreneurship.",
+    "logo": "uni_au_004.png",
+    "type": "Public",
+    "website": "https://www.unsw.edu.au",
+    "country": "Australia",
+    "city": "Sydney",
+    "acceptanceRate": 42,
+    "ranking": 43,
+    "totalStudents": 65000,
+    "internationalStudentsPercentage": 38,
+    "tuitionMin": 30000,
+    "tuitionMax": 50000,
+    "livingCostMin": 21000,
+    "livingCostMax": 29000,
+    "academicRequirements": [
+      "Australian Year 12 or international equivalent",
+      "ATAR 80-95 depending on program",
+      "Mathematics and science prerequisites for STEM programs"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each band) or TOEFL iBT 90+",
+      "PTE Academic 64+ or Cambridge CAE 176+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["November 30", "May 31"]
+  },
+  {
+    "id": "uni_au_005",
+    "name": "University of Queensland",
+    "tagline": "Knowledge for a Better World",
+    "description": "UQ is one of Australia's premier research universities with beautiful campuses in Brisbane. It excels in sciences, engineering, and business with strong emphasis on sustainability and innovation.",
+    "logo": "uni_au_005.png",
+    "type": "Public",
+    "website": "https://www.uq.edu.au",
+    "country": "Australia",
+    "city": "Brisbane",
+    "acceptanceRate": 45,
+    "ranking": 50,
+    "totalStudents": 54000,
+    "internationalStudentsPercentage": 35,
+    "tuitionMin": 29000,
+    "tuitionMax": 48000,
+    "livingCostMin": 18000,
+    "livingCostMax": 25000,
+    "academicRequirements": [
+      "Completion of Year 12 or equivalent",
+      "ATAR 75+ (varies by program)",
+      "Prerequisite subjects as required"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each band) or TOEFL iBT 87+",
+      "PTE Academic 64+ or Cambridge CAE 176+"
+    ],
+    "otherRequirements": [
+      "Supplementary forms for certain programs"
+    ],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["November 30", "May 31"]
+  },
+  {
+    "id": "uni_au_006",
+    "name": "Monash University",
+    "tagline": "Always Making a Difference",
+    "description": "Monash is Australia's largest university with campuses across Melbourne and international locations. It's known for research excellence, particularly in medicine, engineering, and pharmacy.",
+    "logo": "uni_au_006.png",
+    "type": "Public",
+    "website": "https://www.monash.edu",
+    "country": "Australia",
+    "city": "Melbourne",
+    "acceptanceRate": 48,
+    "ranking": 42,
+    "totalStudents": 86000,
+    "internationalStudentsPercentage": 43,
+    "tuitionMin": 30000,
+    "tuitionMax": 49000,
+    "livingCostMin": 19000,
+    "livingCostMax": 27000,
+    "academicRequirements": [
+      "Australian Year 12 or international equivalent",
+      "ATAR 75-90 depending on course",
+      "Subject prerequisites for specialized programs"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each band) or TOEFL iBT 79+",
+      "PTE Academic 58+ or Cambridge CAE 176+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["December 8", "May 31"]
+  },
+  {
+    "id": "uni_au_007",
+    "name": "University of Western Australia",
+    "tagline": "Seek Wisdom",
+    "description": "UWA is Western Australia's premier university with a stunning campus along the Swan River. It's particularly strong in mining engineering, marine science, and agricultural research.",
+    "logo": "uni_au_007.png",
+    "type": "Public",
+    "website": "https://www.uwa.edu.au",
+    "country": "Australia",
+    "city": "Perth",
+    "acceptanceRate": 50,
+    "ranking": 72,
+    "totalStudents": 25000,
+    "internationalStudentsPercentage": 33,
+    "tuitionMin": 28000,
+    "tuitionMax": 46000,
+    "livingCostMin": 17000,
+    "livingCostMax": 23000,
+    "academicRequirements": [
+      "Year 12 completion or equivalent",
+      "ATAR 75+ (varies by program)",
+      "Prerequisite subjects depending on course"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each band) or TOEFL iBT 82+",
+      "PTE Academic 64+ or Cambridge CAE 176+"
+    ],
+    "otherRequirements": [
+      "Personal statement for certain courses"
+    ],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["December 31", "May 31"]
+  },
+  {
+    "id": "uni_au_008",
+    "name": "University of Adelaide",
+    "tagline": "Inspire Excellence",
+    "description": "The University of Adelaide is a member of the Group of Eight with particular strengths in wine research, defense technology, and health sciences. It has produced five Nobel laureates.",
+    "logo": "uni_au_008.png",
+    "type": "Public",
+    "website": "https://www.adelaide.edu.au",
+    "country": "Australia",
+    "city": "Adelaide",
+    "acceptanceRate": 52,
+    "ranking": 89,
+    "totalStudents": 28000,
+    "internationalStudentsPercentage": 30,
+    "tuitionMin": 27000,
+    "tuitionMax": 45000,
+    "livingCostMin": 16000,
+    "livingCostMax": 22000,
+    "academicRequirements": [
+      "Completion of secondary education equivalent to Year 12",
+      "ATAR 70-85 depending on program",
+      "Specific prerequisite subjects for certain courses"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each band) or TOEFL iBT 79+",
+      "PTE Academic 58+ or Cambridge CAE 176+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["December 1", "May 1"]
+  },
+  {
+    "id": "uni_au_009",
+    "name": "University of Technology Sydney",
+    "tagline": "Think. Change. Do.",
+    "description": "UTS is a dynamic young university in the heart of Sydney, known for its industry connections and practice-based learning. It excels in technology, design, and business programs.",
+    "logo": "uni_au_009.png",
+    "type": "Public",
+    "website": "https://www.uts.edu.au",
+    "country": "Australia",
+    "city": "Sydney",
+    "acceptanceRate": 55,
+    "ranking": 133,
+    "totalStudents": 45000,
+    "internationalStudentsPercentage": 36,
+    "tuitionMin": 28000,
+    "tuitionMax": 47000,
+    "livingCostMin": 21000,
+    "livingCostMax": 29000,
+    "academicRequirements": [
+      "Year 12 or international equivalent",
+      "ATAR 70-85 depending on program",
+      "Portfolio for creative programs"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each component) or TOEFL iBT 79+",
+      "PTE Academic 58+ or Cambridge CAE 176+"
+    ],
+    "otherRequirements": [
+      "Work experience for certain professional programs"
+    ],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["January 31", "June 30"]
+  },
+  {
+    "id": "uni_au_010",
+    "name": "Queensland University of Technology",
+    "tagline": "A University for the Real World",
+    "description": "QUT is known for its practical, career-oriented approach to education with strong industry partnerships. It's particularly strong in creative industries, engineering, and business.",
+    "logo": "uni_au_010.png",
+    "type": "Public",
+    "website": "https://www.qut.edu.au",
+    "country": "Australia",
+    "city": "Brisbane",
+    "acceptanceRate": 58,
+    "ranking": 189,
+    "totalStudents": 50000,
+    "internationalStudentsPercentage": 28,
+    "tuitionMin": 27000,
+    "tuitionMax": 44000,
+    "livingCostMin": 18000,
+    "livingCostMax": 24000,
+    "academicRequirements": [
+      "Australian Year 12 or equivalent",
+      "ATAR 68-80 depending on course",
+      "Portfolio or audition for creative programs"
+    ],
+    "languageRequirements": [
+      "IELTS 6.5+ (6.0 in each band) or TOEFL iBT 79+",
+      "PTE Academic 58+ or Cambridge CAE 176+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["February", "July"],
+    "applicationDeadlines": ["November 30", "May 31"]
+  },
+  {
+    "id": "uni_us_001",
+    "name": "Harvard University",
+    "tagline": "Veritas",
+    "description": "Harvard University is the oldest institution of higher education in the United States and consistently ranks as one of the world's most prestigious universities. It offers unparalleled resources, research opportunities, and a diverse intellectual community.",
+    "logo": "uni_us_001.png",
+    "type": "Private",
+    "website": "https://www.harvard.edu",
+    "country": "United States",
+    "city": "Cambridge, MA",
+    "acceptanceRate": 3,
+    "ranking": 4,
+    "totalStudents": 23000,
+    "internationalStudentsPercentage": 25,
+    "tuitionMin": 54000,
+    "tuitionMax": 57000,
+    "livingCostMin": 18000,
+    "livingCostMax": 25000,
+    "academicRequirements": [
+      "SAT 1460-1580 or ACT 33-35",
+      "High school GPA 4.0+ (weighted)",
+      "Exceptional academic record in challenging courses"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 100+ or IELTS 7.5+",
+      "Duolingo 135+"
+    ],
+    "otherRequirements": [
+      "Essays and supplemental materials"
+    ],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 1", "January 1"]
+  },
+  {
+    "id": "uni_us_002",
+    "name": "Stanford University",
+    "tagline": "The Wind of Freedom Blows",
+    "description": "Stanford University is a leading research institution located in the heart of Silicon Valley. It is renowned for innovation, entrepreneurship, and academic excellence across all disciplines.",
+    "logo": "uni_us_002.png",
+    "type": "Private",
+    "website": "https://www.stanford.edu",
+    "country": "United States",
+    "city": "Stanford, CA",
+    "acceptanceRate": 4,
+    "ranking": 3,
+    "totalStudents": 17000,
+    "internationalStudentsPercentage": 24,
+    "tuitionMin": 58000,
+    "tuitionMax": 62000,
+    "livingCostMin": 20000,
+    "livingCostMax": 27000,
+    "academicRequirements": [
+      "SAT 1440-1570 or ACT 32-35",
+      "GPA 3.95+ unweighted",
+      "Rigorous high school curriculum"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 100+",
+      "IELTS 7.0+"
+    ],
+    "otherRequirements": [
+      "Essays, activities list, recommendations"
+    ],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 1", "January 5"]
+  },
+  {
+    "id": "uni_us_003",
+    "name": "Massachusetts Institute of Technology",
+    "tagline": "Mind and Hand",
+    "description": "MIT is the world's premier technological university, pioneering innovation in science, technology, and engineering. It fosters entrepreneurial culture and hands-on learning through cutting-edge research.",
+    "logo": "uni_us_003.png",
+    "type": "Private",
+    "website": "https://www.mit.edu",
+    "country": "United States",
+    "city": "Cambridge, MA",
+    "acceptanceRate": 4,
+    "ranking": 1,
+    "totalStudents": 11500,
+    "internationalStudentsPercentage": 33,
+    "tuitionMin": 57000,
+    "tuitionMax": 60000,
+    "livingCostMin": 19000,
+    "livingCostMax": 26000,
+    "academicRequirements": [
+      "SAT 1520-1580 or ACT 34-36",
+      "Strong mathematics and science background",
+      "GPA 4.1+ weighted"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 90+ (recommended 100+)",
+      "IELTS 7.0+"
+    ],
+    "otherRequirements": [
+      "Maker Portfolio optional but recommended"
+    ],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 1", "January 1"]
+  },
+  {
+    "id": "uni_us_004",
+    "name": "California Institute of Technology",
+    "tagline": "The Truth Shall Make You Free",
+    "description": "Caltech is a world-renowned science and engineering institute that has been advancing human knowledge and educating future scientists and engineers. Despite its small size, it makes huge scientific and technological contributions.",
+    "logo": "uni_us_004.png",
+    "type": "Private",
+    "website": "https://www.caltech.edu",
+    "country": "United States",
+    "city": "Pasadena, CA",
+    "acceptanceRate": 3,
+    "ranking": 7,
+    "totalStudents": 2400,
+    "internationalStudentsPercentage": 29,
+    "tuitionMin": 60000,
+    "tuitionMax": 63000,
+    "livingCostMin": 20000,
+    "livingCostMax": 26000,
+    "academicRequirements": [
+      "SAT 1530-1590 or ACT 35-36",
+      "Exceptional mathematics and science achievements",
+      "GPA 4.0+ unweighted"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 100+",
+      "IELTS 7.5+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 1", "January 3"]
+  },
+  {
+    "id": "uni_us_005",
+    "name": "Princeton University",
+    "tagline": "Under God's Power She Flourishes",
+    "description": "Princeton University combines the strengths of a major research university with intimate collegiate experience. It is distinguished by its commitment to undergraduate teaching and research opportunities for all students.",
+    "logo": "uni_us_005.png",
+    "type": "Private",
+    "website": "https://www.princeton.edu",
+    "country": "United States",
+    "city": "Princeton, NJ",
+    "acceptanceRate": 4,
+    "ranking": 11,
+    "totalStudents": 8500,
+    "internationalStudentsPercentage": 23,
+    "tuitionMin": 57000,
+    "tuitionMax": 60000,
+    "livingCostMin": 18000,
+    "livingCostMax": 24000,
+    "academicRequirements": [
+      "SAT 1470-1570 or ACT 33-35",
+      "Outstanding academic record",
+      "Demonstrated intellectual curiosity"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 100+",
+      "IELTS 7.0+"
+    ],
+    "otherRequirements": [
+      "Senior year thesis required"
+    ],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 1", "January 1"]
+  },
+  {
+    "id": "uni_us_006",
+    "name": "Yale University",
+    "tagline": "Light and Truth",
+    "description": "Yale University is a prestigious Ivy League institution known for its residential college system and strong liberal arts education. It offers exceptional resources and opportunities across all academic disciplines.",
+    "logo": "uni_us_006.png",
+    "type": "Private",
+    "website": "https://www.yale.edu",
+    "country": "United States",
+    "city": "New Haven, CT",
+    "acceptanceRate": 5,
+    "ranking": 12,
+    "totalStudents": 14000,
+    "internationalStudentsPercentage": 22,
+    "tuitionMin": 62000,
+    "tuitionMax": 64000,
+    "livingCostMin": 17000,
+    "livingCostMax": 23000,
+    "academicRequirements": [
+      "SAT 1460-1570 or ACT 33-35",
+      "Strong high school curriculum",
+      "GPA 4.0+ weighted"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 100+",
+      "IELTS 7.0+",
+      "Duolingo 120+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 1", "January 2"]
+  },
+  {
+    "id": "uni_us_007",
+    "name": "Columbia University",
+    "tagline": "In Thy Light Shall We See Light",
+    "description": "Columbia University is a private Ivy League research university in New York City. It offers a distinctive Core Curriculum and leverages its NYC location for unparalleled opportunities in arts, business, and culture.",
+    "logo": "uni_us_007.png",
+    "type": "Private",
+    "website": "https://www.columbia.edu",
+    "country": "United States",
+    "city": "New York, NY",
+    "acceptanceRate": 4,
+    "ranking": 18,
+    "totalStudents": 33000,
+    "internationalStudentsPercentage": 35,
+    "tuitionMin": 65000,
+    "tuitionMax": 68000,
+    "livingCostMin": 22000,
+    "livingCostMax": 30000,
+    "academicRequirements": [
+      "SAT 1480-1560 or ACT 33-35",
+      "Excellent academic performance",
+      "Strong performance in challenging courses"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 100+",
+      "IELTS 7.0+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 1", "January 5"]
+  },
+  {
+    "id": "uni_us_008",
+    "name": "University of Chicago",
+    "tagline": "Let Knowledge Grow From More to More",
+    "description": "The University of Chicago is known for its rigorous academic programs and commitment to free and open inquiry. It has a distinctive Core Curriculum and encourages intellectual exploration across disciplines.",
+    "logo": "uni_us_008.png",
+    "type": "Private",
+    "website": "https://www.uchicago.edu",
+    "country": "United States",
+    "city": "Chicago, IL",
+    "acceptanceRate": 5,
+    "ranking": 10,
+    "totalStudents": 18000,
+    "internationalStudentsPercentage": 30,
+    "tuitionMin": 62000,
+    "tuitionMax": 65000,
+    "livingCostMin": 18000,
+    "livingCostMax": 24000,
+    "academicRequirements": [
+      "SAT 1500-1570 or ACT 34-35",
+      "Strong academic curiosity and performance",
+      "Challenging high school curriculum"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 100+",
+      "IELTS 7.0+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 1", "January 2"]
+  },
+  {
+    "id": "uni_us_009",
+    "name": "University of California, Berkeley",
+    "tagline": "Let There Be Light",
+    "description": "UC Berkeley is a leading public research university known for its academic rigor, groundbreaking research, and social activism. It offers exceptional programs across sciences, engineering, and liberal arts.",
+    "logo": "uni_us_009.png",
+    "type": "Public",
+    "website": "https://www.berkeley.edu",
+    "country": "United States",
+    "city": "Berkeley, CA",
+    "acceptanceRate": 11,
+    "ranking": 8,
+    "totalStudents": 45000,
+    "internationalStudentsPercentage": 17,
+    "tuitionMin": 14000,
+    "tuitionMax": 46000,
+    "livingCostMin": 20000,
+    "livingCostMax": 28000,
+    "academicRequirements": [
+      "SAT 1330-1530 or ACT 28-34",
+      "GPA 3.9+ weighted",
+      "Strong performance in A-G course requirements"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 80+",
+      "IELTS 6.5+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 30"]
+  },
+  {
+    "id": "uni_us_010",
+    "name": "University of Pennsylvania",
+    "tagline": "Laws Without Morals Are Useless",
+    "description": "The University of Pennsylvania is an Ivy League institution known for its interdisciplinary approach and pre-professional programs. It combines liberal arts with practical application through Wharton and other specialized schools.",
+    "logo": "uni_us_010.png",
+    "type": "Private",
+    "website": "https://www.upenn.edu",
+    "country": "United States",
+    "city": "Philadelphia, PA",
+    "acceptanceRate": 5,
+    "ranking": 6,
+    "totalStudents": 28000,
+    "internationalStudentsPercentage": 21,
+    "tuitionMin": 63000,
+    "tuitionMax": 66000,
+    "livingCostMin": 17000,
+    "livingCostMax": 24000,
+    "academicRequirements": [
+      "SAT 1480-1570 or ACT 33-35",
+      "Excellent grades in rigorous courses",
+      "Strong extracurricular involvement"
+    ],
+    "languageRequirements": [
+      "TOEFL iBT 100+",
+      "IELTS 7.5+",
+      "Duolingo 125+"
+    ],
+    "otherRequirements": [],
+    "majorIntakes": ["Fall"],
+    "applicationDeadlines": ["November 1", "January 5"]
+  }
+]
