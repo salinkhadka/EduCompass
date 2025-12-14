@@ -2,7 +2,6 @@ require("dotenv").config();
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const User = require("../Model/UserModel");
-const nodemailer = require("nodemailer");
 const mongoose = require("mongoose");
 
 // =========================================================
@@ -28,7 +27,7 @@ exports.registerUser = async (req, res) => {
       });
     }
 
-    const cleanEmail = email.trim();
+    const cleanEmail = email.trim().toLowerCase();
     const cleanUsername = username.trim();
 
     const existingUser = await User.findOne({ email: cleanEmail });
@@ -58,7 +57,7 @@ exports.registerUser = async (req, res) => {
       message: "User registered successfully",
     });
   } catch (err) {
-    console.error(err);
+    console.error("Register error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
@@ -76,7 +75,7 @@ exports.loginUser = async (req, res) => {
         message: "Missing email or password",
       });
 
-    const cleanEmail = email.trim();
+    const cleanEmail = email.trim().toLowerCase();
     const user = await User.findOne({ email: cleanEmail });
     
     if (!user)
@@ -86,7 +85,6 @@ exports.loginUser = async (req, res) => {
     if (!isMatch)
       return res.status(403).json({ success: false, message: "Invalid credentials" });
 
-    // Remove password BEFORE any other operations
     const userObj = user.toObject();
     delete userObj.password;
 
@@ -122,12 +120,15 @@ exports.getProfile = async (req, res) => {
     if (!req.user)
       return res.status(401).json({ success: false, message: "Unauthorized" });
 
+    const user = await User.findById(req.user._id).select("-password").lean();
+
     return res.status(200).json({
       success: true,
       message: "Profile fetched successfully",
-      data: req.user,
+      data: user,
     });
-  } catch {
+  } catch (err) {
+    console.error("Get profile error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
@@ -149,20 +150,20 @@ exports.updateProfile = async (req, res) => {
       fieldOfStudy,
     } = req.body;
 
-    const updateFields = {
-      ...(username && { username }),
-      ...(phone && { phone }),
-      ...(preferredCountry && { preferredCountry }),
-      ...(degreeLevel && { degreeLevel }),
-      ...(studentStatus && { studentStatus }),
-      ...(fieldOfStudy && { fieldOfStudy }),
-    };
-
+    const updateFields = {};
+    if (username) updateFields.username = username.trim();
+    if (phone !== undefined) updateFields.phone = phone;
+    if (preferredCountry !== undefined) updateFields.preferredCountry = preferredCountry;
+    if (degreeLevel !== undefined) updateFields.degreeLevel = degreeLevel;
+    if (studentStatus !== undefined) updateFields.studentStatus = studentStatus;
+    if (fieldOfStudy !== undefined) updateFields.fieldOfStudy = fieldOfStudy;
     if (req.file) updateFields.profilePhoto = req.file.filename;
 
-    const updated = await User.findByIdAndUpdate(req.user._id, updateFields, {
-      new: true,
-    });
+    const updated = await User.findByIdAndUpdate(
+      req.user._id, 
+      updateFields, 
+      { new: true }
+    ).select("-password");
 
     res.status(200).json({
       success: true,
@@ -170,7 +171,7 @@ exports.updateProfile = async (req, res) => {
       data: updated,
     });
   } catch (err) {
-    console.error(err);
+    console.error("Update profile error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
@@ -207,8 +208,8 @@ exports.saveUniversity = async (req, res) => {
     user.savedUniversities.push({
       universityId,
       universityName,
-      country,
-      program,
+      country: country || "",
+      program: program || "",
     });
 
     await user.save();
@@ -216,9 +217,10 @@ exports.saveUniversity = async (req, res) => {
     res.status(200).json({
       success: true,
       message: "University saved",
+      data: user.savedUniversities,
     });
   } catch (err) {
-    console.error(err);
+    console.error("Save university error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
@@ -226,60 +228,52 @@ exports.saveUniversity = async (req, res) => {
 // =========================================================
 // SAVE SCHOLARSHIP
 // =========================================================
-exports.saveUniversity = async (req, res) => {
-  const session = await mongoose.startSession();
-  session.startTransaction();
-  
+exports.saveScholarship = async (req, res) => {
   try {
     if (!req.user)
       return res.status(401).json({ success: false, message: "Unauthorized" });
 
-    const { universityId, universityName, country, program } = req.body;
+    const { scholarshipId, scholarshipName, provider, amount, deadline } = req.body;
 
-    if (!universityId || !universityName) {
+    if (!scholarshipId || !scholarshipName) {
       return res.status(400).json({
         success: false,
-        message: "Missing university fields",
+        message: "Missing scholarship fields",
       });
     }
 
-    const user = await User.findById(req.user._id).session(session);
+    const user = await User.findById(req.user._id);
 
-    const exists = user.savedUniversities.some(
-      (u) => u.universityId === universityId
+    const exists = user.savedScholarships.some(
+      (s) => s.scholarshipId === scholarshipId
     );
 
-    if (exists) {
-      await session.abortTransaction();
+    if (exists)
       return res.status(400).json({
         success: false,
-        message: "University already saved",
+        message: "Scholarship already saved",
       });
-    }
 
-    user.savedUniversities.push({
-      universityId,
-      universityName,
-      country,
-      program,
+    user.savedScholarships.push({
+      scholarshipId,
+      scholarshipName,
+      provider: provider || "",
+      amount: amount || "",
+      deadline: deadline || null,
     });
 
-    await user.save({ session });
-    await session.commitTransaction();
+    await user.save();
 
     res.status(200).json({
       success: true,
-      message: "University saved",
+      message: "Scholarship saved",
+      data: user.savedScholarships,
     });
   } catch (err) {
-    await session.abortTransaction();
-    console.error("Save university error:", err);
+    console.error("Save scholarship error:", err);
     res.status(500).json({ success: false, message: "Server error" });
-  } finally {
-    session.endSession();
   }
 };
-
 
 // =========================================================
 // GET SAVED UNIVERSITIES
@@ -289,12 +283,14 @@ exports.getSavedUniversities = async (req, res) => {
     if (!req.user)
       return res.status(401).json({ success: false, message: "Unauthorized" });
 
+    const user = await User.findById(req.user._id).select("savedUniversities").lean();
+
     res.status(200).json({
       success: true,
-      data: req.user.savedUniversities,
+      data: user.savedUniversities || [],
     });
   } catch (err) {
-    console.error(err);
+    console.error("Get saved universities error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
@@ -307,15 +303,21 @@ exports.getSavedScholarships = async (req, res) => {
     if (!req.user)
       return res.status(401).json({ success: false, message: "Unauthorized" });
 
+    const user = await User.findById(req.user._id).select("savedScholarships").lean();
+
     res.status(200).json({
       success: true,
-      data: req.user.savedScholarships,
+      data: user.savedScholarships || [],
     });
   } catch (err) {
-    console.error(err);
+    console.error("Get saved scholarships error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
+
+// =========================================================
+// REMOVE SAVED UNIVERSITY
+// =========================================================
 exports.removeSavedUniversity = async (req, res) => {
   try {
     if (!req.user)
@@ -324,18 +326,94 @@ exports.removeSavedUniversity = async (req, res) => {
     const { universityId } = req.params;
 
     const user = await User.findById(req.user._id);
+    
+    const initialLength = user.savedUniversities.length;
     user.savedUniversities = user.savedUniversities.filter(
       (u) => u.universityId !== universityId
     );
+
+    if (user.savedUniversities.length === initialLength) {
+      return res.status(404).json({
+        success: false,
+        message: "University not found in saved list",
+      });
+    }
 
     await user.save();
 
     res.status(200).json({
       success: true,
       message: "University removed",
+      data: user.savedUniversities,
     });
   } catch (err) {
-    console.error(err);
+    console.error("Remove university error:", err);
+    res.status(500).json({ success: false, message: "Server error" });
+  }
+};
+
+// =========================================================
+// REMOVE SAVED SCHOLARSHIP
+// =========================================================
+exports.removeSavedScholarship = async (req, res) => {
+  try {
+    if (!req.user)
+      return res.status(401).json({ success: false, message: "Unauthorized" });
+
+    const { scholarshipId } = req.params;
+
+    const user = await User.findById(req.user._id);
+    
+    const initialLength = user.savedScholarships.length;
+    user.savedScholarships = user.savedScholarships.filter(
+      (s) => s.scholarshipId !== scholarshipId
+    );
+
+    if (user.savedScholarships.length === initialLength) {
+      return res.status(404).json({
+        success: false,
+        message: "Scholarship not found in saved list",
+      });
+    }
+
+    await user.save();
+
+    res.status(200).json({
+      success: true,
+      message: "Scholarship removed",
+      data: user.savedScholarships,
+    });
+  } catch (err) {
+    console.error("Remove scholarship error:", err);
+    res.status(500).json({ success: false, message: "Server error" });
+  }
+};
+
+// =========================================================
+// GET RECENT SEARCHES
+// =========================================================
+exports.getRecentSearches = async (req, res) => {
+  try {
+    if (!req.user)
+      return res.status(401).json({ success: false, message: "Unauthorized" });
+
+    const user = await User.findById(req.user._id)
+      .select("recentSearches")
+      .lean();
+
+    const searches = user.recentSearches || [];
+    
+    // Return last 10 searches, most recent first
+    const recentSearches = searches
+      .sort((a, b) => new Date(b.searchedAt) - new Date(a.searchedAt))
+      .slice(0, 10);
+
+    res.status(200).json({
+      success: true,
+      data: recentSearches,
+    });
+  } catch (err) {
+    console.error("Get recent searches error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
