@@ -121,123 +121,78 @@ exports.deleteUniversity = async (req, res) => {
 // =========================================================
 exports.searchUniversities = async (req, res) => {
   try {
-    const {
-      q,
-      country,
-      city,
-      minTuition,
-      maxTuition,
-      minRanking,
-      maxRanking,
-      level,
-      field,
-      sort,
-    } = req.query;
+    const { page = 1, limit = 20, q = "", country, city, minTuition, maxTuition, level, field, sort } = req.query;
 
-    const { page, limit, skip } = getPagination(req.query);
+    const filter = {};
 
-    const filters = {};
-
-    if (country) filters.country = country;
-    if (city) filters.city = city;
-    
-    if (minRanking || maxRanking) {
-      filters.ranking = {};
-      if (minRanking) filters.ranking.$gte = Number(minRanking);
-      if (maxRanking) filters.ranking.$lte = Number(maxRanking);
-    }
-
-    if (minTuition || maxTuition) {
-      filters.$and = [];
-      if (minTuition)
-        filters.$and.push({ tuitionMax: { $gte: Number(minTuition) } });
-      if (maxTuition)
-        filters.$and.push({ tuitionMin: { $lte: Number(maxTuition) } });
-      if (minTuition && maxTuition) {
-        filters.$and.push({
-          $or: [
-            { tuitionMin: { $lte: Number(maxTuition) } },
-            { tuitionMax: { $gte: Number(minTuition) } },
-          ],
-        });
-      }
-    }
-
-    // Text search
+    // Text search on name, country, city
     if (q) {
-      filters.$text = { $search: q };
+      // Create regex for exact substring match
+      const regex = new RegExp(q, "i"); // i = case-insensitive
+      filter.$or = [
+        { name: { $regex: regex } },
+        { country: { $regex: regex } },
+        { city: { $regex: regex } },
+      ];
     }
 
-    // If level or field provided, find matching universityIds via Course
-    let universityIdsFromCourses = null;
+    // Country & city filters
+    if (country) filter.country = country;
+    if (city) filter.city = city;
+
+    // Tuition filter
+    if (minTuition || maxTuition) {
+      filter.$and = [];
+      if (minTuition) filter.$and.push({ tuitionMax: { $gte: Number(minTuition) } });
+      if (maxTuition) filter.$and.push({ tuitionMin: { $lte: Number(maxTuition) } });
+    }
+
+    // Course level / field filter
     if (level || field) {
       const courseFilter = {};
       if (level) courseFilter.level = level;
-      if (field) courseFilter.field = { $regex: field, $options: "i" };
-
-      const courses = await Course.find(courseFilter)
-        .select("universityId")
-        .lean();
-      const set = new Set(courses.map((c) => String(c.universityId)));
-      universityIdsFromCourses = Array.from(set);
-
+      if (field) courseFilter.field = { $regex: field, $options: 'i' };
+      const courses = await Course.find(courseFilter).select('universityId').lean();
+      const universityIdsFromCourses = courses.map(c => c.universityId.toString());
       if (universityIdsFromCourses.length === 0) {
-        // Track search with 0 results
-        await trackSearch(
-          req.user?._id,
-          q || `${level || ""} ${field || ""}`.trim(),
-          { country, city, minTuition, maxTuition, minRanking, maxRanking, level, field },
-          0,
-          "university"
-        );
-
-        return res.status(200).json({
-          success: true,
-          data: [],
-          meta: { total: 0, page, limit },
-        });
+        return res.status(200).json({ success: true, data: [], meta: { total: 0, page: Number(page), limit: Number(limit), totalPages: 0 } });
       }
-      filters._id = { $in: universityIdsFromCourses };
+      filter._id = { $in: universityIdsFromCourses };
     }
 
     // Sorting
     let sortObj = { createdAt: -1 };
     if (sort) {
-      if (sort === "ranking_asc") sortObj = { ranking: 1 };
-      if (sort === "ranking_desc") sortObj = { ranking: -1 };
-      if (sort === "tuition_asc") sortObj = { tuitionMin: 1 };
-      if (sort === "tuition_desc") sortObj = { tuitionMax: -1 };
+      if (sort === 'ranking') sortObj = { ranking: 1 };
+      else if (sort === 'ranking_desc') sortObj = { ranking: -1 };
+      else if (sort === 'tuition_asc') sortObj = { tuitionMin: 1 };
+      else if (sort === 'tuition_desc') sortObj = { tuitionMax: -1 };
     }
 
-    // Count
-    const total = await University.countDocuments(filters);
-    const totalPages = Math.ceil(total / limit);
+    const skip = (Number(page) - 1) * Number(limit);
+    const total = await University.countDocuments(filter);
+    const data = await University.find(filter).sort(sortObj).skip(skip).limit(Number(limit)).lean();
 
-    const data = await University.find(filters)
-      .sort(sortObj)
-      .skip(skip)
-      .limit(limit)
-      .lean();
-
-    // Track search analytics
-    await trackSearch(
-      req.user?._id,
-      q || `${level || ""} ${field || ""}`.trim(),
-      { country, city, minTuition, maxTuition, minRanking, maxRanking, level, field },
-      total,
-      "university"
-    );
-
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
+      message: "Universities fetched",
       data,
-      meta: { total, page, limit, totalPages },
+      meta: {
+        total,
+        page: Number(page),
+        limit: Number(limit),
+        totalPages: Math.ceil(total / Number(limit)),
+      },
     });
   } catch (err) {
-    console.error("Search error:", err);
-    res.status(500).json({ success: false, message: "Server error" });
+    console.error(err);
+    return res.status(500).json({ success: false, message: "Server error" });
   }
 };
+
+
+
+
 
 // =========================================================
 // SIMILAR UNIVERSITIES
