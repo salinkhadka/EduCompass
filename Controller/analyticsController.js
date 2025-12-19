@@ -4,39 +4,22 @@ const User = require("../Model/UserModel");
 // =========================================================
 // TRACK SEARCH (Called from search endpoints)
 // =========================================================
-exports.trackSearch = async (userId, query, filters, resultCount, category) => {
+exports.trackSearch = async (req, res, next) => {
   try {
-    await SearchAnalytics.create({
-      userId: userId || null,
-      query,
-      filters: filters || {},
-      resultCount,
-      category,
-    });
+    const { query } = req.body;
+    if (!query || query.trim() === "") return; // skip empty queries
 
-    // Also update user's recent searches if logged in
-    if (userId) {
-      const user = await User.findById(userId);
-      if (user) {
-        // Keep only last 20 searches
-        if (user.recentSearches.length >= 20) {
-          user.recentSearches = user.recentSearches.slice(-19);
-        }
-        
-        user.recentSearches.push({
-          query,
-          category,
-          searchedAt: new Date(),
-        });
-        
-        await user.save();
-      }
-    }
+    const searchAnalytics = new SearchAnalytics({
+      query: query.trim(),
+      userId: req.user?._id || null,
+    });
+    await searchAnalytics.save();
   } catch (err) {
     console.error("Track search error:", err);
-    // Don't throw error - analytics should not break main flow
   }
+  next();
 };
+
 
 // =========================================================
 // GET SEARCH ANALYTICS (Admin)

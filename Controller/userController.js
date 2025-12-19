@@ -77,7 +77,7 @@ exports.loginUser = async (req, res) => {
 
     const cleanEmail = email.trim().toLowerCase();
     const user = await User.findOne({ email: cleanEmail });
-    
+
     if (!user)
       return res.status(404).json({ success: false, message: "User not found" });
 
@@ -160,8 +160,8 @@ exports.updateProfile = async (req, res) => {
     if (req.file) updateFields.profilePhoto = req.file.filename;
 
     const updated = await User.findByIdAndUpdate(
-      req.user._id, 
-      updateFields, 
+      req.user._id,
+      updateFields,
       { new: true }
     ).select("-password");
 
@@ -184,46 +184,40 @@ exports.saveUniversity = async (req, res) => {
     if (!req.user)
       return res.status(401).json({ success: false, message: "Unauthorized" });
 
-    const { universityId, universityName, country, program } = req.body;
-
-    if (!universityId || !universityName) {
-      return res.status(400).json({
-        success: false,
-        message: "Missing university fields",
-      });
+    const { universityId } = req.body;
+    if (!universityId) {
+      return res.status(400).json({ success: false, message: "University ID missing" });
     }
 
     const user = await User.findById(req.user._id);
-
+    // ✅ Convert ObjectId to string for comparison
     const exists = user.savedUniversities.some(
-      (u) => u.universityId === universityId
+      (u) => u.universityId.toString() === universityId
     );
 
     if (exists)
-      return res.status(400).json({
-        success: false,
-        message: "University already saved",
-      });
+      return res.status(400).json({ success: false, message: "University already saved" });
+
+    const uni = await University.findById(universityId);
+    if (!uni) return res.status(404).json({ success: false, message: "University not found" });
 
     user.savedUniversities.push({
       universityId,
-      universityName,
-      country: country || "",
-      program: program || "",
+      universityName: uni.name,
+      country: uni.country || "",
+      program: uni.programs?.[0] || ""
     });
 
     await user.save();
 
-    res.status(200).json({
-      success: true,
-      message: "University saved",
-      data: user.savedUniversities,
-    });
+    res.status(200).json({ success: true, message: "University saved", data: user.savedUniversities });
   } catch (err) {
     console.error("Save university error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
+
+
 
 // =========================================================
 // SAVE SCHOLARSHIP
@@ -326,7 +320,7 @@ exports.removeSavedUniversity = async (req, res) => {
     const { universityId } = req.params;
 
     const user = await User.findById(req.user._id);
-    
+
     const initialLength = user.savedUniversities.length;
     user.savedUniversities = user.savedUniversities.filter(
       (u) => u.universityId !== universityId
@@ -363,7 +357,7 @@ exports.removeSavedScholarship = async (req, res) => {
     const { scholarshipId } = req.params;
 
     const user = await User.findById(req.user._id);
-    
+
     const initialLength = user.savedScholarships.length;
     user.savedScholarships = user.savedScholarships.filter(
       (s) => s.scholarshipId !== scholarshipId
@@ -402,7 +396,7 @@ exports.getRecentSearches = async (req, res) => {
       .lean();
 
     const searches = user.recentSearches || [];
-    
+
     // Return last 10 searches, most recent first
     const recentSearches = searches
       .sort((a, b) => new Date(b.searchedAt) - new Date(a.searchedAt))
