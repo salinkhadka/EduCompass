@@ -33,6 +33,7 @@ router.delete(
 // =========================================================
 // PUBLIC ROUTES
 // =========================================================
+router.get("/course/:courseId", controller.getScholarshipsByCourse);
 router.get("/getAll", controller.getAllScholarships);
 router.get("/get/:id", controller.getScholarship);
 router.get("/search", controller.searchScholarships);

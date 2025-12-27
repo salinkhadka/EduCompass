@@ -108,6 +108,33 @@ exports.updateScholarship = async (req, res) => {
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
+// =========================================================
+// GET SCHOLARSHIPS BY COURSE ID
+// =========================================================
+exports.getScholarshipsByCourse = async (req, res) => {
+  try {
+    const { courseId } = req.params;
+
+    const scholarships = await Scholarship.find({
+      courseIds: courseId, // matches ObjectId inside array
+    })
+      .populate("universityId", "name country city logo")
+      .populate("courseIds", "name level field")
+      .sort({ deadline: 1 })
+      .lean();
+
+    res.status(200).json({
+      success: true,
+      data: scholarships,
+    });
+  } catch (err) {
+    console.error("Get scholarships by course error:", err);
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+    });
+  }
+};
 
 // =========================================================
 // DELETE SCHOLARSHIP (Admin)
