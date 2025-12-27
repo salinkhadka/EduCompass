@@ -12,5 +12,6 @@ router.delete("/delete/:id", authenticateUser, isAdmin, controller.deleteCourse)
 router.get("/university/:universityId", controller.getCoursesByUniversity);
 
 router.get("/search", controller.searchCourses);
+router.get("/:id", controller.getCourseById);
 
 module.exports = router;

@@ -1,4 +1,4 @@
-const SearchAnalytics = require("../Model/SearchAnalyticsModel");
+const SearchAnalytics = require("../Model/SearchAnalyticsModel.js");
 const User = require("../Model/UserModel");
 
 // =========================================================
