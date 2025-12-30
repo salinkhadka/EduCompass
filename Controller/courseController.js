@@ -1,7 +1,6 @@
 const Course = require("../Model/CourseModel");
 const University = require("../Model/universityModel");
 const pagination = require("../utils/pagination");
-const { trackSearch } = require("../Controller/analyticsController");
 
 // =========================================================
 // CREATE COURSE (Admin)
@@ -90,108 +89,191 @@ exports.deleteCourse = async (req, res) => {
 };
 
 // =========================================================
-// GLOBAL COURSE SEARCH (with Analytics)
+// GLOBAL COURSE SEARCH (Enhanced)
 // =========================================================
 exports.searchCourses = async (req, res) => {
   try {
     const {
-      name,
-      level,
-      field,
+      q, // Single search - course name, field, university name
+      country, // Country code from courseId (e.g., jp, us, uk)
+      level, // UG, PG, PhD
+      field, // Engineering, Business, etc.
       minTuition,
       maxTuition,
-      country,
-      type,
+      duration, // "2 years", "4 years"
+      type, // University type (Public/Private)
+      sort, // tuition_asc, tuition_desc, name_asc, duration_asc
       page = 1,
-      limit = 10,
+      limit = 20,
     } = req.query;
 
+    const { skip } = pagination({ page, limit });
     let filter = {};
 
-    // Filter by course name
-    if (name) {
-      filter.name = { $regex: name, $options: "i" };
+    // ============================================
+    // 1. SINGLE SEARCH BAR
+    // Searches: course name, field, and university name (via populate)
+    // ============================================
+    if (q && q.trim()) {
+      const searchTerm = q.trim();
+      // We'll search course name and field with regex
+      // University name search requires fetching after population
+      filter.$or = [
+        { name: { $regex: searchTerm, $options: "i" } },
+        { field: { $regex: searchTerm, $options: "i" } },
+        { courseId: { $regex: searchTerm, $options: "i" } }
+      ];
     }
 
-    // Filter by level (UG/PG/PhD)
-    if (level) {
-      filter.level = level;
+    // ============================================
+    // 2. COUNTRY FILTER (from courseId)
+    // Format: course_{country}_{number}
+    // Example: course_jp_001, course_us_002
+    // ============================================
+    if (country && country.trim()) {
+      const countryLower = country.toLowerCase().trim();
+      filter.courseId = { 
+        $regex: `_${countryLower}_`, 
+        $options: "i" 
+      };
     }
 
-    // Filter by field
-    if (field) {
-      filter.field = { $regex: field, $options: "i" };
+    // ============================================
+    // 3. LEVEL FILTER (UG, PG, PhD)
+    // ============================================
+    if (level && level.trim()) {
+      // Support comma-separated levels for multiple selection
+      const levels = level.split(',').map(l => l.trim().toUpperCase());
+      filter.level = { $in: levels };
     }
 
-    // Tuition filter
+    // ============================================
+    // 4. FIELD FILTER
+    // ============================================
+    if (field && field.trim()) {
+      // Support comma-separated fields for multiple selection
+      const fields = field.split(',').map(f => f.trim());
+      filter.field = { 
+        $in: fields.map(f => new RegExp(f, 'i'))
+      };
+    }
+
+    // ============================================
+    // 5. TUITION RANGE FILTER
+    // ============================================
     if (minTuition || maxTuition) {
       filter.tuitionFee = {};
       if (minTuition) filter.tuitionFee.$gte = Number(minTuition);
       if (maxTuition) filter.tuitionFee.$lte = Number(maxTuition);
     }
 
-    // If country or type filter is used, we need university info
-    let universityFilter = {};
-    if (country) universityFilter.country = country;
-    if (type) universityFilter.type = type;
+    // ============================================
+    // 6. DURATION FILTER
+    // ============================================
+    if (duration && duration.trim()) {
+      filter.duration = { $regex: duration.trim(), $options: "i" };
+    }
 
+    // ============================================
+    // 7. UNIVERSITY TYPE FILTER
+    // If type filter is used, we need to filter by university
+    // ============================================
     let universityIds = null;
-
-    if (country || type) {
-      const universities = await University.find(universityFilter)
+    if (type && type.trim()) {
+      const universities = await University.find({ type: type.trim() })
         .select("_id")
         .lean();
       universityIds = universities.map((u) => u._id);
       
       if (universityIds.length === 0) {
-        // Track search with 0 results
-        await trackSearch(
-          req.user?._id,
-          name || field || "",
-          { level, field, minTuition, maxTuition, country, type },
-          0,
-          "course"
-        );
-
         return res.status(200).json({
           success: true,
-          total: 0,
-          page: Number(page),
-          totalPages: 0,
           data: [],
+          meta: {
+            total: 0,
+            page: Number(page),
+            limit: Number(limit),
+            totalPages: 0,
+          },
         });
       }
       
       filter.universityId = { $in: universityIds };
     }
 
-    // Pagination calculation
-    const skip = (page - 1) * limit;
-
-    // Find courses
-    const courses = await Course.find(filter)
+    // ============================================
+    // 8. FETCH COURSES WITH POPULATION
+    // ============================================
+    let courses = await Course.find(filter)
       .populate("universityId", "name country city logo type ranking")
-      .skip(skip)
-      .limit(Number(limit))
       .lean();
 
-    const total = await Course.countDocuments(filter);
+    // ============================================
+    // 9. ADDITIONAL FILTERING BY UNIVERSITY NAME (post-populate)
+    // If search query might match university name
+    // ============================================
+    if (q && q.trim()) {
+      const searchTerm = q.trim().toLowerCase();
+      courses = courses.filter(course => {
+        const matchesCourseName = course.name.toLowerCase().includes(searchTerm);
+        const matchesField = course.field?.toLowerCase().includes(searchTerm);
+        const matchesUniversity = course.universityId?.name?.toLowerCase().includes(searchTerm);
+        const matchesCourseId = course.courseId.toLowerCase().includes(searchTerm);
+        
+        return matchesCourseName || matchesField || matchesUniversity || matchesCourseId;
+      });
+    }
 
-    // Track search analytics
-    await trackSearch(
-      req.user?._id,
-      name || field || "",
-      { level, field, minTuition, maxTuition, country, type },
-      total,
-      "course"
-    );
+    // ============================================
+    // 10. SORTING
+    // ============================================
+    if (sort) {
+      courses.sort((a, b) => {
+        if (sort === "tuition_asc") {
+          return (a.tuitionFee || 0) - (b.tuitionFee || 0);
+        }
+        if (sort === "tuition_desc") {
+          return (b.tuitionFee || 0) - (a.tuitionFee || 0);
+        }
+        if (sort === "name_asc") {
+          return a.name.localeCompare(b.name);
+        }
+        if (sort === "name_desc") {
+          return b.name.localeCompare(a.name);
+        }
+        if (sort === "duration_asc") {
+          const durationA = parseInt((a.duration || "0").match(/\d+/)?.[0] || 0);
+          const durationB = parseInt((b.duration || "0").match(/\d+/)?.[0] || 0);
+          return durationA - durationB;
+        }
+        if (sort === "duration_desc") {
+          const durationA = parseInt((a.duration || "0").match(/\d+/)?.[0] || 0);
+          const durationB = parseInt((b.duration || "0").match(/\d+/)?.[0] || 0);
+          return durationB - durationA;
+        }
+        return 0;
+      });
+    } else {
+      // Default sort by name
+      courses.sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    // ============================================
+    // 11. PAGINATION
+    // ============================================
+    const total = courses.length;
+    const totalPages = Math.ceil(total / limit);
+    const paginatedCourses = courses.slice(skip, skip + Number(limit));
 
     return res.status(200).json({
       success: true,
-      total,
-      page: Number(page),
-      totalPages: Math.ceil(total / limit),
-      data: courses,
+      data: paginatedCourses,
+      meta: {
+        total,
+        page: Number(page),
+        limit: Number(limit),
+        totalPages,
+      },
     });
   } catch (err) {
     console.error("Search courses error:", err);
@@ -208,7 +290,7 @@ exports.searchCourses = async (req, res) => {
 exports.getCourseById = async (req, res) => {
   try {
     const course = await Course.findById(req.params.id)
-      .populate("universityId", "name country city logo website ranking")
+      .populate("universityId", "name country city logo website ranking type")
       .lean();
 
     if (!course)

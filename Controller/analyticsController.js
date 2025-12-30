@@ -1,44 +1,34 @@
-const SearchAnalytics = require("../Model/SearchAnalyticsModel.js");
-const User = require("../Model/UserModel");
+const SearchAnalytics = require("../Model/SearchAnalyticsModel");
 
 // =========================================================
-// TRACK SEARCH (Called from search endpoints)
+// TRACK SEARCH (Middleware for GET /search)
 // =========================================================
 exports.trackSearch = async (req, res, next) => {
   try {
-    const { query } = req.body;
-    if (!query || query.trim() === "") return; // skip empty queries
+    const { q } = req.query;
+    if (!q || q.trim() === "") return next();
 
-    const searchAnalytics = new SearchAnalytics({
-      query: query.trim(),
+    await SearchAnalytics.create({
+      query: q.trim(),
       userId: req.user?._id || null,
+      timestamp: new Date(),
     });
-    await searchAnalytics.save();
   } catch (err) {
     console.error("Track search error:", err);
   }
   next();
 };
 
-
 // =========================================================
 // GET SEARCH ANALYTICS (Admin)
 // =========================================================
 exports.getSearchAnalytics = async (req, res) => {
   try {
-    const {
-      category,
-      startDate,
-      endDate,
-      limit = 100,
-      page = 1,
-    } = req.query;
+    const { category, startDate, endDate, limit = 100, page = 1 } = req.query;
 
     const filters = {};
 
-    if (category) {
-      filters.category = category;
-    }
+    if (category) filters.category = category;
 
     if (startDate || endDate) {
       filters.timestamp = {};
@@ -49,19 +39,19 @@ exports.getSearchAnalytics = async (req, res) => {
     const skip = (page - 1) * limit;
     const total = await SearchAnalytics.countDocuments(filters);
 
-    const analytics = await SearchAnalytics.find(filters)
+    const data = await SearchAnalytics.find(filters)
       .sort({ timestamp: -1 })
       .skip(skip)
-      .limit(parseInt(limit))
+      .limit(Number(limit))
       .lean();
 
     res.status(200).json({
       success: true,
-      data: analytics,
+      data,
       meta: {
         total,
-        page: parseInt(page),
-        limit: parseInt(limit),
+        page: Number(page),
+        limit: Number(limit),
         totalPages: Math.ceil(total / limit),
       },
     });
@@ -72,143 +62,100 @@ exports.getSearchAnalytics = async (req, res) => {
 };
 
 // =========================================================
-// GET POPULAR SEARCHES (Admin)
+// GET POPULAR SEARCHES
 // =========================================================
 exports.getPopularSearches = async (req, res) => {
   try {
     const { category, days = 30, limit = 10 } = req.query;
 
-    const dateFilter = new Date();
-    dateFilter.setDate(dateFilter.getDate() - parseInt(days));
+    const date = new Date();
+    date.setDate(date.getDate() - Number(days));
 
-    const matchStage = {
-      timestamp: { $gte: dateFilter },
-    };
+    const match = { timestamp: { $gte: date } };
+    if (category) match.category = category;
 
-    if (category) {
-      matchStage.category = category;
-    }
-
-    const popular = await SearchAnalytics.aggregate([
-      { $match: matchStage },
-      {
-        $group: {
-          _id: "$query",
-          count: { $sum: 1 },
-          category: { $first: "$category" },
-          avgResults: { $avg: "$resultCount" },
-        },
-      },
+    const data = await SearchAnalytics.aggregate([
+      { $match: match },
+      { $group: { _id: "$query", count: { $sum: 1 } } },
       { $sort: { count: -1 } },
-      { $limit: parseInt(limit) },
+      { $limit: Number(limit) },
     ]);
 
-    res.status(200).json({
-      success: true,
-      data: popular,
-    });
+    res.status(200).json({ success: true, data });
   } catch (err) {
-    console.error("Get popular searches error:", err);
+    console.error("Popular searches error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
 
 // =========================================================
-// GET SEARCH STATISTICS (Admin)
+// GET SEARCH STATISTICS
 // =========================================================
 exports.getSearchStatistics = async (req, res) => {
   try {
     const { days = 30 } = req.query;
 
-    const dateFilter = new Date();
-    dateFilter.setDate(dateFilter.getDate() - parseInt(days));
+    const date = new Date();
+    date.setDate(date.getDate() - Number(days));
 
     const stats = await SearchAnalytics.aggregate([
-      { $match: { timestamp: { $gte: dateFilter } } },
+      { $match: { timestamp: { $gte: date } } },
       {
         $group: {
-          _id: "$category",
+          _id: null,
           totalSearches: { $sum: 1 },
-          avgResults: { $avg: "$resultCount" },
           uniqueQueries: { $addToSet: "$query" },
-        },
-      },
-      {
-        $project: {
-          category: "$_id",
-          totalSearches: 1,
-          avgResults: { $round: ["$avgResults", 2] },
-          uniqueQueriesCount: { $size: "$uniqueQueries" },
+          uniqueUsers: { $addToSet: "$userId" },
         },
       },
     ]);
 
-    // Overall statistics
-    const totalSearches = await SearchAnalytics.countDocuments({
-      timestamp: { $gte: dateFilter },
-    });
-
-    const totalUsers = await SearchAnalytics.distinct("userId", {
-      timestamp: { $gte: dateFilter },
-      userId: { $ne: null },
-    });
-
     res.status(200).json({
       success: true,
       data: {
-        overall: {
-          totalSearches,
-          uniqueUsers: totalUsers.length,
-        },
-        byCategory: stats,
+        totalSearches: stats[0]?.totalSearches || 0,
+        uniqueQueries: stats[0]?.uniqueQueries.length || 0,
+        uniqueUsers: stats[0]?.uniqueUsers.filter(Boolean).length || 0,
         period: `Last ${days} days`,
       },
     });
   } catch (err) {
-    console.error("Get search statistics error:", err);
+    console.error("Search stats error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
 
 // =========================================================
-// GET USER SEARCH HISTORY (User)
+// GET USER SEARCH HISTORY
 // =========================================================
 exports.getUserSearchHistory = async (req, res) => {
   try {
-    if (!req.user) {
-      return res.status(401).json({
-        success: false,
-        message: "Unauthorized",
-      });
-    }
+    if (!req.user)
+      return res.status(401).json({ success: false, message: "Unauthorized" });
 
-    const { category, limit = 50, page = 1 } = req.query;
-
-    const filters = { userId: req.user._id };
-    if (category) filters.category = category;
-
+    const { limit = 50, page = 1 } = req.query;
     const skip = (page - 1) * limit;
-    const total = await SearchAnalytics.countDocuments(filters);
 
-    const history = await SearchAnalytics.find(filters)
+    const total = await SearchAnalytics.countDocuments({ userId: req.user._id });
+
+    const data = await SearchAnalytics.find({ userId: req.user._id })
       .sort({ timestamp: -1 })
       .skip(skip)
-      .limit(parseInt(limit))
-      .select("query category resultCount timestamp")
+      .limit(Number(limit))
       .lean();
 
     res.status(200).json({
       success: true,
-      data: history,
+      data,
       meta: {
         total,
-        page: parseInt(page),
-        limit: parseInt(limit),
+        page: Number(page),
+        limit: Number(limit),
         totalPages: Math.ceil(total / limit),
       },
     });
   } catch (err) {
-    console.error("Get user search history error:", err);
+    console.error("User search history error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };

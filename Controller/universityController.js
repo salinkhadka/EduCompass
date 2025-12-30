@@ -1,39 +1,47 @@
 const University = require("../Model/universityModel");
-const Course = require("../Model/CourseModel");
 const getPagination = require("../utils/pagination");
-const { trackSearch } = require("../Controller/analyticsController");
 
 // =========================================================
 // CREATE UNIVERSITY (Admin)
 // =========================================================
 exports.createUniversity = async (req, res) => {
   try {
-    const data = req.body;
-    if (req.file) data.logo = req.file.filename;
-
-    const uni = await University.create(data);
-
+    const university = await University.create(req.body);
+    
     res.status(201).json({
       success: true,
-      message: "University created successfully",
-      data: uni,
+      message: "University created",
+      data: university,
     });
   } catch (err) {
-    console.error("Create University Error:", err.message);
+    console.error("Create university error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
 
 // =========================================================
-// GET ALL UNIVERSITIES
+// GET ALL UNIVERSITIES (with pagination)
 // =========================================================
 exports.getAllUniversities = async (req, res) => {
   try {
-    const unis = await University.find().sort({ createdAt: -1 }).lean();
+    const { page, limit, skip } = getPagination(req.query);
+    
+    const total = await University.countDocuments();
+    const data = await University.find()
+      .skip(skip)
+      .limit(limit)
+      .sort({ ranking: 1 })
+      .lean();
 
     res.status(200).json({
       success: true,
-      data: unis,
+      data,
+      meta: {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      },
     });
   } catch (err) {
     console.error("Get all universities error:", err);
@@ -42,13 +50,13 @@ exports.getAllUniversities = async (req, res) => {
 };
 
 // =========================================================
-// GET SINGLE UNIVERSITY
+// GET UNIVERSITY BY ID
 // =========================================================
 exports.getUniversityById = async (req, res) => {
   try {
-    const uni = await University.findById(req.params.id).lean();
+    const university = await University.findById(req.params.id).lean();
 
-    if (!uni)
+    if (!university)
       return res.status(404).json({
         success: false,
         message: "University not found",
@@ -56,7 +64,7 @@ exports.getUniversityById = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      data: uni,
+      data: university,
     });
   } catch (err) {
     console.error("Get university error:", err);
@@ -69,12 +77,11 @@ exports.getUniversityById = async (req, res) => {
 // =========================================================
 exports.updateUniversity = async (req, res) => {
   try {
-    const data = req.body;
-    if (req.file) data.logo = req.file.filename;
-
-    const updated = await University.findByIdAndUpdate(req.params.id, data, {
-      new: true,
-    });
+    const updated = await University.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
 
     if (!updated)
       return res.status(404).json({
@@ -84,7 +91,7 @@ exports.updateUniversity = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: "University updated successfully",
+      message: "University updated",
       data: updated,
     });
   } catch (err) {
@@ -108,7 +115,7 @@ exports.deleteUniversity = async (req, res) => {
 
     res.status(200).json({
       success: true,
-      message: "University deleted successfully",
+      message: "University deleted",
     });
   } catch (err) {
     console.error("Delete university error:", err);
@@ -117,83 +124,181 @@ exports.deleteUniversity = async (req, res) => {
 };
 
 // =========================================================
-// SEARCH + FILTER + PAGINATION (with Analytics)
+// SEARCH UNIVERSITIES (with advanced filters)
 // =========================================================
 exports.searchUniversities = async (req, res) => {
   try {
-    const { page = 1, limit = 20, q = "", country, city, minTuition, maxTuition, level, field, sort } = req.query;
+    const {
+      q, // Single search query - searches name, country, city, uniId
+      country, // Country code (us, uk, ca, au, jp) - from uniId
+      type, // Public/Private
+      minTuition, // Minimum tuition
+      maxTuition, // Maximum tuition
+      minRanking, // Minimum ranking (lower number = better)
+      maxRanking, // Maximum ranking
+      minAcceptance, // Minimum acceptance rate
+      maxAcceptance, // Maximum acceptance rate
+      minInternational, // Minimum international student %
+      maxInternational, // Maximum international student %
+      sort, // ranking, tuition_asc, tuition_desc
+    } = req.query;
 
-    const filter = {};
+    const { page, limit, skip } = getPagination(req.query);
 
-    // Text search on name, country, city
-    if (q) {
-      // Create regex for exact substring match
-      const regex = new RegExp(q, "i"); // i = case-insensitive
-      filter.$or = [
-        { name: { $regex: regex } },
-        { country: { $regex: regex } },
-        { city: { $regex: regex } },
+    const filters = {};
+
+    // ============================================
+    // 1. SINGLE SEARCH BAR
+    // Searches: name, country (field), city, and uniId pattern
+    // ============================================
+    if (q && q.trim()) {
+      const searchTerm = q.trim();
+      filters.$or = [
+        { name: { $regex: searchTerm, $options: "i" } },
+        { country: { $regex: searchTerm, $options: "i" } },
+        { city: { $regex: searchTerm, $options: "i" } },
+        { uniId: { $regex: searchTerm, $options: "i" } }
       ];
     }
 
-    // Country & city filters
-    if (country) filter.country = country;
-    if (city) filter.city = city;
+    // ============================================
+    // 2. COUNTRY FILTER (from uniId)
+    // Format: uni_{country}_{number}
+    // Example: uni_us_001, uni_uk_002, uni_jp_003
+    // ============================================
+    if (country && country.trim()) {
+      const countryLower = country.toLowerCase().trim();
+      filters.uniId = { 
+        $regex: `_${countryLower}_`, 
+        $options: "i" 
+      };
+    }
 
-    // Tuition filter
+    // ============================================
+    // 3. TYPE FILTER (Public/Private)
+    // ============================================
+    if (type && type.trim()) {
+      filters.type = type;
+    }
+
+    // ============================================
+    // 4. TUITION RANGE FILTER
+    // Check if university's tuition range overlaps with search range
+    // ============================================
     if (minTuition || maxTuition) {
-      filter.$and = [];
-      if (minTuition) filter.$and.push({ tuitionMax: { $gte: Number(minTuition) } });
-      if (maxTuition) filter.$and.push({ tuitionMin: { $lte: Number(maxTuition) } });
-    }
-
-    // Course level / field filter
-    if (level || field) {
-      const courseFilter = {};
-      if (level) courseFilter.level = level;
-      if (field) courseFilter.field = { $regex: field, $options: 'i' };
-      const courses = await Course.find(courseFilter).select('universityId').lean();
-      const universityIdsFromCourses = courses.map(c => c.universityId.toString());
-      if (universityIdsFromCourses.length === 0) {
-        return res.status(200).json({ success: true, data: [], meta: { total: 0, page: Number(page), limit: Number(limit), totalPages: 0 } });
+      const tuitionFilters = [];
+      
+      if (minTuition) {
+        // University's max tuition should be >= search min
+        tuitionFilters.push({ tuitionMax: { $gte: parseInt(minTuition) } });
       }
-      filter._id = { $in: universityIdsFromCourses };
+      
+      if (maxTuition) {
+        // University's min tuition should be <= search max
+        tuitionFilters.push({ tuitionMin: { $lte: parseInt(maxTuition) } });
+      }
+      
+      if (tuitionFilters.length > 0) {
+        filters.$and = filters.$and || [];
+        filters.$and.push(...tuitionFilters);
+      }
     }
 
-    // Sorting
-    let sortObj = { createdAt: -1 };
-    if (sort) {
-      if (sort === 'ranking') sortObj = { ranking: 1 };
-      else if (sort === 'ranking_desc') sortObj = { ranking: -1 };
-      else if (sort === 'tuition_asc') sortObj = { tuitionMin: 1 };
-      else if (sort === 'tuition_desc') sortObj = { tuitionMax: -1 };
+    // ============================================
+    // 5. RANKING RANGE FILTER
+    // Lower number = better ranking
+    // ============================================
+    if (minRanking || maxRanking) {
+      filters.ranking = {};
+      if (minRanking) filters.ranking.$gte = parseInt(minRanking);
+      if (maxRanking) filters.ranking.$lte = parseInt(maxRanking);
     }
 
-    const skip = (Number(page) - 1) * Number(limit);
-    const total = await University.countDocuments(filter);
-    const data = await University.find(filter).sort(sortObj).skip(skip).limit(Number(limit)).lean();
+    // ============================================
+    // 6. ACCEPTANCE RATE RANGE
+    // ============================================
+    if (minAcceptance || maxAcceptance) {
+      filters.acceptanceRate = {};
+      if (minAcceptance) filters.acceptanceRate.$gte = parseInt(minAcceptance);
+      if (maxAcceptance) filters.acceptanceRate.$lte = parseInt(maxAcceptance);
+    }
 
-    return res.status(200).json({
+    // ============================================
+    // 7. INTERNATIONAL STUDENTS % RANGE
+    // ============================================
+    if (minInternational || maxInternational) {
+      filters.internationalStudentsPercentage = {};
+      if (minInternational) {
+        filters.internationalStudentsPercentage.$gte = parseInt(minInternational);
+      }
+      if (maxInternational) {
+        filters.internationalStudentsPercentage.$lte = parseInt(maxInternational);
+      }
+    }
+
+    // ============================================
+    // 8. SORTING
+    // ============================================
+    let sortObj = { ranking: 1 }; // Default: best ranking first
+    
+    if (sort === "tuition_asc") {
+      sortObj = { tuitionMin: 1 };
+    } else if (sort === "tuition_desc") {
+      sortObj = { tuitionMax: -1 };
+    } else if (sort === "ranking") {
+      sortObj = { ranking: 1 };
+    } else if (sort === "name_asc") {
+      sortObj = { name: 1 };
+    } else if (sort === "name_desc") {
+      sortObj = { name: -1 };
+    }
+
+    // ============================================
+    // 9. FETCH UNIVERSITIES
+    // ============================================
+    const total = await University.countDocuments(filters);
+    const universities = await University.find(filters)
+      .sort(sortObj)
+      .skip(skip)
+      .limit(limit)
+      .lean();
+
+    res.status(200).json({
       success: true,
-      message: "Universities fetched",
-      data,
+      data: universities,
       meta: {
         total,
-        page: Number(page),
-        limit: Number(limit),
-        totalPages: Math.ceil(total / Number(limit)),
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
       },
     });
   } catch (err) {
-    console.error(err);
-    return res.status(500).json({ success: false, message: "Server error" });
+    console.error("Search universities error:", err);
+    res.status(500).json({ success: false, message: "Server error" });
   }
 };
 
+// =========================================================
+// GET UNIVERSITIES BY COUNTRY
+// =========================================================
+exports.getUniversitiesByCountry = async (req, res) => {
+  try {
+    const { country } = req.params;
 
+    const universities = await University.find({ country })
+      .sort({ ranking: 1 })
+      .lean();
 
-
-
+    res.status(200).json({
+      success: true,
+      data: universities,
+    });
+  } catch (err) {
+    console.error("Get universities by country error:", err);
+    res.status(500).json({ success: false, message: "Server error" });
+  }
+};
 // =========================================================
 // SIMILAR UNIVERSITIES
 // =========================================================

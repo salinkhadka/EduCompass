@@ -1,12 +1,37 @@
 const Scholarship = require("../Model/ScholarshipModel");
 const getPagination = require("../utils/pagination");
 
+// Helper function to clean data before saving
+const cleanScholarshipData = (data) => {
+  const cleaned = { ...data };
+  
+  // Convert empty strings to null for ObjectId fields
+  if (cleaned.universityId === "" || cleaned.universityId === undefined) {
+    cleaned.universityId = null;
+  }
+  
+  // Filter out empty course IDs
+  if (Array.isArray(cleaned.courseIds)) {
+    cleaned.courseIds = cleaned.courseIds.filter(id => id && id.trim() !== "");
+    if (cleaned.courseIds.length === 0) {
+      cleaned.courseIds = [];
+    }
+  }
+  
+  // Filter out empty eligibility items
+  if (Array.isArray(cleaned.eligibility)) {
+    cleaned.eligibility = cleaned.eligibility.filter(item => item && item.trim() !== "");
+  }
+  
+  return cleaned;
+};
+
 // =========================================================
 // CREATE SCHOLARSHIP (Admin)
 // =========================================================
 exports.createScholarship = async (req, res) => {
   try {
-    const data = req.body;
+    const data = cleanScholarshipData(req.body);
     if (req.file) data.logo = req.file.filename;
 
     const scholarship = await Scholarship.create(data);
@@ -18,7 +43,10 @@ exports.createScholarship = async (req, res) => {
     });
   } catch (err) {
     console.error("Create scholarship error:", err);
-    res.status(500).json({ success: false, message: "Server error" });
+    res.status(500).json({ 
+      success: false, 
+      message: err.message || "Server error" 
+    });
   }
 };
 
@@ -83,13 +111,13 @@ exports.getScholarship = async (req, res) => {
 // =========================================================
 exports.updateScholarship = async (req, res) => {
   try {
-    const data = req.body;
+    const data = cleanScholarshipData(req.body);
     if (req.file) data.logo = req.file.filename;
 
     const updated = await Scholarship.findByIdAndUpdate(
       req.params.id,
       data,
-      { new: true }
+      { new: true, runValidators: true }
     );
 
     if (!updated)
@@ -105,9 +133,13 @@ exports.updateScholarship = async (req, res) => {
     });
   } catch (err) {
     console.error("Update scholarship error:", err);
-    res.status(500).json({ success: false, message: "Server error" });
+    res.status(500).json({ 
+      success: false, 
+      message: err.message || "Server error" 
+    });
   }
 };
+
 // =========================================================
 // GET SCHOLARSHIPS BY COURSE ID
 // =========================================================
@@ -116,7 +148,7 @@ exports.getScholarshipsByCourse = async (req, res) => {
     const { courseId } = req.params;
 
     const scholarships = await Scholarship.find({
-      courseIds: courseId, // matches ObjectId inside array
+      courseIds: courseId,
     })
       .populate("universityId", "name country city logo")
       .populate("courseIds", "name level field")
@@ -160,73 +192,148 @@ exports.deleteScholarship = async (req, res) => {
 };
 
 // =========================================================
-// SEARCH SCHOLARSHIPS (with filters)
+// SEARCH SCHOLARSHIPS (with advanced filters)
 // =========================================================
 exports.searchScholarships = async (req, res) => {
   try {
     const {
-      q, // text search
-      provider,
+      q,
+      country,
       minAmount,
       maxAmount,
-      deadline, // before this date
+      fromDate,
+      toDate,
+      courseLevel,
+      courseField,
       universityId,
-      sort, // deadline_asc, deadline_desc, amount_asc, amount_desc
+      sort,
     } = req.query;
 
     const { page, limit, skip } = getPagination(req.query);
 
     const filters = {};
 
-    // Text search
-    if (q) {
-      filters.$text = { $search: q };
+    if (q && q.trim()) {
+      filters.$or = [
+        { name: { $regex: q.trim(), $options: "i" } },
+        { provider: { $regex: q.trim(), $options: "i" } },
+        { overview: { $regex: q.trim(), $options: "i" } }
+      ];
     }
 
-    // Provider filter
-    if (provider) {
-      filters.provider = { $regex: provider, $options: "i" };
+    if (country && country.trim()) {
+      const countryLower = country.toLowerCase().trim();
+      filters.scholarshipId = { 
+        $regex: `_${countryLower}_`, 
+        $options: "i" 
+      };
     }
 
-    // Amount filters (parse string amounts like "$5000" or "Full tuition")
-    if (minAmount) {
-      filters.amount = { $regex: minAmount, $options: "i" };
+    if (fromDate || toDate) {
+      filters.deadline = {};
+      
+      if (fromDate) {
+        filters.deadline.$gte = fromDate;
+      }
+      
+      if (toDate) {
+        filters.deadline.$lte = toDate;
+      }
     }
 
-    // Deadline filter (scholarships with deadline before specified date)
-    if (deadline) {
-      filters.deadline = { $lte: new Date(deadline) };
-    }
-
-    // University filter
     if (universityId) {
       filters.universityId = universityId;
     }
 
-    // Sorting
-    let sortObj = { createdAt: -1 };
-    if (sort) {
-      if (sort === "deadline_asc") sortObj = { deadline: 1 };
-      if (sort === "deadline_desc") sortObj = { deadline: -1 };
-      if (sort === "name_asc") sortObj = { name: 1 };
-      if (sort === "name_desc") sortObj = { name: -1 };
+    let scholarships = await Scholarship.find(filters)
+      .populate("universityId", "name country city logo")
+      .populate("courseIds", "name level field courseId")
+      .lean();
+
+    if (minAmount || maxAmount) {
+      scholarships = scholarships.filter(scholarship => {
+        const amountStr = scholarship.amount || "";
+        
+        const match = amountStr.match(/[\d,]+/);
+        if (!match) {
+          return !minAmount && !maxAmount;
+        }
+        
+        const amount = parseInt(match[0].replace(/,/g, ""));
+        
+        if (minAmount && amount < parseInt(minAmount)) return false;
+        if (maxAmount && amount > parseInt(maxAmount)) return false;
+        
+        return true;
+      });
     }
 
-    // Count total
-    const total = await Scholarship.countDocuments(filters);
-    const totalPages = Math.ceil(total / limit);
+    if (courseLevel && courseLevel.trim()) {
+      const levelUpper = courseLevel.toUpperCase().trim();
+      
+      scholarships = scholarships.filter(scholarship => {
+        if (!scholarship.courseIds || scholarship.courseIds.length === 0) {
+          return false;
+        }
+        
+        return scholarship.courseIds.some(course => 
+          course.level && 
+          course.level.toUpperCase() === levelUpper
+        );
+      });
+    }
 
-    // Fetch data
-    const data = await Scholarship.find(filters)
-      .populate("universityId", "name country city logo")
-      .sort(sortObj)
-      .skip(skip)
-      .limit(limit)
-      .lean();
+    if (courseField && courseField.trim()) {
+      scholarships = scholarships.filter(scholarship => {
+        if (!scholarship.courseIds || scholarship.courseIds.length === 0) {
+          return false;
+        }
+        
+        return scholarship.courseIds.some(course => 
+          course.field && 
+          course.field.toLowerCase().includes(courseField.toLowerCase().trim())
+        );
+      });
+    }
+
+    if (sort) {
+      scholarships.sort((a, b) => {
+        if (sort === "deadline_asc") {
+          return new Date(a.deadline) - new Date(b.deadline);
+        }
+        if (sort === "deadline_desc") {
+          return new Date(b.deadline) - new Date(a.deadline);
+        }
+        if (sort === "name_asc") {
+          return a.name.localeCompare(b.name);
+        }
+        if (sort === "name_desc") {
+          return b.name.localeCompare(a.name);
+        }
+        if (sort === "amount_asc" || sort === "amount_desc") {
+          const getAmount = (amountStr) => {
+            const match = (amountStr || "").match(/[\d,]+/);
+            return match ? parseInt(match[0].replace(/,/g, "")) : 0;
+          };
+          const amountA = getAmount(a.amount);
+          const amountB = getAmount(b.amount);
+          return sort === "amount_asc" ? amountA - amountB : amountB - amountA;
+        }
+        return 0;
+      });
+    } else {
+      scholarships.sort((a, b) => 
+        new Date(b.createdAt) - new Date(a.createdAt)
+      );
+    }
+
+    const total = scholarships.length;
+    const totalPages = Math.ceil(total / limit);
+    const paginatedData = scholarships.slice(skip, skip + limit);
 
     res.status(200).json({
       success: true,
-      data,
+      data: paginatedData,
       meta: {
         total,
         page,
@@ -266,7 +373,7 @@ exports.getScholarshipsByUniversity = async (req, res) => {
 // =========================================================
 exports.getUpcomingDeadlines = async (req, res) => {
   try {
-    const { days = 30 } = req.query; // default 30 days
+    const { days = 30 } = req.query;
     const { page, limit, skip } = getPagination(req.query);
 
     const today = new Date();
@@ -275,18 +382,19 @@ exports.getUpcomingDeadlines = async (req, res) => {
 
     const total = await Scholarship.countDocuments({
       deadline: {
-        $gte: today,
-        $lte: futureDate,
+        $gte: today.toISOString(),
+        $lte: futureDate.toISOString(),
       },
     });
 
     const scholarships = await Scholarship.find({
       deadline: {
-        $gte: today,
-        $lte: futureDate,
+        $gte: today.toISOString(),
+        $lte: futureDate.toISOString(),
       },
     })
       .populate("universityId", "name country city logo")
+      .populate("courseIds", "name level field")
       .sort({ deadline: 1 })
       .skip(skip)
       .limit(limit)
