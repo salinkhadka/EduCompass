@@ -2,7 +2,7 @@ const multer = require("multer")
 const { v4: uuidv4 } = require("uuid")
 
 const storage = multer.diskStorage({
-    destination: (req, file, cb) => cb(null, "uploads/"),
+    destination: (req, file, cb) => cb(null, "Uploads/"),
     filename: (req, file, cb) => {
         const ext = file.originalname.split(".").pop()
         const filename = `${file.fieldname}-${uuidv4()}.${ext}`

@@ -1,105 +1,181 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema(
   {
+    // =========================
+    // AUTH FIELDS
+    // =========================
     email: {
       type: String,
       required: true,
       unique: true,
       lowercase: true,
       trim: true,
+      index: true,
     },
     username: {
       type: String,
       required: true,
       trim: true,
+      index: true,
     },
     password: {
       type: String,
-      required: true,
+      required: false, // Google users don't need password
     },
+
+    authProvider: {
+      type: String,
+      enum: ["local", "google"],
+      default: "local",
+    },
+    googleId: {
+      type: String,
+      unique: true,
+      sparse: true,
+    },
+    isVerified: {
+      type: Boolean,
+      default: false,
+    },
+
+    // =========================
+    // PROFILE
+    // =========================
     profilePhoto: {
       type: String,
-      default: '',
+      default: "",
     },
     phone: {
       type: String,
-      default: '',
+      default: "",
       trim: true,
     },
     role: {
       type: String,
-      enum: ['normal', 'admin' ],
-      default: 'normal',
+      enum: ["normal", "admin"],
+      default: "normal",
     },
+
     preferredCountry: {
       type: String,
-      default: '',
+      default: "",
       trim: true,
     },
     degreeLevel: {
       type: String,
-      enum: ['', 'Undergraduate', 'Masters', 'PhD', 'Diploma', 'Certificate'],
-      default: '',
+      enum: ["", "Undergraduate", "Masters", "PhD", "Diploma", "Certificate"],
+      default: "",
     },
     studentStatus: {
       type: String,
-      enum: ['', 'Planning 2025', 'Planning 2026', 'Planning 2027', 'Researching', 'Applying', 'Enrolled'],
-      default: '',
+      enum: [
+        "",
+        "Planning 2025",
+        "Planning 2026",
+        "Planning 2027",
+        "Researching",
+        "Applying",
+        "Enrolled",
+      ],
+      default: "",
     },
     fieldOfStudy: {
       type: String,
-      default: '',
+      default: "",
       trim: true,
     },
-    savedUniversities: [{
-      universityId: String,
-      universityName: String,
-      country: String,
-      program: String,
-      savedAt: { type: Date, default: Date.now },
-    }],
-    savedScholarships: [{
-      scholarshipId: String,
-      scholarshipName: String,
-      provider: String,
-      amount: String,
-      deadline: Date,
-      savedAt: { type: Date, default: Date.now },
-    }],
-    
-    // Recent Activity
-    recentSearches: [{
-      query: String,
-      category: String, // 'university', 'scholarship', 'program'
-      searchedAt: { type: Date, default: Date.now },
-    }],
+
+    // =========================
+    // SAVED UNIVERSITIES
+    // =========================
+    savedUniversities: [
+      {
+        universityId: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "University",
+          required: true,
+        },
+        universityName: String,
+        country: String,
+        program: String,
+        savedAt: {
+          type: Date,
+          default: Date.now,
+        },
+      },
+    ],
+
+    // =========================
+    // SAVED SCHOLARSHIPS
+    // =========================
+    savedScholarships: [
+      {
+        scholarshipId: {
+          type: String, // External or internal ID
+          required: true,
+        },
+        scholarshipName: String,
+        provider: String,
+        amount: String,
+        deadline: Date,
+        savedAt: {
+          type: Date,
+          default: Date.now,
+        },
+      },
+    ],
+
+    // =========================
+    // PASSWORD RESET
+    // =========================
+    resetPasswordToken: String,
+    resetPasswordExpires: Date,
+
+    // =========================
+    // ACTIVITY & STATUS
+    // =========================
+    recentSearches: [
+      {
+        query: String,
+        category: {
+          type: String,
+          enum: ["university", "scholarship", "program"],
+        },
+        searchedAt: {
+          type: Date,
+          default: Date.now,
+        },
+      },
+    ],
+
     isActive: {
       type: Boolean,
       default: true,
     },
-    lastLogin: {
-      type: Date,
-    },
+    lastLogin: Date,
   },
   {
     timestamps: true,
   }
 );
 
-userSchema.index({ email: 1 });
-userSchema.index({ username: 1 });
-
-
-userSchema.virtual('savedUniversitiesCount').get(function() {
+// =========================
+// VIRTUALS
+// =========================
+userSchema.virtual("savedUniversitiesCount").get(function () {
   return this.savedUniversities.length;
 });
 
-userSchema.virtual('savedScholarshipsCount').get(function() {
+userSchema.virtual("savedScholarshipsCount").get(function () {
   return this.savedScholarships.length;
 });
 
-userSchema.set('toJSON', { virtuals: true });
-userSchema.set('toObject', { virtuals: true });
+userSchema.set("toJSON", { virtuals: true });
+userSchema.set("toObject", { virtuals: true });
 
-module.exports = mongoose.model('User', userSchema);
+// =========================
+// EXPORT
+// =========================
+module.exports =
+  mongoose.models.User || mongoose.model("User", userSchema);
