@@ -13,6 +13,7 @@ const scholarshipRoutes = require('./Route/scholarshipRoutes');
 const courseRoutes = require('./Route/courseRoutes');
 const analyticsRoutes = require('./Route/analyticsRoutes');
 const adminRoutes = require('./Route/adminroutes'); // NEW
+const recommendationRoutes = require('./Route/recommendationRoutes');
 
 const app = express();
 
@@ -43,6 +44,7 @@ app.use('/api/universities', universityRoutes);
 app.use('/api/scholarships', scholarshipRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/recommendations', recommendationRoutes);
 app.use('/api/admin', adminRoutes); // NEW ADMIN ROUTES
 
 // Start server

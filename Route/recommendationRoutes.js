@@ -34,5 +34,7 @@ router.get(
   authenticateUser,
   controller.getScholarshipRecommendations
 );
+router.get("/similar/:id", controller.getSimilarUniversities);
+
 
 module.exports = router;

@@ -229,18 +229,6 @@ exports.searchScholarships = async (req, res) => {
       };
     }
 
-    if (fromDate || toDate) {
-      filters.deadline = {};
-      
-      if (fromDate) {
-        filters.deadline.$gte = fromDate;
-      }
-      
-      if (toDate) {
-        filters.deadline.$lte = toDate;
-      }
-    }
-
     if (universityId) {
       filters.universityId = universityId;
     }
@@ -249,6 +237,50 @@ exports.searchScholarships = async (req, res) => {
       .populate("universityId", "name country city logo")
       .populate("courseIds", "name level field courseId")
       .lean();
+
+    // Helper function to parse "Month Day" format to Date object
+    const parseDeadline = (deadlineStr) => {
+      if (!deadlineStr) return null;
+      
+      try {
+        // Parse "October 15" format
+        const currentYear = 2026;
+        const deadline = new Date(`${deadlineStr}, ${currentYear}`);
+        
+        // If invalid date, return null
+        if (isNaN(deadline.getTime())) {
+          return null;
+        }
+        
+        return deadline;
+      } catch (error) {
+        return null;
+      }
+    };
+
+    // Filter by date range
+    if (fromDate || toDate) {
+      scholarships = scholarships.filter(scholarship => {
+        const deadlineDate = parseDeadline(scholarship.deadline);
+        
+        // Skip if deadline can't be parsed
+        if (!deadlineDate) return false;
+        
+        if (fromDate) {
+          const fromDateObj = new Date(fromDate);
+          if (deadlineDate < fromDateObj) return false;
+        }
+        
+        if (toDate) {
+          const toDateObj = new Date(toDate);
+          // Set to end of day for toDate
+          toDateObj.setHours(23, 59, 59, 999);
+          if (deadlineDate > toDateObj) return false;
+        }
+        
+        return true;
+      });
+    }
 
     if (minAmount || maxAmount) {
       scholarships = scholarships.filter(scholarship => {
@@ -298,11 +330,18 @@ exports.searchScholarships = async (req, res) => {
 
     if (sort) {
       scholarships.sort((a, b) => {
-        if (sort === "deadline_asc") {
-          return new Date(a.deadline) - new Date(b.deadline);
-        }
-        if (sort === "deadline_desc") {
-          return new Date(b.deadline) - new Date(a.deadline);
+        if (sort === "deadline_asc" || sort === "deadline_desc") {
+          const dateA = parseDeadline(a.deadline);
+          const dateB = parseDeadline(b.deadline);
+          
+          // Handle null dates - push them to the end
+          if (!dateA && !dateB) return 0;
+          if (!dateA) return 1;
+          if (!dateB) return -1;
+          
+          return sort === "deadline_asc" 
+            ? dateA - dateB 
+            : dateB - dateA;
         }
         if (sort === "name_asc") {
           return a.name.localeCompare(b.name);
